@@ -1,4 +1,4 @@
-var Sfx = new Audio("https://cdn.jsdelivr.net/gh/AyGemuy/Cerdasin/audio@master/typewriter.wav");
+var Sfx = new Audio("//cdn.jsdelivr.net/gh/AyGemuy/Cerdasin/audio/typewriter.wav");
 
 document.onclick = function() {
   Sfx.play();
