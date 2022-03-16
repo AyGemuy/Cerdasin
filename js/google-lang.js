@@ -1,0 +1,1 @@
+function googleTranslateElementInit(){new google.translate.TranslateElement({pageLanguage:'id',includedLanguages:'en,id,vi,zh-CN,th,ru,ms,ko,ja,it,hi,fr,es,de,ar,tr,jw,sn',layout:google.translate.TranslateElement.InlineLayout.SIMPLE},'google_translate_element')}$(".hover").mouseleave(function (){$(this).removeClass("hover")});
