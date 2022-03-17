@@ -27,22 +27,24 @@ const Toast = Swal.mixin({
             imageHeight: 100,
             imageAlt: 'Hai',
             input: 'text',
-            confirmButtonText: 'Hai om',
+            confirmButtonText: '<i class="fa fa-thumbs-up"></i> Hai',
             showCancelButton: false,
+            footer: 'By <a href="/">Cerdasin62.</a>'
             });
             
             if(nama && nama.length < 11){
             window.nama = nama;
             var { isConfirmed: ke_satu } = await swals.fire({
-            title: 'Hai,' + nama + ' uwu :3',
+            title: 'Hai kak ,' + nama + ' uwu :3',
             imageUrl: 'https://cdn.jsdelivr.net/gh/AyGemuy/Blogger/img/chat.png',
             imageWidth: 100,
             imageHeight: 100,
             imageAlt: 'Hai',
             text: 'Siap untuk membaca!',
             showCancelButton: true,
-            confirmButtonText: 'Siap',
-            cancelButtonText: 'Gak',
+            confirmButtonText: '<i class="fa fa-thumbs-up"></i> Siap',
+            cancelButtonText: '<i class="fa fa-thumbs-down"></i> Gak',
+            footer: 'By <a href="/">Cerdasin62.</a>'
             });
             
             if(ke_satu){
