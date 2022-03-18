@@ -227,29 +227,27 @@ body{top:0!important}
 .drK .FollowByEmail{border-color:var(--contentL)}
 
 /* Img Animation */
-/*
 .post-body a img{box-shadow: 0px 0x 6px rgba(0, 0, 0, 0, 5);
 border-radius:10px;}
 .post-body a img:hover{
-animation:animate1Shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+animation: Zoom-Img 3s ease 0s infinite normal forwards;
 transform:translate3d(0, 0, 0);
 backface-visibility:hidden;
 perspective:1000px}
-@keyframes animate1Shake{
-10%,90%{transform:translate3d(-1px,0,0)}
-20%,80%{transform:translate3d(2px,0,0)}
-30%,50%,70%{transform:translate3d(-4px,0,0)}
-40%,60%{transform:translate3d(4px, 0, 0)}}
+@keyframes Zoom-Img {
+  0% {
+    transform: scale(1) translateY(0);
+    transform-origin: 50% 16%;
+  }
 
-@-webkit-keyframes animate2Shake{
-10%,90%{transform:translate3d(-1px,0,0)}
-20%,80%{transform:translate3d(2px,0,0)}
-30%,50%,70%{transform:translate3d(-4px,0,0)}
-40%,60%{transform:translate3d(4px,0,0)}}
-*/
+  100% {
+    transform: scale(1.25) translateY(-15px);
+    transform-origin: top;
+  }
+}
 
 /* Back To Top by Cerdasin */
-.BackToTop {visibility:hidden; width:40px; height:40px; position:fixed; bottom:10rem; right: 10px; z-index:99; cursor:pointer; border-radius: 50px 0px 50px 50px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; opacity:0; -webkit-transform:translateZ(0); transition:all .5s; background: black; url("data:image/svg+xml,<svg class='line' viewBox='0 0 24 24'><g transform='translate(12.000000, 12.000000) rotate(-180.000000) translate(-12.000000, -12.000000) translate(5.000000, 8.500000)'><path d='M14,0 C14,0 9.856,7 7,7 C4.145,7 0,0 0,0'/></g></svg>") no-repeat center center;}
+.BackToTop {visibility:hidden; width:40px; height:40px; position:fixed; bottom:9rem; right: 10px; z-index:99; cursor:pointer; border-radius: 50px 0px 50px 50px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; opacity:0; -webkit-transform:translateZ(0); transition:all .5s; background: white; url("data:image/svg+xml,<svg class='line' viewBox='0 0 24 24'><g transform='translate(12.000000, 12.000000) rotate(-180.000000) translate(-12.000000, -12.000000) translate(5.000000, 8.500000)'><path d='M14,0 C14,0 9.856,7 7,7 C4.145,7 0,0 0,0'/></g></svg>") no-repeat center center;}
 .BackToTop:hover {opacity: 1; background: white; url("data:image/svg+xml,<svg class='line' viewBox='0 0 24 24'><g transform='translate(12.000000, 12.000000) rotate(-180.000000) translate(-12.000000, -12.000000) translate(5.000000, 8.500000)'><path d='M14,0 C14,0 9.856,7 7,7 C4.145,7 0,0 0,0'/></g></svg>") no-repeat center center;}
 .BackToTop.show {visibility:visible; bottom:8rem; opacity:1;}
 
@@ -292,11 +290,38 @@ font-family: Iceland;
 font-weight: bold;
 font-size: 25px;
 border-radius: 0px 50px 50px 50px;
-animation-name: bounceInLeft;
+animation-name: Kiri-Kanan;
 animation-duration: 3s;
 animation-iteration-count: infinite;
 animation-direction: alternate;
 animation-timing-function: ease-in-out;
+}
+@keyframes Kiri-Kanan {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60% {
+    transform: translateX(10px);
+  }
+
+  80% {
+    transform: translateX(8px);
+  }
+
+  90% {
+    transform: translateX(-8px);
+  }
 }
 /*
 @keyframes cmPulse {
@@ -380,8 +405,8 @@ animation-timing-function: ease-in-out;
   align-self: center;
   white-space: nowrap;
   border-radius: 3px;
-  background-color: white;
-  color: black;
+  background-color: black;
+  color: white;
   font-size: 16px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
   margin-left: 20px;
