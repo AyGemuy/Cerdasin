@@ -110,7 +110,7 @@
 .drK .ajax-search h3{color:#fff}
 
 /* kotak donasi by Cerdasin */
-.wc-dnt-box{position:relative;max-width:500px;background-color:#fefefe;box-shadow:0 5px 12px -2px rgb(0 0 0 / 12%); border:1px solid #eceff1;border-radius:5px; padding:15px;margin:20px 0; display:flex;align-items:center;font-size:13px;transition:all .2s ease;}  
+.wc-dnt-box{position:relative;max-width:500px;background-color:var(--contentB);box-shadow:0 5px 12px -2px rgb(0 0 0 / 12%); border:1px solid #eceff1;border-radius:5px; padding:15px;margin:20px 0; display:flex;align-items:center;font-size:13px;transition:all .2s ease;}  
 .wc-dnt-box .wc-dnt-icon{flex-shrink:0;display:flex;align-items:center;justify-content:center;width:50px;height:50px;padding:10px; background:#f1f1f0;border-radius:5px;border:1px solid transparent}
 .wc-dnt-box .wc-dnt-txt{flex-grow:1; width:calc(100% - 150px);padding:0 15px;line-height:20px}
 .wc-dnt-box .wc-dnt-sw{position:absolute;padding:1px 3px;margin-top:-80px;margin-left:230px;width:30px;height:30px;background:#0b57cf;border-radius:50%;border:1px solid #eceff1;transition:all .2s ease;z-index:3}  
@@ -210,7 +210,7 @@ body{top:0!important}
 
 /* Baca Juga */
 .post-relatedText{position:relative; margin:42px 0;padding:1.5em 0; border:1px solid #eceff1;border-left:0;border-right:0; font-size:14px;line-height:1.8em;}
-.post-relatedText h3, .post-relatedText h4, .post-relatedText b{font-size:13px;font-weight:400; margin:0;padding:2px 14px;background-color:#fefefe;border:1px solid #eceff1;border-radius:15px; position:absolute;top:-15.5px;left:20px}
+.post-relatedText h3, .post-relatedText h4, .post-relatedText b{font-size:13px;font-weight:400; margin:0;padding:2px 14px;background-color:var(--contentB);border:1px solid #eceff1;border-radius:15px; position:absolute;top:-15.5px;left:20px}
 .post-relatedText ul, .post-relatedText ol{margin:8px 0 0;padding-left:20px}.post-relatedText a{text-decoration: none}
 .post-relatedText a:hover{opacity:.9}
 
@@ -249,8 +249,8 @@ perspective:1000px}
 */
 
 /* Back To Top by Cerdasin */
-.BackToTop {visibility:hidden; width:40px; height:40px; position:fixed; bottom:10rem; right: 10px; z-index:99; cursor:pointer; border-radius: 50px 0px 50px 50px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; opacity:0; -webkit-transform:translateZ(0); transition:all .5s; background:#ffffff url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z' fill='%23000'/%3E%3C/svg%3E") no-repeat center center;}
-.BackToTop:hover {opacity: 1; background:#ffffff url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z' fill='%23000'/%3E%3C/svg%3E") no-repeat center center;}
+.BackToTop {visibility:hidden; width:40px; height:40px; position:fixed; bottom:10rem; right: 10px; z-index:99; cursor:pointer; border-radius: 50px 0px 50px 50px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; opacity:0; -webkit-transform:translateZ(0); transition:all .5s; background:var(--contentB); url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z' fill='%23000'/%3E%3C/svg%3E") no-repeat center center;}
+.BackToTop:hover {opacity: 1; background:var(--contentB); url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z' fill='%23000'/%3E%3C/svg%3E") no-repeat center center;}
 .BackToTop.show {visibility:visible; bottom:8rem; opacity:1;}
 
 /* Progress bar */
@@ -292,7 +292,7 @@ font-family: Iceland;
 font-weight: bold;
 font-size: 25px;
 border-radius: 0px 50px 50px 50px;
-animation-name: animate__shakeX;
+animation-name: bounceInLeft;
 animation-duration: 3s;
 animation-iteration-count: infinite;
 animation-direction: alternate;
@@ -319,7 +319,7 @@ animation-timing-function: ease-in-out;
 }
 */
 .line {
-  animation: animate__shakeX 3s ease-in-out infinite;
+  animation: bounceInRight infinite;
   filter:drop-shadow(1px 1px 1px rgb(0 0 0 / 0.5))
 }
 
@@ -381,7 +381,7 @@ animation-timing-function: ease-in-out;
   white-space: nowrap;
   border-radius: 3px;
   background-color: var(--contentB);
-  color: #fff;
+  color: var(--contentB);
   font-size: 16px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
   margin-left: 20px;
