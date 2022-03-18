@@ -5,7 +5,7 @@ showClass: {
   hideClass: {
     popup: 'animate__animated animate__rotateOutDownLeft'
   }
-});
+  });
 
 const Toast = Swal.mixin({
   toast: true,
@@ -17,25 +17,11 @@ const Toast = Swal.mixin({
     toast.addEventListener('mouseenter', Swal.stopTimer)
     toast.addEventListener('mouseleave', Swal.resumeTimer)
   }
-});
+  });
 
             async function mulai(){
-            var { value: nama } = await swals.fire({
-            title: 'Siapa anda?',
-            imageUrl: 'https://cdn.jsdelivr.net/gh/AyGemuy/Blogger/img/chat.png',
-            imageWidth: 100,
-            imageHeight: 100,
-            imageAlt: 'Hai',
-            input: 'text',
-            confirmButtonText: '<i class="fa fa-thumbs-up"></i> Hai',
-            showCancelButton: false,
-            footer: 'By <a href="/">Cerdasin62.</a>'
-            });
-            
-            if(nama && nama.length < 11){
-            window.nama = nama;
             var { isConfirmed: ke_satu } = await swals.fire({
-            title: 'Hai kak ,' + nama + ' uwu :3',
+            title: 'Hai kak :3',
             imageUrl: 'https://cdn.jsdelivr.net/gh/AyGemuy/Blogger/img/chat.png',
             imageWidth: 100,
             imageHeight: 100,
@@ -51,13 +37,12 @@ const Toast = Swal.mixin({
             await Toast.fire({
   icon: 'success',
   title: 'Oke!, Selamat membaca ya'
-});
-            }
+  });
             } else {
             await Toast.fire({
   icon: 'warning',
   title: 'Gak bisa om!!'
-});
+  });
             mulai();
             }
             }
