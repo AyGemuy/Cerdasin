@@ -247,8 +247,8 @@ perspective:1000px}
 }
 
 /* Back To Top by Cerdasin */
-.BackToTop {visibility:hidden; width:40px; height:40px; position:fixed; bottom:9rem; right: 10px; z-index:99; cursor:pointer; border-radius: 50px 0px 50px 50px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; opacity:0; -webkit-transform:translateZ(0); transition:all .5s; background: white; url("data:image/svg+xml,&lt;svg class=&#039;line&#039; viewBox=&#039;0 0 24 24&#039;&gt;&lt;g transform=&#039;translate(12.000000, 12.000000) rotate(-180.000000) translate(-12.000000, -12.000000) translate(5.000000, 8.500000)&#039;&gt;&lt;path d=&#039;M14,0 C14,0 9.856,7 7,7 C4.145,7 0,0 0,0&#039;/&gt;&lt;/g&gt;&lt;/svg&gt;") no-repeat center center;}
-.BackToTop:hover {opacity: 1; background: white; url("data:image/svg+xml,&lt;svg class=&#039;line&#039; viewBox=&#039;0 0 24 24&#039;&gt;&lt;g transform=&#039;translate(12.000000, 12.000000) rotate(-180.000000) translate(-12.000000, -12.000000) translate(5.000000, 8.500000)&#039;&gt;&lt;path d=&#039;M14,0 C14,0 9.856,7 7,7 C4.145,7 0,0 0,0&#039;/&gt;&lt;/g&gt;&lt;/svg&gt;") no-repeat center center;}
+.BackToTop {visibility:hidden; width:40px; height:40px; position:fixed; bottom:9rem; right: 10px; z-index:99; cursor:pointer; border-radius: 50px 0px 50px 50px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; opacity:0; -webkit-transform:translateZ(0); transition:all .5s; background:var(--notifU);color:var(--notifC); url("data:image/svg+xml,%3Csvg%20class%3D'line'%20viewBox%3D'0%200%2024%2024'%3E%3Cg%20transform%3D'translate(12.000000%2C%2012.000000)%20rotate(-180.000000)%20translate(-12.000000%2C%20-12.000000)%20translate(5.000000%2C%208.500000)'%3E%3Cpath%20d%3D'M14%2C0%20C14%2C0%209.856%2C7%207%2C7%20C4.145%2C7%200%2C0%200%2C0'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") no-repeat center center;}
+.BackToTop:hover {opacity: 1; background:var(--notifU);color:var(--notifC); url("data:image/svg+xml,%3Csvg%20class%3D'line'%20viewBox%3D'0%200%2024%2024'%3E%3Cg%20transform%3D'translate(12.000000%2C%2012.000000)%20rotate(-180.000000)%20translate(-12.000000%2C%20-12.000000)%20translate(5.000000%2C%208.500000)'%3E%3Cpath%20d%3D'M14%2C0%20C14%2C0%209.856%2C7%207%2C7%20C4.145%2C7%200%2C0%200%2C0'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") no-repeat center center;}
 .BackToTop.show {visibility:visible; bottom:8rem; opacity:1;}
 
 /* Progress bar */
@@ -323,23 +323,60 @@ animation-timing-function: ease-in-out;
     transform: translateX(-8px);
   }
 }
-/*
-@keyframes cmPulse {
-  0% {box-shadow: 0px 0px 6px 0px rgba(255, 0, 0, 1);}
-  25% {box-shadow: 0px 0px 6px 0px rgba(255, 255, 0, 1);}
-  50% {box-shadow: 0px 0px 6px 0px rgba(0, 255, 0, 1);}
-  75% {box-shadow: 0px 0px 6px 0px rgba(0, 125, 255, 1);}
-  100% {box-shadow: 0px 0px 6px 0px rgba(0, 0, 255, 1);}
+
+@keyframes Kiri-Kanan {
+  0% {
+box-shadow: 0px 0px 6px 0px rgba(255, 0, 0, 1)
 }
-*/
+  25% {
+box-shadow: 0px 0px 6px 0px rgba(255, 255, 0, 1)
+}
+  50% {
+box-shadow: 0px 0px 6px 0px rgba(0, 255, 0, 1)
+}
+  75% {
+box-shadow: 0px 0px 6px 0px rgba(0, 125, 255, 1)
+}
+  100% {
+box-shadow: 0px 0px 6px 0px rgba(0, 0, 255, 1)
+}
+}
+
 
 /* Svg Color */
 @keyframes svg-color {
-  0%        {fill: #ff0000, filter: drop-shadow(9px 17px 24px #ff0000);}
-  25%        {fill: #ffff00, filter: drop-shadow(9px 17px 24px #ffff00);}
-  50%        {fill: #00ff00, filter: drop-shadow(9px 17px 24px #00ff00);}
-  75%        {fill: #00ffff, filter: drop-shadow(9px 17px 24px #00ffff);}
-  100%       {fill: #ffffff, filter: drop-shadow(9px 17px 24px #ffffff);}
+  0%        {
+filter: drop-shadow(9px 17px 24px #ff0000)
+}
+  25%        {
+filter: drop-shadow(9px 17px 24px #ffff00)
+}
+  50%        {
+filter: drop-shadow(9px 17px 24px #00ff00)
+}
+  75%        {
+filter: drop-shadow(9px 17px 24px #00ffff)
+}
+  100%       {
+filter: drop-shadow(9px 17px 24px #ffffff)
+}
+}
+@keyframes svg-color {
+  0%        {
+fill: #ff0000
+}
+  25%        {
+fill: #ffff00
+}
+  50%        {
+fill: #00ff00
+}
+  75%        {
+fill: #00ffff
+}
+  100%       {
+fill: #ffffff
+}
 }
 
 .line {
@@ -358,14 +395,14 @@ animation-timing-function: ease-in-out;
   width: 60px;
   height: 30px;
   border-radius: 25px 5px 25px 5px;
-  background: white;
+  background:var(--notifU);color:var(--notifC); 
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 .fab-wrapper .fab-icon-holder.fab {
   width: 40px;
   height: 40px;
   border-radius: 0px 50px 50px 50px;
-  background: white;
+  background:var(--notifU);color:var(--notifC); 
 }
 .fab-wrapper .fab-icon-holder:hover {
   opacity: 0.8;
