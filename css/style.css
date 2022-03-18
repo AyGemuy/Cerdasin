@@ -230,7 +230,7 @@ body{top:0!important}
 .post-body a img{box-shadow: 0px 0x 6px rgba(0, 0, 0, 0, 5);
 border-radius:10px;}
 .post-body a img:hover{
-animation: Zoom-Img 3s ease 0s infinite normal forwards;
+animation: Zoom-Img 3s ease-in-out 0s infinite normal both;
 transform:translate3d(0, 0, 0);
 backface-visibility:hidden;
 perspective:1000px}
@@ -247,8 +247,8 @@ perspective:1000px}
 }
 
 /* Back To Top by Cerdasin */
-.BackToTop {visibility:hidden; width:40px; height:40px; position:fixed; bottom:9rem; right: 10px; z-index:99; cursor:pointer; border-radius: 50px 0px 50px 50px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; opacity:0; -webkit-transform:translateZ(0); transition:all .5s; background: white; url("data:image/svg+xml,<svg class='line' viewBox='0 0 24 24'><g transform='translate(12.000000, 12.000000) rotate(-180.000000) translate(-12.000000, -12.000000) translate(5.000000, 8.500000)'><path d='M14,0 C14,0 9.856,7 7,7 C4.145,7 0,0 0,0'/></g></svg>") no-repeat center center;}
-.BackToTop:hover {opacity: 1; background: white; url("data:image/svg+xml,<svg class='line' viewBox='0 0 24 24'><g transform='translate(12.000000, 12.000000) rotate(-180.000000) translate(-12.000000, -12.000000) translate(5.000000, 8.500000)'><path d='M14,0 C14,0 9.856,7 7,7 C4.145,7 0,0 0,0'/></g></svg>") no-repeat center center;}
+.BackToTop {visibility:hidden; width:40px; height:40px; position:fixed; bottom:9rem; right: 10px; z-index:99; cursor:pointer; border-radius: 50px 0px 50px 50px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; opacity:0; -webkit-transform:translateZ(0); transition:all .5s; background: white; url("data:image/svg+xml,&lt;svg class=&#039;line&#039; viewBox=&#039;0 0 24 24&#039;&gt;&lt;g transform=&#039;translate(12.000000, 12.000000) rotate(-180.000000) translate(-12.000000, -12.000000) translate(5.000000, 8.500000)&#039;&gt;&lt;path d=&#039;M14,0 C14,0 9.856,7 7,7 C4.145,7 0,0 0,0&#039;/&gt;&lt;/g&gt;&lt;/svg&gt;") no-repeat center center;}
+.BackToTop:hover {opacity: 1; background: white; url("data:image/svg+xml,&lt;svg class=&#039;line&#039; viewBox=&#039;0 0 24 24&#039;&gt;&lt;g transform=&#039;translate(12.000000, 12.000000) rotate(-180.000000) translate(-12.000000, -12.000000) translate(5.000000, 8.500000)&#039;&gt;&lt;path d=&#039;M14,0 C14,0 9.856,7 7,7 C4.145,7 0,0 0,0&#039;/&gt;&lt;/g&gt;&lt;/svg&gt;") no-repeat center center;}
 .BackToTop.show {visibility:visible; bottom:8rem; opacity:1;}
 
 /* Progress bar */
@@ -334,18 +334,16 @@ animation-timing-function: ease-in-out;
 */
 
 /* Svg Color */
-/*
 @keyframes svg-color {
-  0%        {fill: #ff0000}
-  25%        {fill: #ffff00}
-  50%        {fill: #00ff00}
-  75%        {fill: #00ffff}
-  100%       {fill: #ffffff}
+  0%        {fill: #ff0000, filter: drop-shadow(9px 17px 24px #ff0000);}
+  25%        {fill: #ffff00, filter: drop-shadow(9px 17px 24px #ffff00);}
+  50%        {fill: #00ff00, filter: drop-shadow(9px 17px 24px #00ff00);}
+  75%        {fill: #00ffff, filter: drop-shadow(9px 17px 24px #00ffff);}
+  100%       {fill: #ffffff, filter: drop-shadow(9px 17px 24px #ffffff);}
 }
-*/
+
 .line {
-  animation: bounceInRight infinite;
-  filter:drop-shadow(1px 1px 1px rgb(0 0 0 / 0.5))
+  animation: svg-color 15s infinite;
 }
 
 /* Font Size */
