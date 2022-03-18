@@ -247,13 +247,13 @@ perspective:1000px}
 }
 
 /* Back To Top by Cerdasin */
-.BackToTop {visibility:hidden; width:40px; height:40px; position:fixed; bottom:9rem; right: 10px; z-index:99; cursor:pointer; border-radius: 50px 0px 50px 50px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; opacity:0; -webkit-transform:translateZ(0); transition:all .5s; background:var(--notifU);color:var(--notifC); url("data:image/svg+xml,%3Csvg%20class%3D'line'%20viewBox%3D'0%200%2024%2024'%3E%3Cg%20transform%3D'translate(12.000000%2C%2012.000000)%20rotate(-180.000000)%20translate(-12.000000%2C%20-12.000000)%20translate(5.000000%2C%208.500000)'%3E%3Cpath%20d%3D'M14%2C0%20C14%2C0%209.856%2C7%207%2C7%20C4.145%2C7%200%2C0%200%2C0'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") no-repeat center center;}
-.BackToTop:hover {opacity: 1; background:var(--notifU);color:var(--notifC); url("data:image/svg+xml,%3Csvg%20class%3D'line'%20viewBox%3D'0%200%2024%2024'%3E%3Cg%20transform%3D'translate(12.000000%2C%2012.000000)%20rotate(-180.000000)%20translate(-12.000000%2C%20-12.000000)%20translate(5.000000%2C%208.500000)'%3E%3Cpath%20d%3D'M14%2C0%20C14%2C0%209.856%2C7%207%2C7%20C4.145%2C7%200%2C0%200%2C0'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") no-repeat center center;}
+.BackToTop {visibility:hidden; width:40px; height:40px; position:fixed; bottom:9rem; right: 10px; z-index:99; cursor:pointer; border-radius: 50px 0px 50px 50px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; opacity:0; -webkit-transform:translateZ(0); transition:all .5s; background:var(--notifU);color:var(--notifC); url("//cerdasin.vercel.app/img/double-up-arrow.png") no-repeat center center;}
+.BackToTop:hover {opacity: 1; background:var(--notifU);color:var(--notifC); url("//cerdasin.vercel.app/img/double-up-arrow.png") no-repeat center center;}
 .BackToTop.show {visibility:visible; bottom:8rem; opacity:1;}
 
 /* Progress bar */
 .progress-container{width:100%;position:fixed;z-index:99;top:0;left:0;}
-.progress-bar{height:2px;background:linear-gradient(45deg, #f11712, #ffffff);}
+.progress-bar{height:3px;background:linear-gradient(45deg, #f11712, #ffffff);}
 
 /* Neon bar */
 /* Bottom Bar Animation by Tech and Fun Zone */ .animeTFZ,.animeBlurTFZ{position:fixed;width:100%;bottom:0;left:0;right:0;height:3px;z-index:23;background:linear-gradient(-45deg, #4086F4, #31A952, #FBBE01, #EB4132,#4086F4, #31A952, #FBBE01, #EB4132);background-size:200%;-webkit-animation:animeBar 5s linear infinite;animation:animeBar 5s linear infinite}.animeBlurTFZ{height:10px;z-index:22;filter:blur(10px);opacity:.7}@-webkit-keyframes animeBar{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}@keyframes animeBar{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}} 
@@ -290,6 +290,7 @@ font-family: Iceland;
 font-weight: bold;
 font-size: 25px;
 border-radius: 0px 50px 50px 50px;
+box-shadow: 0px 0px 6px 0px black;
 animation-name: Kiri-Kanan;
 animation-duration: 3s;
 animation-iteration-count: infinite;
@@ -324,43 +325,9 @@ animation-timing-function: ease-in-out;
   }
 }
 
-@keyframes Kiri-Kanan {
-  0% {
-box-shadow: 0px 0px 6px 0px rgba(255, 0, 0, 1)
-}
-  25% {
-box-shadow: 0px 0px 6px 0px rgba(255, 255, 0, 1)
-}
-  50% {
-box-shadow: 0px 0px 6px 0px rgba(0, 255, 0, 1)
-}
-  75% {
-box-shadow: 0px 0px 6px 0px rgba(0, 125, 255, 1)
-}
-  100% {
-box-shadow: 0px 0px 6px 0px rgba(0, 0, 255, 1)
-}
-}
-
 
 /* Svg Color */
-@keyframes svg-color {
-  0%        {
-filter: drop-shadow(9px 17px 24px #ff0000)
-}
-  25%        {
-filter: drop-shadow(9px 17px 24px #ffff00)
-}
-  50%        {
-filter: drop-shadow(9px 17px 24px #00ff00)
-}
-  75%        {
-filter: drop-shadow(9px 17px 24px #00ffff)
-}
-  100%       {
-filter: drop-shadow(9px 17px 24px #ffffff)
-}
-}
+
 @keyframes svg-color {
   0%        {
 fill: #ff0000
@@ -381,6 +348,7 @@ fill: #ffffff
 
 .line {
   animation: svg-color 15s infinite;
+  filter: drop-shadow(9px 17px 24px black;)
 }
 
 /* Font Size */
