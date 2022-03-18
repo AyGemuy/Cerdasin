@@ -210,7 +210,7 @@ body{top:0!important}
 
 /* Baca Juga */
 .post-relatedText{position:relative; margin:42px 0;padding:1.5em 0; border:1px solid #eceff1;border-left:0;border-right:0; font-size:14px;line-height:1.8em;}
-.post-relatedText h3, .post-relatedText h4, .post-relatedText b{font-size:13px;font-weight:400; margin:0;padding:2px 14px;background-color:var(--darkB);border:1px solid #eceff1;border-radius:15px; position:absolute;top:-15.5px;left:20px}
+.post-relatedText h3, .post-relatedText h4, .post-relatedText b{font-size:13px;font-weight:400; margin:0;padding:2px 14px;background-color:var(--contentB);border:1px solid #eceff1;border-radius:15px; position:absolute;top:-15.5px;left:20px}
 .post-relatedText ul, .post-relatedText ol{margin:8px 0 0;padding-left:20px}.post-relatedText a{text-decoration: none}
 .post-relatedText a:hover{opacity:.9}
 
@@ -249,8 +249,8 @@ perspective:1000px}
 */
 
 /* Back To Top by Cerdasin */
-.BackToTop {visibility:hidden; width:40px; height:40px; position:fixed; bottom:10rem; right: 10px; z-index:99; cursor:pointer; border-radius: 50px 0px 50px 50px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; opacity:0; -webkit-transform:translateZ(0); transition:all .5s; background:var(--darkB); url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z' fill='%23000'/%3E%3C/svg%3E") no-repeat center center;}
-.BackToTop:hover {opacity: 1; background:var(--darkB); url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z' fill='%23000'/%3E%3C/svg%3E") no-repeat center center;}
+.BackToTop {visibility:hidden; width:40px; height:40px; position:fixed; bottom:10rem; right: 10px; z-index:99; cursor:pointer; border-radius: 50px 0px 50px 50px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; opacity:0; -webkit-transform:translateZ(0); transition:all .5s; background:var(--contentB); url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z' fill='%23000'/%3E%3C/svg%3E") no-repeat center center;}
+.BackToTop:hover {opacity: 1; background:var(--contentB); url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z' fill='%23000'/%3E%3C/svg%3E") no-repeat center center;}
 .BackToTop.show {visibility:visible; bottom:8rem; opacity:1;}
 
 /* Progress bar */
@@ -335,14 +335,14 @@ animation-timing-function: ease-in-out;
   width: 60px;
   height: 30px;
   border-radius: 25px 5px 25px 5px;
-  background:var(--darkB); 
+  background:var(--contentB); 
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 .fab-wrapper .fab-icon-holder.fab {
   width: 40px;
   height: 40px;
   border-radius: 0px 50px 50px 50px;
-  background:var(--darkB);
+  background:var(--contentB);
 }
 .fab-wrapper .fab-icon-holder:hover {
   opacity: 0.8;
@@ -380,8 +380,8 @@ animation-timing-function: ease-in-out;
   align-self: center;
   white-space: nowrap;
   border-radius: 3px;
-  background-color: var(--darkB);
-  color: var(--darkB);
+  background-color: var(--contentB);
+  color: var(--contentB);
   font-size: 16px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
   margin-left: 20px;
