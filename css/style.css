@@ -210,7 +210,7 @@ body{top:0!important}
 
 /* Baca Juga */
 .post-relatedText{position:relative; margin:42px 0;padding:1.5em 0; border:1px solid #eceff1;border-left:0;border-right:0; font-size:14px;line-height:1.8em;}
-.post-relatedText h3, .post-relatedText h4, .post-relatedText b{font-size:13px;font-weight:400; margin:0;padding:2px 14px;background-color:var(--transB);border:1px solid #eceff1;border-radius:15px; position:absolute;top:-15.5px;left:20px}
+.post-relatedText h3, .post-relatedText h4, .post-relatedText b{font-size:13px;font-weight:400; margin:0;padding:2px 14px;background-color:var(--notifU);border:1px solid #eceff1;border-radius:15px; position:absolute;top:-15.5px;left:20px}
 .post-relatedText ul, .post-relatedText ol{margin:8px 0 0;padding-left:20px}.post-relatedText a{text-decoration: none}
 .post-relatedText a:hover{opacity:.9}
 
@@ -249,13 +249,13 @@ perspective:1000px}
 */
 
 /* Back To Top by Cerdasin */
-.BackToTop {visibility:hidden; width:40px; height:40px; position:fixed; bottom:10rem; right: 10px; z-index:99; cursor:pointer; border-radius: 50px 0px 50px 50px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; opacity:0; -webkit-transform:translateZ(0); transition:all .5s; background:var(--transB); url("data:image/svg+xml,<svg class='line' viewBox='0 0 24 24'><g transform='translate(12.000000, 12.000000) rotate(-180.000000) translate(-12.000000, -12.000000) translate(5.000000, 8.500000)'><path d='M14,0 C14,0 9.856,7 7,7 C4.145,7 0,0 0,0'/></g></svg>") no-repeat center center;}
-.BackToTop:hover {opacity: 1; background:var(--transB); url("data:image/svg+xml,<svg class='line' viewBox='0 0 24 24'><g transform='translate(12.000000, 12.000000) rotate(-180.000000) translate(-12.000000, -12.000000) translate(5.000000, 8.500000)'><path d='M14,0 C14,0 9.856,7 7,7 C4.145,7 0,0 0,0'/></g></svg>") no-repeat center center;}
+.BackToTop {visibility:hidden; width:40px; height:40px; position:fixed; bottom:10rem; right: 10px; z-index:99; cursor:pointer; border-radius: 50px 0px 50px 50px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; opacity:0; -webkit-transform:translateZ(0); transition:all .5s; background:var(--notifU); url("data:image/svg+xml,<svg class='line' viewBox='0 0 24 24'><g transform='translate(12.000000, 12.000000) rotate(-180.000000) translate(-12.000000, -12.000000) translate(5.000000, 8.500000)'><path d='M14,0 C14,0 9.856,7 7,7 C4.145,7 0,0 0,0'/></g></svg>") no-repeat center center;}
+.BackToTop:hover {opacity: 1; background:var(--notifU); url("data:image/svg+xml,<svg class='line' viewBox='0 0 24 24'><g transform='translate(12.000000, 12.000000) rotate(-180.000000) translate(-12.000000, -12.000000) translate(5.000000, 8.500000)'><path d='M14,0 C14,0 9.856,7 7,7 C4.145,7 0,0 0,0'/></g></svg>") no-repeat center center;}
 .BackToTop.show {visibility:visible; bottom:8rem; opacity:1;}
 
 /* Progress bar */
 .progress-container{width:100%;position:fixed;z-index:99;top:0;left:0;}
-.progress-bar{height:3px;background:linear-gradient(45deg, #f11712, #ffffff);}
+.progress-bar{height:5px;background:linear-gradient(45deg, #f11712, #ffffff);}
 
 /* Neon bar */
 /* Bottom Bar Animation by Tech and Fun Zone */ .animeTFZ,.animeBlurTFZ{position:fixed;width:100%;bottom:0;left:0;right:0;height:3px;z-index:23;background:linear-gradient(-45deg, #4086F4, #31A952, #FBBE01, #EB4132,#4086F4, #31A952, #FBBE01, #EB4132);background-size:200%;-webkit-animation:animeBar 5s linear infinite;animation:animeBar 5s linear infinite}.animeBlurTFZ{height:10px;z-index:22;filter:blur(10px);opacity:.7}@-webkit-keyframes animeBar{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}@keyframes animeBar{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}} 
@@ -335,14 +335,14 @@ animation-timing-function: ease-in-out;
   width: 60px;
   height: 30px;
   border-radius: 25px 5px 25px 5px;
-  background:var(--transB); 
+  background:var(--notifU); 
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 .fab-wrapper .fab-icon-holder.fab {
   width: 40px;
   height: 40px;
   border-radius: 0px 50px 50px 50px;
-  background:var(--transB);
+  background:var(--notifU);
 }
 .fab-wrapper .fab-icon-holder:hover {
   opacity: 0.8;
@@ -380,8 +380,8 @@ animation-timing-function: ease-in-out;
   align-self: center;
   white-space: nowrap;
   border-radius: 3px;
-  background-color: var(--transB);
-  color: var(--transB);
+  background-color: var(--notifU);
+  color: var(--notifU);
   font-size: 16px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
   margin-left: 20px;
