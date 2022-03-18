@@ -298,7 +298,7 @@ animation-iteration-count: infinite;
 animation-direction: alternate;
 animation-timing-function: ease-in-out;
 }
-/
+/*
 @keyframes cmPulse {
   0% {box-shadow: 0px 0px 6px 0px rgba(255, 0, 0, 1);}
   25% {box-shadow: 0px 0px 6px 0px rgba(255, 255, 0, 1);}
@@ -306,7 +306,7 @@ animation-timing-function: ease-in-out;
   75% {box-shadow: 0px 0px 6px 0px rgba(0, 125, 255, 1);}
   100% {box-shadow: 0px 0px 6px 0px rgba(0, 0, 255, 1);}
 }
-*
+*/
 
 /* Svg Color */
 /*
@@ -335,14 +335,14 @@ animation-timing-function: ease-in-out;
   width: 60px;
   height: 30px;
   border-radius: 25px 5px 25px 5px;
-  /* background:var(--contentB); */
+  background:var(--contentB); 
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 .fab-wrapper .fab-icon-holder.fab {
   width: 40px;
   height: 40px;
   border-radius: 0px 50px 50px 50px;
-  /* background:var(--contentB); */
+  background:var(--contentB);
 }
 .fab-wrapper .fab-icon-holder:hover {
   opacity: 0.8;
@@ -380,7 +380,7 @@ animation-timing-function: ease-in-out;
   align-self: center;
   white-space: nowrap;
   border-radius: 3px;
-  /* background-color: #000; */
+  background-color: var(--contentB);
   color: #fff;
   font-size: 16px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
