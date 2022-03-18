@@ -1,0 +1,38 @@
+.copy-click {
+  position: relative;
+  padding-bottom: 2px;
+  text-decoration: none;
+  cursor: copy;
+  color: #484848;
+  border-bottom: 1px dashed #767676;
+  transition: background-color calc(400ms * 2) cubic-bezier(0.19, 1, 0.22, 1);
+}
+.copy-click:after {
+  content: attr(data-tooltip-text);
+  position: absolute;
+  bottom: calc(100% + 6px);
+  left: 50%;
+  padding: 8px 16px;
+  white-space: nowrap;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 0 0 -12px rgba(0, 0, 0, 0);
+  pointer-events: none;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  opacity: 0;
+  transform: translate(-50%, 12px);
+  transition: box-shadow calc(400ms / 1.5) cubic-bezier(0.6, -0.28, 0.735, 0.045), opacity calc(400ms / 1.5) cubic-bezier(0.6, -0.28, 0.735, 0.045), transform calc(400ms / 1.5) cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+.copy-click.is-hovered:after {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  opacity: 1;
+  transform: translate(-50%, 0);
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+.copy-click.is-copied {
+  background-color: yellow;
+}
+.copy-click.is-copied:after {
+  content: attr(data-tooltip-text-copied);
+}
