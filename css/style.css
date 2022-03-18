@@ -290,7 +290,7 @@ font-family: Iceland;
 font-weight: bold;
 font-size: 25px;
 border-radius: 0px 50px 50px 50px;
-box-shadow: 0px 0px 6px 0px black;
+box-shadow: 0px 0px 6px 0px #000000;
 animation-name: Kiri-Kanan;
 animation-duration: 3s;
 animation-iteration-count: infinite;
@@ -348,7 +348,7 @@ fill: #ffffff
 
 .line {
   animation: svg-color 15s infinite;
-  filter: drop-shadow(9px 17px 24px black;)
+  filter: drop-shadow(9px 17px 24px #000000;)
 }
 
 /* Font Size */
@@ -408,8 +408,8 @@ fill: #ffffff
   align-self: center;
   white-space: nowrap;
   border-radius: 3px;
-  background-color: black;
-  color: white;
+  background-color: #000000;
+  color: #ffffff;
   font-size: 16px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
   margin-left: 20px;
