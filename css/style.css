@@ -210,9 +210,10 @@ body{top:0!important}
 
 /* Baca Juga */
 .post-relatedText{position:relative; margin:42px 0;padding:1.5em 0; border:1px solid #eceff1;border-left:0;border-right:0; font-size:14px;line-height:1.8em;}
-.post-relatedText h3, .post-relatedText h4, .post-relatedText b{font-size:13px;font-weight:400; margin:0;padding:2px 14px;background-color:var(--mobB);border:1px solid #eceff1;border-radius:15px; position:absolute;top:-15.5px;left:20px}
+.post-relatedText h3, .post-relatedText h4, .post-relatedText b{font-size:13px;font-weight:700; margin:0;padding:2px 14px;background-color: #0b57cf;border:1px solid #eceff1;border-radius:5px; position:absolute;top:-15.5px;left:20px}
 .post-relatedText ul, .post-relatedText ol{margin:8px 0 0;padding-left:20px}.post-relatedText a{text-decoration: none}
 .post-relatedText a:hover{opacity:.9}
+.post-relatedText{display:flex; max-width:480px;margin:30px 0; padding:12px 12px 15px; background:var(--contentB);border-radius:8px; box-shadow:0 10px 25px -3px rgba(0,0,0,.1)} 
 
 /* Form Email */
 /* Widget FollowByEmail Median-ui 1.6 */
@@ -281,31 +282,11 @@ animation-direction: alternate;
 animation-timing-function: ease-in-out;
 }
 @keyframes Kiri-Kanan {
-  0%,
-  100% {
-    transform: translateX(0);
-  }
-
-  10%,
-  30%,
-  50%,
-  70% {
-    transform: translateX(-5px);
-  }
-
-  20%,
-  40%,
-  60% {
-    transform: translateX(5px);
-  }
-
-  80% {
-    transform: translateX(4px);
-  }
-
-  90% {
-    transform: translateX(-4px);
-  }
+  0%,100% { transform: translateX(0); }
+  10%,30%,50%,70% { transform: translateX(-5px); }
+  20%,40%,60% { transform: translateX(5px); }
+  80% { transform: translateX(4px); }
+  90% { transform: translateX(-4px); }
 }
 
 
@@ -335,14 +316,14 @@ animation-timing-function: ease-in-out;
   width: 60px;
   height: 30px;
   border-radius: 25px 5px 25px 5px;
-  background:var(--notifU);color:var(--notifC); 
+  background:var(--contentB);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 .fab-wrapper .fab-icon-holder.fab {
   width: 40px;
   height: 40px;
   border-radius: 0px 50px 50px 50px;
-  background:var(--notifU);color:var(--notifC); 
+  background:var(--contentB);
 }
 .fab-wrapper .fab-icon-holder:hover {
   opacity: 0.8;
@@ -427,6 +408,23 @@ canvas {
   top: 0;
   left: 0
  }
+ 
+  /* Title */
+  .pTtl {
+  text-align: center;
+	transform: scale(1);
+	animation: jedug 2s infinite;
+}
+@keyframes jedug {
+	0% { transform: scale(0.95); }
+	70% { transform: scale(0.98); }
+	100% { transform: scale(0.95); }
+	}
+		
+  /* Icon svg */
+.ke-kanan{display:flex;justify-content:right; margin: -3rem 0px 2rem 0px}
+
+
 
 /* --- End --- */
 
