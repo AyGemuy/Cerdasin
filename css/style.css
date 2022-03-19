@@ -541,6 +541,32 @@ svg.wc-buysvg.line{fill:none!important;stroke:#767676;stroke-linecap:round;strok
 .darkMode .panel-body input,.darkMode .panel-body input:focus{background:#2d2d30;color:#fefefe}
 .darkMode .wcSafeClose{color:#fefefe}
 
+/* Feedback */
+.csquare {
+    background: #fff;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 8px 6px -6px #e0e0e0;
+    -ms-box-shadow: 0 8px 6px -6px #e0e0e0;
+    box-shadow: 0 8px 6px -6px #e0e0e0;
+    padding: 20px;
+    border: 1px solid #dce4e9;
+    margin-bottom: 20px;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.csquare.feedback-popup {
+  position: absolute;
+  bottom: 8rem;
+  width: 300px;
+  left: -310px;
+  padding-top: 10px;
+}
+
+.csquare.feedback-popup #closeFeedbackPopup {
+  font-size: 200%;
+}
 /* --- End --- */
 
 /*]]>*/
