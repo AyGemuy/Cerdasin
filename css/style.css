@@ -289,15 +289,11 @@ animation-timing-function: ease-in-out;
   50%        {fill: #00ff00}
   75%        {fill: #00ffff}
   100%       {fill: #ffffff}
-  0%        {filter:drop-shadow(1px 1px 1px rgb(0 0 0 / 1))}
-  25%        {filter:drop-shadow(1px 1px 1px rgb(0 0 0 / 2))}
-  50%        {filter:drop-shadow(1px 1px 1px rgb(0 0 0 / 3))}
-  75%        {filter:drop-shadow(1px 1px 1px rgb(0 0 0 / 5))}
-  100%       {filter:drop-shadow(1px 1px 1px rgb(0 0 0 / 5))}
 }
 
 .line {
   animation: svg-color 15s color;
+  filter:drop-shadow(1px 1px 1px rgb(0 0 0 / 1));
 }
 
 /* Font Size */
@@ -330,7 +326,6 @@ animation-timing-function: ease-in-out;
   justify-content: center;
   height: 100%;
   font-size: 25px;
-  color: #fff;
 }
 .fab-wrapper .fab-options {
   padding: 0px;
