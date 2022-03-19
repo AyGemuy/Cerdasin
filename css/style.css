@@ -228,7 +228,7 @@ body{top:0!important}
 .drK .FollowByEmail{border-color:var(--contentL)}
 
 /* css gambar zoom */
-.post img{animation: tostart 2s infinite;}
+.post img:hover{animation: nudge 2s infinite;}
 
 /* Back To Top by Cerdasin */
 .BackToTop {visibility:hidden; width:40px; height:40px; position:fixed; bottom:10rem; right: 10px; z-index:99; cursor:pointer; border-radius: 50px 0px 50px 50px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; opacity:0; -webkit-transform:translateZ(0); transition:all .5s; background:#ffffff url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z' fill='%23000'/%3E%3C/svg%3E") no-repeat center center;}
@@ -275,7 +275,7 @@ font-weight: bold;
 font-size: 25px;
 border-radius: 0px 50px 50px 50px;
 box-shadow: 0px 0px 6px 0px #000000;
-animation-name: snap;
+animation-name: nudge;
 animation-duration: 3s;
 animation-iteration-count: infinite;
 animation-direction: alternate;
@@ -297,7 +297,7 @@ animation-timing-function: ease-in-out;
 }
 
 .line {
-  animation: svg-shadow 15s color;
+  animation: svg-color 15s color;
 }
 
 /* Font Size */
