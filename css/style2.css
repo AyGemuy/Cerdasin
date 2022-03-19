@@ -184,7 +184,7 @@ body{top:0!important}
 .post img:hover{animation: nudge 2s infinite;}
 
 /* Back To Top by Cerdasin */
-.BackToTop {visibility:hidden; width:40px; height:40px; position:fixed; bottom:10rem; right: 10px; z-index:99; cursor:pointer; border-radius: 50px 0px 50px 50px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; opacity:0; -webkit-transform:translateZ(0); transition:all .5s; background:#ffffff url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z' fill='%23000'/%3E%3C/svg%3E") no-repeat center center;}
+.BackToTop {background: 100% 100%/250% 100% #fff linear-gradient(135deg, transparent 33%, #2c92c8 66%, #892cc8) no-repeat;visibility:hidden; width:40px; height:40px; position:fixed; bottom:10rem; right: 10px; z-index:99; cursor:pointer; border-radius: 50px 0px 50px 50px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; opacity:0; -webkit-transform:translateZ(0); transition:all .5s; background:#ffffff url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z' fill='%23000'/%3E%3C/svg%3E") no-repeat center center;}
 .BackToTop:hover {opacity: 1; background:#ffffff url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z' fill='%23000'/%3E%3C/svg%3E") no-repeat center center;}
 .BackToTop.show {visibility:visible; bottom:8rem; opacity:1;}
 
@@ -531,6 +531,7 @@ svg.wc-buysvg.line{fill:none!important;stroke:#767676;stroke-linecap:round;strok
   transition: all 0.15s ease-out;
   z-index: 1;
   will-change: width;
+  border-radius: 0px 50px 50px 50px;
 }
 #mega-button > .tooltip {
   padding: 5px 10px;
@@ -563,8 +564,8 @@ svg.wc-buysvg.line{fill:none!important;stroke:#767676;stroke-linecap:round;strok
   position: absolute;
   bottom: 1px;
   left: 8px;
-  width: 12px;
-  height: 6px;
+  width: 10px;
+  height: 4px;
   background-color: inherit;
   -webkit-clip-path: polygon(0 0, 100% 0, 50% 100%);
           clip-path: polygon(0 0, 100% 0, 50% 100%);
@@ -581,7 +582,7 @@ svg.wc-buysvg.line{fill:none!important;stroke:#767676;stroke-linecap:round;strok
   height: 50px;
   padding-top: 4px;
   background: 100% 100%/250% 100% #fff linear-gradient(135deg, transparent 33%, #2c92c8 66%, #892cc8) no-repeat;
-  border-radius: 50%;
+  border-radius: 0px 50px 50px 50px;
   content: "";
   font-family: "Font Awesome 5 Pro";
   font-size: 32px;
