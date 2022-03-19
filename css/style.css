@@ -558,7 +558,7 @@ svg.wc-buysvg.line{fill:none!important;stroke:#767676;stroke-linecap:round;strok
 
 .csquare.feedback-popup {
   position: absolute;
-  bottom: 8rem;
+  top: 10x;
   width: 300px;
   left: -310px;
   padding-top: 10px;
@@ -567,6 +567,7 @@ svg.wc-buysvg.line{fill:none!important;stroke:#767676;stroke-linecap:round;strok
 .csquare.feedback-popup #closeFeedbackPopup {
   font-size: 200%;
 }
+
 /* --- End --- */
 
 /*]]>*/
