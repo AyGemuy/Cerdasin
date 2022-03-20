@@ -1,4 +1,5 @@
-var ngeklik = document.getElementById("add-bookmark");
+
+	var ngeklik = document.getElementById("add-bookmark");
 	var ngeklik2 = document.getElementById("huruf-kecil");
 	var ngeklik3 = document.getElementById("huruf-sedang");
 	var ngeklik4 = document.getElementById("huruf-besar");
@@ -48,5 +49,9 @@ Toast.fire({
             await Toast.fire({
   icon: 'warning',
   title: 'Prank ya kack!'
-  })}
+  });
+         }
 })
+})
+            
+            
