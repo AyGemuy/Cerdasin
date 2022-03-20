@@ -63,7 +63,7 @@
 .drK .ajax-search h3{color:#fff}
 
 /* kotak donasi by Cerdasin */
-.wc-dnt-box{font-family: Sriracha;position:relative;max-width:500px;background-color:var(--contentB);box-shadow:0 5px 12px -2px rgb(0 0 0 / 12%); border:1px solid #eceff1;border-radius:5px; padding:15px;margin:20px 0; display:flex;align-items:center;font-size:13px;transition:all .2s ease;}  
+.wc-dnt-box{font-family: Metal Mania;position:relative;max-width:500px;background-color:var(--contentB);box-shadow:0 5px 12px -2px rgb(0 0 0 / 12%); border:1px solid #eceff1;border-radius:5px; padding:15px;margin:20px 0; display:flex;align-items:center;font-size:13px;transition:all .2s ease;}  
 .wc-dnt-box .wc-dnt-icon{flex-shrink:0;display:flex;align-items:center;justify-content:center;width:50px;height:50px;padding:10px; background:#f1f1f0;border-radius:5px;border:1px solid transparent}
 .wc-dnt-box .wc-dnt-txt{flex-grow:1; width:calc(100% - 150px);padding:0 15px;line-height:20px}
 .wc-dnt-box .wc-dnt-sw{position:absolute;padding:1px 3px;margin-top:-80px;margin-left:230px;width:30px;height:30px;background:#0b57cf;border-radius:50%;border:1px solid #eceff1;transition:all .2s ease;z-index:3}  
@@ -362,7 +362,7 @@ canvas {
  
   /* Title */
   .pTtl {
-  font-family: Sriracha;
+  font-family: Metal Mania;
   text-align: center;
 	animation: nudge 2s infinite;
 }
