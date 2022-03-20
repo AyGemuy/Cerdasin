@@ -33,7 +33,7 @@
 .ajax-search.hidden{display:none}
 .ajax-search{padding:20px 10px;background:rgba(255,255,255,.89)!important;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);text-align:center;box-shadow:0 15px 10px -10px rgba(155,155,155,0.15),0 -15px 10px -10px rgba(155,155,155,0.15);max-height:450px!important;margin:20px auto;border-radius:8px;animation:fadeInDown .5s linear}
 .ajax-search-results-empty{text-align:center}
-.ajax-search h3{font-family: Rancho;color:#000;font-size:14px;font-weight:500;margin:0 10px 20px 10px;text-align:left}
+.ajax-search h3{font-family: Metal Mania;color:#000;font-size:14px;font-weight:500;margin:0 10px 20px 10px;text-align:left}
 .ajax-search-results{text-align:left}
 .ajax-search li{background:#fff;position:relative;display:inline-block;width:100%;padding:10px;margin:5px 5px 5px -15px;border-radius:5px;border:1px solid rgba(155,155,155,0.15);overflow:hidden;transition:all .3s}
 .ajax-search li:hover{border-color:#0b57cf}
