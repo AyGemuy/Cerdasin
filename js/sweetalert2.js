@@ -9,9 +9,9 @@ showClass: {
 
 const Toast = Swal.mixin({
   toast: true,
-  position: 'center',
+  position: 'top-end',
   showConfirmButton: false,
-  timer: 5000,
+  timer: 3000,
   timerProgressBar: true,
   didOpen: (toast) => {
     toast.addEventListener('mouseenter', Swal.stopTimer)
@@ -47,3 +47,37 @@ const Toast = Swal.mixin({
             }
             }
             mulai();
+
+var bel = new Audio('https://www.soundjay.com/buttons/sounds/button-09a.mp3');
+function add-bookmark() {
+Toast.fire({
+ icon: 'success',
+ title: 'Sukses menambahkan ke bookmark'
+})
+bel.currentTime = 0;
+bel.play();
+}
+function huruf-kecil() {
+Toast.fire({
+ icon: 'success',
+ title: 'Sukses mengubah ke huruf kecil'
+})
+bel.currentTime = 0;
+bel.play();
+}
+function huruf-sedang() {
+Toast.fire({
+ icon: 'success',
+ title: 'Sukses mengubah ke huruf sedang'
+})
+bel.currentTime = 0;
+bel.play();
+}
+function huruf-besar() {
+Toast.fire({
+ icon: 'success',
+ title: 'Sukses mengubah ke huruf besar'
+})
+bel.currentTime = 0;
+bel.play();
+}
