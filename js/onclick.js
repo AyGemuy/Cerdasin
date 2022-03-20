@@ -1,25 +1,25 @@
-document.getElementById("add-bookmark").onclick(){
+$('#add-bookmark').click(function(){
 Toast.fire({
  icon: 'success',
  title: 'Sukses menambahkan ke bookmark'
 })
-}
-document.getElementById("huruf-kecil").onclick(){
+})
+$('#huruf-kecil').click(function(){
 Toast.fire({
  icon: 'success',
  title: 'Sukses mengubah ke huruf kecil'
 })
-}
-document.getElementById("huruf-sedang").onclick(){
+})
+$('#huruf-sedang').click(function(){
 Toast.fire({
  icon: 'success',
  title: 'Sukses mengubah ke huruf sedang'
 })
-}
-document.getElementById("huruf-besar").onclick(){
+})
+$('#huruf-besar').click(function(){
 Toast.fire({
  icon: 'success',
  title: 'Sukses mengubah ke huruf besar'
 })
-}
+})
 
