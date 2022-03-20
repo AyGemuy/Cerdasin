@@ -163,7 +163,7 @@ body{top:0!important}
 .tocC:before{content:'';display:block;width:12px;height:12px;background-color:var(--linkC);border:2px solid var(--bodyB);border-radius:50%;position:absolute;top:5px;left:12px;animation:indicator 1s ease infinite;-webkit-animation:indicator 1s ease infinite;z-index:1}@-webkit-keyframes indicator{0%{opacity:0}50%{opacity:1}100%{opacity:0}}@keyframes indicator{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
 
 /* Baca Juga */
-.post-relatedText{font-family: Fredericka the Great;position:relative; margin:42px 0;padding:1.5em 0; border:1px solid #eceff1;border-left:0;border-right:0; font-size:14px;line-height:1.8em;}
+.post-relatedText{font-family: Bubblegum Sans;position:relative; margin:42px 0;padding:1.5em 0; border:1px solid #eceff1;border-left:0;border-right:0; font-size:14px;line-height:1.8em;}
 .post-relatedText h3, .post-relatedText h4, .post-relatedText b{font-size:13px;font-weight:700; margin:0;padding:2px 14px;background-color: #0b57cf;color:var(--bodyB)border:1px solid #eceff1;border-radius:5px; position:absolute;top:-15.5px;left:20px}
 .post-relatedText ul, .post-relatedText ol{margin:8px 0 0;padding-left:20px}.post-relatedText a{text-decoration: none}
 .post-relatedText a:hover{opacity:.9}
@@ -362,6 +362,7 @@ canvas {
  
   /* Title */
   .pTtl {
+  font-family: Sriracha;
   text-align: center;
 	animation: nudge 2s infinite;
 }
