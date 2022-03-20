@@ -46,7 +46,12 @@ var { isConfirmed: di_follow } = swals.fire({
             if(di_follow){
             await Toast.fire({
   icon: 'success',
-  title: 'Okey!, Makasih ya kack'
+  title: 'Okey!, Makasih ya kack :3'
   });
- } 
+ } else {
+            await Toast.fire({
+  icon: 'warning',
+  title: 'Prank ya kack!'
+  });
+            }
 ;} , false);
