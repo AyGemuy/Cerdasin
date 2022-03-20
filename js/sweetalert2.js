@@ -9,7 +9,7 @@ showClass: {
 
 const Toast = Swal.mixin({
   toast: true,
-  position: 'top-end',
+  position: 'center',
   showConfirmButton: false,
   timer: 3000,
   timerProgressBar: true,
@@ -28,8 +28,8 @@ const Toast = Swal.mixin({
             imageAlt: 'Hai',
             text: 'Siap untuk membaca!',
             showCancelButton: true,
-            confirmButtonText: '<i class="fa fa-thumbs-up"></i> Siap',
-            cancelButtonText: '<i class="fa fa-thumbs-down"></i> Gak',
+            confirmButtonText: '<i class="fa fa-thumbs-up"></i> Yups',
+            cancelButtonText: '<i class="fa fa-thumbs-down"></i> Tydack',
             footer: 'By <a href="/"> Cerdasin62.</a>'
             });
             
@@ -41,7 +41,7 @@ const Toast = Swal.mixin({
             } else {
             await Toast.fire({
   icon: 'warning',
-  title: 'Gak bisa om!!'
+  title: 'Gak bisa kak, isi dulu!'
   });
             mulai();
             }
