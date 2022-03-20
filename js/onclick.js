@@ -29,6 +29,7 @@ Toast.fire({
  title: 'Sukses mengubah ke huruf besar'
 })
 ;} , false);
+
 	ngeklik5.addEventListener("click", function () {
 var { isConfirmed: di_follow } = swals.fire({
             title: 'Follow yuk kak :3',
@@ -53,5 +54,6 @@ var { isConfirmed: di_follow } = swals.fire({
   icon: 'warning',
   title: 'Prank ya kack!'
   });
+            }
             }
 ;} , false);
