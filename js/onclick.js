@@ -38,7 +38,7 @@ var { isConfirmed: di_follow } = swals.fire({
             imageAlt: 'Hai',
             text: 'Mau follow tydack!',
             showCancelButton: true,
-            confirmButtonText: '<i class="fa fa-thumbs-up"></i> Yups',
+            confirmButtonText: '<a href="https://www.blogger.com/follow.g?blogID=8384880727344316369"><i class="fa fa-thumbs-up"></i> Yups </a>',
             cancelButtonText: '<i class="fa fa-thumbs-down"></i> Tydack',
             footer: 'By <a href="/"> Cerdasin62.</a>'
             });
