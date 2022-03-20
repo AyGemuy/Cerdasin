@@ -31,6 +31,7 @@ Toast.fire({
 ;} , false);
 
 	ngeklik5.addEventListener("click", function () {
+	
 var { isConfirmed: di_follow } = swals.fire({
             title: 'Follow yuk kak :3',
             imageUrl: 'https://cdn.jsdelivr.net/gh/AyGemuy/Blogger/img/chat.png',
@@ -47,13 +48,12 @@ var { isConfirmed: di_follow } = swals.fire({
             if(di_follow){
             await Toast.fire({
   icon: 'success',
-  title: 'Okey!, Makasih ya kack :3'
+  title: 'Oke Teqwi kack!, Selamat membaca ya'
   });
- } else {
+            } else {
             await Toast.fire({
   icon: 'warning',
   title: 'Prank ya kack!'
   });
             }
             }
-;} , false);
