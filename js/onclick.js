@@ -1,25 +1,37 @@
-$('#add-bookmark').click(function(){
-Toast.fire({
- icon: 'success',
+
+const Toast = Swal.mixin({
+  toast: true,
+  position: 'center',
+  showConfirmButton: false,
+  timer: 3000,
+  timerProgressBar: true,
+  didOpen: (toast) => {
+    toast.addEventListener('mouseenter', Swal.stopTimer)
+    toast.addEventListener('mouseleave', Swal.resumeTimer)
+  }
+  });
+
+async function add-bookmark(){
+            await Toast.fire({
+ icon: 'info',
  title: 'Sukses menambahkan ke bookmark'
 })
-})
-$('#huruf-kecil').click(function(){
-Toast.fire({
- icon: 'success',
+}
+async function huruf-kecil(){
+            await Toast.fire({
+ icon: 'info',
  title: 'Sukses mengubah ke huruf kecil'
 })
-})
-$('#huruf-sedang').click(function(){
-Toast.fire({
- icon: 'success',
+}
+async function huruf-sedang(){
+            await Toast.fire({
+ icon: 'info',
  title: 'Sukses mengubah ke huruf sedang'
 })
-})
-$('#huruf-besar').click(function(){
-Toast.fire({
- icon: 'success',
+}
+async function huruf-besar(){
+            await Toast.fire({
+ icon: 'info',
  title: 'Sukses mengubah ke huruf besar'
 })
-})
-
+}
