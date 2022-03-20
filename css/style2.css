@@ -91,25 +91,13 @@
 .darkMode .wc-dnt-svg{fill:#fefefe;stroke:#fefefe}
 .darkMode .wc-dnt-box,.darkMode .wc-dnt-sw,.darkMode .wc-dnt-icon{border-color:rgba(255,255,255,.1)}
 
-/* Variable Warna */
-:root{
---font-name: 'Noto Sans', sans-serif ;
---background-color: #fffdfc;
---content-text: #48525c;
---border-color: #e6e6e6;
---textarea-background: #f6f6f6;
---main-color: #f89000;
---dark-background: #2d2d30;
---dark-text :#fffdfc;
-}
-
 /* Komentar Fitur */
-#cm-menu{position:relative;font-family:var(--font-name);font-size:14px;background:var(--background-color);border-radius:4px;padding:20px 20px 50px 20px;margin:0 0 20px -2px;color:var(--content-text);line-height:1.5em;box-shadow:0 6px 18px 0 rgba(9,32,76,.075)}
-#cm-menu:before{content:'';display:block;border:11px solid;border-color:var(--background-color) transparent transparent transparent;position:absolute;bottom:-22px;left:25px}
+#cm-menu{position:relative;font-family:var(--fontB);font-size:14px;background:var(--contentB);border-radius:4px;padding:20px 20px 50px 20px;margin:0 0 20px -2px;color:var(--bodyC);line-height:1.5em;box-shadow:0 6px 18px 0 rgba(9,32,76,.075)}
+#cm-menu:before{content:'';display:block;border:11px solid;border-color:var(--contentB) transparent transparent transparent;position:absolute;bottom:-22px;left:25px}
 #parser{position:relative;margin-top:20px}
-#codes{border:1px solid var(--border-color);width:100%;height:150px;display:block;background-color:var(--textarea-background);border-radius:4px;font:400 11px 'Fira Mono',monospace;resize:none;margin:0 0 10px;padding:10px;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;box-shadow:none}
+#codes{border:1px solid var(--contentL);width:100%;height:150px;display:block;background-color:var(--synxBg);border-radius:4px;font:400 11px 'Fira Mono',monospace;resize:none;margin:0 0 10px;padding:10px;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;box-shadow:none}
 #codes:active,#codes:focus{background-color:#f5f5f5;color:#444;outline:0}
-.cm-btn{font-family:var(--font-name);font-size:12px;line-height:1.5;border-radius:2px;padding:1px 5px;border:none;color:var(--background-color);outline:0;cursor:pointer;background-color:var(--main-color);margin-bottom:10px}
+.cm-btn{font-family:var(--fontB);font-size:12px;line-height:1.5;border-radius:2px;padding:1px 5px;border:none;color:var(--contentB);outline:0;cursor:pointer;background-color:var(--linkC);margin-bottom:10px}
 .cm-btn-clr{background-color:#7687b7}
 .cm-btn-cpy{background-color:#c16c6c}
 .cm-btn:active,.cm-btn:hover,.parser:active,.parser:hover,.cm-btn:focus,.button-group button:disabled,.parser:focus{opacity:.9}
@@ -119,25 +107,18 @@
 .alert span{font-size:12px}
 .alert-success{color:#3c763d;background-color:rgba(215,236,206,.58)}
 .checkbox{display:none}
+.drK #cm-menu:before{border-color:var(--darkBa) transparent transparent transparent}
+.drK #cm-menu,.drK #codes,drK #codes:active,.drK #codes:focus{border-color:rgba(255,255,255,.15);background-color:var(--darkBa);color:var(--darkT)}
 .cmbutton{display:grid;grid-template-columns:1fr 1fr;width:calc(100% - 40px);position:absolute;bottom:0}
 .cmbutton1{border-bottom-left-radius:4px}
 .cmbutton2{border-bottom-right-radius:4px}
 .cmbutton-title{padding:10px;border-top:5px solid #e8e8e8;display:block;text-align:center}
 .cmbutton label{display:block;cursor:pointer}
-.cm-menus1:checked ~ .cmbutton .cmbutton1 .cmbutton-title, .cm-menus2:checked ~ .cmbutton .cmbutton2 .cmbutton-title{border-top:5px solid var(--main-color)}
+.cm-menus1:checked ~ .cmbutton .cmbutton1 .cmbutton-title, .cm-menus2:checked ~ .cmbutton .cmbutton2 .cmbutton-title{border-top:5px solid var(--linkC)}
 .cm-menus1:checked ~ .bbcode{display:none}
 .cm-menus1:checked ~ #parser{display:none}
 .cm-menus2:checked ~ .pesan-komen{display:none}
 .cm-menus1:checked ~ .cmbutton .cmbutton1, .cm-menus2:checked ~ .cmbutton .cmbutton2{background:rgba(23,191,99,.07)}
-
-/* css darkmode sesuaikan class (.drK) dengan templatemu agar dapat berfungsi */
-.drK #cm-menu:before{border-color:var(--dark-background) transparent transparent transparent}
-.drK #cm-menu,.drK #codes,drK #codes:active,.drK #codes:focus{border-color:rgba(255,255,255,.15);background-color:var(--dark-background);color:var(--dark-text)}
-
-/* syantax komentar sesuaikan class (.comment-content) dengan template kalian agar dapat berfungsi */
-.comment-content i[rel=pre],.comment-content i[rel=code]{padding:15px;font-size:12px;margin:0;overflow-x:auto;white-space:pre;display:block;color:.e0d072;background:.262a2d;user-select:text;-webkit-user-select:text;-khtml-user-select:text;-moz-user-select:text;-ms-user-select:text}
-.comment-content i[rel=quote]{margin:0;padding:15px;border:1px dashed .ededef;border-radius:4px;font-size:13px;font-style:italic}
-.comment-content i[rel=img]{border-radius:4px}
 
 /* karena di versi 1.6 tidak ada css ini jadi saya tambahkan agar <i rel='code'></i> bisa berfungsi */
 .cmC i[rel=code]{margin-top:1em;margin-bottom:1em;font-style:normal;line-height:inherit;padding:20px}
