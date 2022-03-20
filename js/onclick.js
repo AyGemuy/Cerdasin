@@ -10,7 +10,7 @@ Toast.fire({
  title: 'Sukses mengubah ke huruf kecil'
 })
 }
-document.getElementById("huruf-sedang(").onclick(){
+document.getElementById("huruf-sedang").onclick(){
 Toast.fire({
  icon: 'success',
  title: 'Sukses mengubah ke huruf sedang'
