@@ -1,5 +1,4 @@
-
-	var ngeklik = document.getElementById("add-bookmark");
+var ngeklik = document.getElementById("add-bookmark");
 	var ngeklik2 = document.getElementById("huruf-kecil");
 	var ngeklik3 = document.getElementById("huruf-sedang");
 	var ngeklik4 = document.getElementById("huruf-besar");
@@ -44,17 +43,10 @@ Toast.fire({
             footer: 'By <a href="/"> Cerdasin62.</a>'
             }).then((result) => {
   if (result.isConfirmed) {
-  await Toast.fire({
-  icon: 'success',
-  title: 'Oke Teqwi kack!, Selamat membaca ya'
-  });
      window.open("https://www.blogger.com/follow.g?blogID=8384880727344316369");
   } else {
             await Toast.fire({
   icon: 'warning',
   title: 'Prank ya kack!'
-  });
-            }
+  })}
 })
-            
-            
