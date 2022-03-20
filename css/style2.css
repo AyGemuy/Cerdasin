@@ -5,7 +5,7 @@
 .pop-area.open{opacity:1;visibility:visible}
 .pop-area .pop-html{background:#fff;padding-bottom:10px;display:block;margin:auto auto;width:calc(100% - 20px);max-width:500px;visibility:hidden;opacity:0;overflow:hidden;transition:all 0.5s ease-in-out;transform:scale(.5);border-radius:7px;box-shadow:0 9px 46px 8px rgba(0,0,0,.14),0 11px 15px -7px rgba(0,0,0,.12),0 24px 38px 3px rgba(0,0,0,.2)}
 .pop-area.open .pop-html{opacity:1;transform:scale(1);visibility:visible}
-.pop-area .head-pop:after{content:"Bookmark";color:#fefefe;font-weight:bold}
+.pop-area .head-pop:after{font-family: Akronim;content:"Bookmark";color:#fefefe;font-weight:bold}
 .pop-area .head-pop{width:-webkit-fill-available;padding:12px 30px;overflow:hidden;background:#0b57cf}
 .pop-area .close-btn{float:right;cursor:pointer;fill:#7e7e7e;color:#fefefe;font-weight:bold}
 .pop-area .body-content{padding:10px}
@@ -20,24 +20,24 @@
 .pop-area .img-left{width:150px}
 .pop-area .item-left{padding-right:10px}
 .pop-area .btn-remove{cursor:pointer}
-.show-bookmark{font-size:11px;line-height:18px;padding:0 5px;border-radius:10px;background:#e6e6e6;color:var(--bodyC);position:absolute;top:-5px;right:0;z-index:2}
+.show-bookmark{font-family: Libre Barcode 128 Text;font-size:11px;line-height:18px;padding:0 5px;border-radius:10px;background:#e6e6e6;color:var(--bodyC);position:absolute;top:-5px;right:0;z-index:2}
 .pop-area .counterStat{color:white;font-size:16px}
 .drK .pop-area.open .pop-html,.drK .pop-area .body-content,.drK .pop-area .table a{background-color:#1e1e1e;color:#fefefe}
 
 /* css tambahan untuk tombol bookmark muncul di beranda pada template median ui 1.6 */
 .iFxd .hartomy-bookmark-btn:hover::before{content:'add to bookmark';right:15px;display:block}
-.iFxd .hartomy-bookmark-btn:before{content:'';font-size:12px;color:#767676;width:150px;padding-left:30px;padding:5px 0 5px 30px;background-color:var(--bodyB);border-radius:5px;position:absolute;right:0;display:none}
+.iFxd .hartomy-bookmark-btn:before{font-family: Boogaloo;content:'';font-size:12px;color:#767676;width:150px;padding-left:30px;padding:5px 0 5px 30px;background-color:var(--bodyB);border-radius:5px;position:absolute;right:0;display:none}
 .iFxd .hartomy-bookmark-btn{position:relative;transition:var(--trans-4)}
 
 /* ajax search */
 .ajax-search.hidden{display:none}
 .ajax-search{padding:20px 10px;background:rgba(255,255,255,.89)!important;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);text-align:center;box-shadow:0 15px 10px -10px rgba(155,155,155,0.15),0 -15px 10px -10px rgba(155,155,155,0.15);max-height:450px!important;margin:20px auto;border-radius:8px;animation:fadeInDown .5s linear}
 .ajax-search-results-empty{text-align:center}
-.ajax-search h3{color:#000;font-size:14px;font-weight:500;margin:0 10px 20px 10px;text-align:left}
+.ajax-search h3{font-family: Rancho;color:#000;font-size:14px;font-weight:500;margin:0 10px 20px 10px;text-align:left}
 .ajax-search-results{text-align:left}
 .ajax-search li{background:#fff;position:relative;display:inline-block;width:100%;padding:10px;margin:5px 5px 5px -15px;border-radius:5px;border:1px solid rgba(155,155,155,0.15);overflow:hidden;transition:all .3s}
 .ajax-search li:hover{border-color:#0b57cf}
-.ajax-search li h4{font-size:13px;font-weight:500;margin:0 15px 0 0}
+.ajax-search li h4{font-family: Londrina Solid;font-size:13px;font-weight:500;margin:0 15px 0 0}
 .ajax-search li h4 a{color:#000;transition:all .3s}
 .ajax-search li h4 mark{background-color:transparent;color:#0b57cf;text-decoration:underline;transition:all .3s}
 .ajax-search li h4 a:hover,.ajax-search li h4:hover mark{color:#0b57cf}
@@ -63,7 +63,7 @@
 .drK .ajax-search h3{color:#fff}
 
 /* kotak donasi by Cerdasin */
-.wc-dnt-box{position:relative;max-width:500px;background-color:var(--contentB);box-shadow:0 5px 12px -2px rgb(0 0 0 / 12%); border:1px solid #eceff1;border-radius:5px; padding:15px;margin:20px 0; display:flex;align-items:center;font-size:13px;transition:all .2s ease;}  
+.wc-dnt-box{font-family: Sriracha;position:relative;max-width:500px;background-color:var(--contentB);box-shadow:0 5px 12px -2px rgb(0 0 0 / 12%); border:1px solid #eceff1;border-radius:5px; padding:15px;margin:20px 0; display:flex;align-items:center;font-size:13px;transition:all .2s ease;}  
 .wc-dnt-box .wc-dnt-icon{flex-shrink:0;display:flex;align-items:center;justify-content:center;width:50px;height:50px;padding:10px; background:#f1f1f0;border-radius:5px;border:1px solid transparent}
 .wc-dnt-box .wc-dnt-txt{flex-grow:1; width:calc(100% - 150px);padding:0 15px;line-height:20px}
 .wc-dnt-box .wc-dnt-sw{position:absolute;padding:1px 3px;margin-top:-80px;margin-left:230px;width:30px;height:30px;background:#0b57cf;border-radius:50%;border:1px solid #eceff1;transition:all .2s ease;z-index:3}  
@@ -75,7 +75,7 @@
 #wc-check-bnk:checked ~ .wc-dnt-pp{visibility:hidden;opacity:0;position:relative}
 #wc-check-bnk:checked ~ .wc-dnt-rk{visibility:visible;opacity:1;position:absolute;margin-top:-43px}
 .wc-dnt-hidden{position:absolute;width:calc(100% - 30px);background-color:transparent;margin:-250px auto auto -15px;visibility:hidden;opacity:0;transition:all .2s ease}
-.wc-dnt-hidden h2{font-size:20px;margin:10px auto;text-align:center}
+.wc-dnt-hidden h2{font-family: Luckiest Guy;font-size:20px;margin:10px auto;text-align:center}
 .wc-dnt-hidden span{font-size:17px;color:#767676;margin-left:35px}
 .wc-dnt-trn,.wc-dnt-pp,.wc-dnt-rk{display:inline-block;width:calc(100% - 30px);border:1px solid #999;background:#fefefe;border-radius:3px;margin:10px 25px 0;padding:10px;transition:all .2s ease}
 .wc-dnt-pp{position:absolute}
@@ -134,12 +134,13 @@
 .notif-content{display:flex;align-items:center}
 .notif-icon .notiflogo{max-width:60px;border-radius:100%;transition:all 0.3s ease}
 .notif-content .notif-details{margin-left:15px;text-decoration:none;outline:none}
-.notif-details span{font-family:Noto Sans;position:relative;font-size:18px;font-weight:600;color:#000000;top:10px}
+.notif-details span{font-family: Fredericka the Great;position:relative;font-size:18px;font-weight:600;color:#000000;top:10px}
 .notif-details p{color:#878787;font-size:12px}
 .notif-closeIcon svg{position:absolute;fill:#878787;font-size:20px;cursor:pointer;height:28px;width:28px;text-align:center;right:13px;top:8px;border-radius:50%;background:#f2f2f2;transition:all 0.3s ease}
 .notif-wrap:hover .notif-icon img{-webkit-transform:rotate(360deg);transform:rotate(360deg)}
 .notif-closeIcon:hover svg{fill: #444;}
 @media screen and (max-width: 480px){.notif-wrap{right:25px}}
+
 /* css untuk darkmode silakan sesuaikan classnya jika berbeda atau bisa di hapus bagian ini */
 .dark-mode .notif-wrap,.dark-mode .notif-closeIcon svg{background:#2d2d30}
 .dark-mode .notif-wrap{border-color:#444}
@@ -162,7 +163,7 @@ body{top:0!important}
 .tocC:before{content:'';display:block;width:12px;height:12px;background-color:var(--linkC);border:2px solid var(--bodyB);border-radius:50%;position:absolute;top:5px;left:12px;animation:indicator 1s ease infinite;-webkit-animation:indicator 1s ease infinite;z-index:1}@-webkit-keyframes indicator{0%{opacity:0}50%{opacity:1}100%{opacity:0}}@keyframes indicator{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
 
 /* Baca Juga */
-.post-relatedText{position:relative; margin:42px 0;padding:1.5em 0; border:1px solid #eceff1;border-left:0;border-right:0; font-size:14px;line-height:1.8em;}
+.post-relatedText{font-family: Fredericka the Great;position:relative; margin:42px 0;padding:1.5em 0; border:1px solid #eceff1;border-left:0;border-right:0; font-size:14px;line-height:1.8em;}
 .post-relatedText h3, .post-relatedText h4, .post-relatedText b{font-size:13px;font-weight:700; margin:0;padding:2px 14px;background-color: #0b57cf;color:var(--bodyB)border:1px solid #eceff1;border-radius:5px; position:absolute;top:-15.5px;left:20px}
 .post-relatedText ul, .post-relatedText ol{margin:8px 0 0;padding-left:20px}.post-relatedText a{text-decoration: none}
 .post-relatedText a:hover{opacity:.9}
@@ -170,7 +171,7 @@ body{top:0!important}
 
 /* Form Email */
 /* Widget FollowByEmail Median-ui 1.6 */
-.FollowByEmail{position:relative;padding:18px 20px 25px;border:1px solid var(--contentL);border-radius:4px;font-size:90%}
+.FollowByEmail{font-family: Bubblegum Sans;position:relative;padding:18px 20px 25px;border:1px solid var(--contentL);border-radius:4px;font-size:90%}
 .FollowByEmail .title{font-size:14px;margin-bottom:15px;color:#48525c}
 .FollowByEmail .follow-text{display:block;margin-bottom:18px}
 .FollowByEmail .follow-label{position:absolute;top:0;right:0;display:flex;align-items:center;padding:0 15px;height:54px;cursor:pointer}
