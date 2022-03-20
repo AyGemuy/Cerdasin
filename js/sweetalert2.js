@@ -30,7 +30,7 @@ const Toast = Swal.mixin({
             showCancelButton: true,
             confirmButtonText: '<i class="fa fa-thumbs-up"></i> Siap',
             cancelButtonText: '<i class="fa fa-thumbs-down"></i> Gak',
-            footer: 'By <a href="/">Cerdasin62.</a>'
+            footer: 'By <a href="/"> Cerdasin62.</a>'
             });
             
             if(ke_satu){
@@ -47,37 +47,3 @@ const Toast = Swal.mixin({
             }
             }
             mulai();
-
-var bel = new Audio('https://www.soundjay.com/buttons/sounds/button-09a.mp3');
-function add-bookmark() {
-Toast.fire({
- icon: 'success',
- title: 'Sukses menambahkan ke bookmark'
-})
-bel.currentTime = 0;
-bel.play();
-}
-function huruf-kecil() {
-Toast.fire({
- icon: 'success',
- title: 'Sukses mengubah ke huruf kecil'
-})
-bel.currentTime = 0;
-bel.play();
-}
-function huruf-sedang() {
-Toast.fire({
- icon: 'success',
- title: 'Sukses mengubah ke huruf sedang'
-})
-bel.currentTime = 0;
-bel.play();
-}
-function huruf-besar() {
-Toast.fire({
- icon: 'success',
- title: 'Sukses mengubah ke huruf besar'
-})
-bel.currentTime = 0;
-bel.play();
-}
