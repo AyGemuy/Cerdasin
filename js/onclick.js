@@ -31,8 +31,7 @@ Toast.fire({
 ;} , false);
 
 	ngeklik5.addEventListener("click", function () {
-	
-var { isConfirmed: di_follow } = swals.fire({
+	swals.fire({
             title: 'Follow yuk kak :3',
             imageUrl: 'https://cdn.jsdelivr.net/gh/AyGemuy/Blogger/img/chat.png',
             imageWidth: 100,
@@ -40,20 +39,22 @@ var { isConfirmed: di_follow } = swals.fire({
             imageAlt: 'Hai',
             text: 'Mau follow tydack!',
             showCancelButton: true,
-            confirmButtonText: '<a href="https://www.blogger.com/follow.g?blogID=8384880727344316369"><i class="fa fa-thumbs-up"></i> Yups </a>',
+            confirmButtonText: '<i class="fa fa-thumbs-up"></i> Yups',
             cancelButtonText: '<i class="fa fa-thumbs-down"></i> Tydack',
             footer: 'By <a href="/"> Cerdasin62.</a>'
-            });
-            
-            if(di_follow){
-            await Toast.fire({
+            }).then((result) => {
+  if (result.isConfirmed) {
+  await Toast.fire({
   icon: 'success',
   title: 'Oke Teqwi kack!, Selamat membaca ya'
   });
-            } else {
+     window.open("https://www.blogger.com/follow.g?blogID=8384880727344316369");
+  } else {
             await Toast.fire({
   icon: 'warning',
   title: 'Prank ya kack!'
   });
             }
-            }
+})
+            
+            
