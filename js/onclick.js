@@ -1,5 +1,5 @@
 
-const Toast = Swal.mixin({
+const Alex = Swal.mixin({
   toast: true,
   position: 'center',
   showConfirmButton: false,
@@ -11,26 +11,26 @@ const Toast = Swal.mixin({
   }
   });
 
-async function add-bookmark(){
-            await Toast.fire({
+function add-bookmark(){
+await Alex.fire({
  icon: 'info',
  title: 'Sukses menambahkan ke bookmark'
 })
 }
-async function huruf-kecil(){
-            await Toast.fire({
+function huruf-kecil(){
+await Alex.fire({
  icon: 'info',
  title: 'Sukses mengubah ke huruf kecil'
 })
 }
-async function huruf-sedang(){
-            await Toast.fire({
+function huruf-sedang(){
+await Alex.fire({
  icon: 'info',
  title: 'Sukses mengubah ke huruf sedang'
 })
 }
-async function huruf-besar(){
-            await Toast.fire({
+function huruf-besar(){
+await Alex.fire({
  icon: 'info',
  title: 'Sukses mengubah ke huruf besar'
 })
