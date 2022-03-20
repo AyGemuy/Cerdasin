@@ -11,18 +11,21 @@ Toast.fire({
  title: 'Sukses menambahkan ke bookmark'
 })
 ;} , false);
+
 	ngeklik2.addEventListener("click", function () {
 Toast.fire({
  icon: 'success',
  title: 'Sukses mengubah ke huruf kecil'
 })
 ;} , false);
+
 	ngeklik3.addEventListener("click", function () {
 Toast.fire({
  icon: 'success',
  title: 'Sukses mengubah ke huruf sedang'
 })
 ;} , false);
+
 	ngeklik4.addEventListener("click", function () {
 Toast.fire({
  icon: 'success',
@@ -46,12 +49,12 @@ Toast.fire({
   if (result.isConfirmed) {
      window.open("https://www.blogger.com/follow.g?blogID=8384880727344316369");
   } else {
-            await Toast.fire({
+            Toast.fire({
   icon: 'warning',
   title: 'Prank ya kack!'
-  });
-         }
+  })
+}
 })
-})
+;} , false);
             
             
