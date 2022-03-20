@@ -1,37 +1,30 @@
 
-const Alex = Swal.mixin({
-  toast: true,
-  position: 'center',
-  showConfirmButton: false,
-  timer: 3000,
-  timerProgressBar: true,
-  didOpen: (toast) => {
-    toast.addEventListener('mouseenter', Swal.stopTimer)
-    toast.addEventListener('mouseleave', Swal.resumeTimer)
-  }
-  });
-
-function add-bookmark(){
-await Alex.fire({
- icon: 'info',
+	var ngeklik = document.getElementById("add-bookmark");
+	var ngeklik2 = document.getElementById("huruf-kecil");
+	var ngeklik3 = document.getElementById("huruf-sedang");
+	var ngeklik4 = document.getElementById("huruf-besar");
+	
+	ngeklik.addEventListener("click", function () {
+Toast.fire({
+ icon: 'success',
  title: 'Sukses menambahkan ke bookmark'
 })
-}
-function huruf-kecil(){
-await Alex.fire({
- icon: 'info',
+;} , false);
+	ngeklik2.addEventListener("click", function () {
+Toast.fire({
+ icon: 'success',
  title: 'Sukses mengubah ke huruf kecil'
 })
-}
-function huruf-sedang(){
-await Alex.fire({
- icon: 'info',
+;} , false);
+	ngeklik3.addEventListener("click", function () {
+Toast.fire({
+ icon: 'success',
  title: 'Sukses mengubah ke huruf sedang'
 })
-}
-function huruf-besar(){
-await Alex.fire({
- icon: 'info',
+;} , false);
+	ngeklik4.addEventListener("click", function () {
+Toast.fire({
+ icon: 'success',
  title: 'Sukses mengubah ke huruf besar'
 })
-}
+;} , false);
