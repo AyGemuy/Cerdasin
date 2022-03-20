@@ -1,22 +1,22 @@
-function add-bookmark() {
+document.getElementById("add-bookmark").onclick(){
 Toast.fire({
  icon: 'success',
  title: 'Sukses menambahkan ke bookmark'
 })
 }
-function huruf-kecil() {
+document.getElementById("huruf-kecil").onclick(){
 Toast.fire({
  icon: 'success',
  title: 'Sukses mengubah ke huruf kecil'
 })
 }
-function huruf-sedang() {
+document.getElementById("huruf-sedang(").onclick(){
 Toast.fire({
  icon: 'success',
  title: 'Sukses mengubah ke huruf sedang'
 })
 }
-function huruf-besar() {
+document.getElementById("huruf-besar").onclick(){
 Toast.fire({
  icon: 'success',
  title: 'Sukses mengubah ke huruf besar'
