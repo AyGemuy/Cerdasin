@@ -161,7 +161,6 @@ animation-delay:1s;
 -webkit-animation-delay:1s;
 
 position:-webkit-sticky;top:4px;transition:top .3s ease}
-#header.show{top:-70px}
 
 /* Google translate */
 body{top:0!important}
