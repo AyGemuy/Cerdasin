@@ -235,12 +235,12 @@ body{top:0!important}
 .post img:hover{animation: nudge 2s infinite;}
 
 /* Back To Top by Cerdasin */
-.BackToTop {animation:fadeInRight .5s linear;visibility:hidden; width:50px; height:50px; position:fixed; bottom:10rem; right: 10px; z-index:99; cursor:pointer; border-radius: 50px 0px 50px 50px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; opacity:0; -webkit-transform:translateZ(0); transition:all .5s; background: #fff url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z' fill='%23000'/%3E%3C/svg%3E") no-repeat center center;}
+.BackToTop {z-index: 1;animation:fadeInRight .5s linear;visibility:hidden; width:50px; height:50px; position:fixed; bottom:10rem; right: 10px; z-index:99; cursor:pointer; border-radius: 50px 0px 50px 50px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; opacity:0; -webkit-transform:translateZ(0); transition:all .5s; background: #fff url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z' fill='%23000'/%3E%3C/svg%3E") no-repeat center center;}
 .BackToTop:hover {opacity: 1; background: #fff url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z' fill='%23000'/%3E%3C/svg%3E") no-repeat center center;}
 .BackToTop.show {visibility:visible; bottom:8rem; opacity:1;}
 
 /* Persentase Scrollbar */
-#scrollPersentase {display:none;position:fixed;top:0;right:5px;z-index:500;padding:3px 8px;background-color:blue;color:#FFF;border-radius: 50px 0px 50px 50px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;overflow-x:hidden}
+#scrollPersentase {display:none;position:fixed;top:0;right:5px;z-index:1;padding:3px 8px;background-color:var(--darkB);color:var(--bodyB);border-radius: 50px 0px 50px 50px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;overflow-x:hidden}
 #scrollPersentase:after {position:absolute;top:50%;right:-8px;height:0;width:0;margin-top:-4px;}
  
 /* Neon bar */
@@ -1065,7 +1065,6 @@ svg.wc-buysvg.line{fill:none!important;stroke:#767676;stroke-linecap:round;strok
 /* Nanobar */
 .my-class .bar {
   background: #f04c78;
-  z-index: -1;
 }
 .progress-bar {
     background: linear-gradient(to right, red var(--scroll), transparent 0);
