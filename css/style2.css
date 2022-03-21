@@ -30,7 +30,7 @@
 
 /* ajax search */
 .ajax-search.hidden{display:none}
-/* .ajax-search{background:rgba(255,255,255,.89)!important;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);text-align:center;box-shadow:0 15px 10px -10px rgba(155,155,155,0.15),0 -15px 10px -10px rgba(155,155,155,0.15);max-height:450px!important;margin:20px auto;border-radius:50px;animation:fadeInDown .5s linear} */
+.ajax-search{background:rgba(255,255,255,.89)!important;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);text-align:center;box-shadow:0 15px 10px -10px rgba(155,155,155,0.15),0 -15px 10px -10px rgba(155,155,155,0.15);max-height:450px!important;margin:20px auto;border-radius:50px;animation:fadeInDown .5s linear}
 .ajax-search-results-empty{text-align:center}
 .ajax-search h3{font-family: 'Metal Mania', cursive;color:#000;font-size:14px;font-weight:500;margin:0 10px 20px 10px;text-align:left}
 .ajax-search-results{text-align:left}
@@ -1065,7 +1065,7 @@ svg.wc-buysvg.line{fill:none!important;stroke:#767676;stroke-linecap:round;strok
 /* Nanobar */
 .my-class .bar {
   background: #f04c78;
-  z-index: 1;
+  z-index: -1;
 }
 .progress-bar {
     background: linear-gradient(to right, red var(--scroll), transparent 0);
