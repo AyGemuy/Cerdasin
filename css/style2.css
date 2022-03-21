@@ -154,10 +154,8 @@
   -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
   border: 2px solid rgba(255, 255, 255, 0.4);
-	height:15px;
-position:fixed;position:-webkit-sticky;top:2px;transition:top .3s ease}
-@media screen and (max-width:640px){
-#header.show{top:-70px}}
+  
+position:fixed;top:4px;transition:top .3s ease}
 
 /* Google translate */
 body{top:0!important}
