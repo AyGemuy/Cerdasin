@@ -34,7 +34,7 @@
 .ajax-search-results-empty{text-align:center}
 .ajax-search h3{font-family: 'Metal Mania', cursive;color:#000;font-size:14px;font-weight:500;margin:0 10px 20px 10px;text-align:left}
 .ajax-search-results{text-align:left}
-.ajax-search li{background:#fff;position:relative;display:inline-block;width:100%;padding:10px;margin:5px 5px 5px -15px;border-radius:5px;border:1px solid rgba(155,155,155,0.15);overflow:hidden;transition:all .3s}
+.ajax-search li{background:#fff;position:relative;display:inline-block;width:100%;padding:10px;margin:5px 5px 5px -15px;border-radius:50px;border:1px solid rgba(155,155,155,0.15);overflow:hidden;transition:all .3s}
 .ajax-search li:hover{border-color:#0b57cf}
 .ajax-search li h4{font-family: 'Londrina Solid', cursive;font-size:13px;font-weight:500;margin:0 15px 0 0}
 .ajax-search li h4 a{color:#000;transition:all .3s}
@@ -42,7 +42,7 @@
 .ajax-search li h4 a:hover,.ajax-search li h4:hover mark{color:#0b57cf}
 .ajax-search-image{float:left;margin:0 10px 0 0}
 .ajax-search-image img{border-radius:5px}
-.ajax-search-pager a{display:inline-block;clear:both;overflow:hidden;background:#0b57cf;color:#fff;font-size:13px;padding:7px 15px;border-radius:5px;margin:15px 3px 0 3px}
+.ajax-search-pager a{display:inline-block;clear:both;overflow:hidden;background:#0b57cf;color:#fff;font-size:13px;padding:7px 15px;border-radius:50px;margin:15px 3px 0 3px}
 .ajax-search-pager{overflow:hidden;clear:both;position:relative}.ajax-search li:nth-child(odd){animation:bounceInLeft 1.5s}
 .ajax-search li:nth-child(even){animation:bounceInRight 1.5s}
 
@@ -199,7 +199,7 @@ left:5px;
 top:35px;
 transition:top .3s ease}
 @media screen and (max-width:640px){
-.ajax-search.show{bottom:-70px}}
+.ajax-search.show{top:-70px}}
 
 /* Google translate */
 body{top:0!important}
