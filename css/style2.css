@@ -1009,3 +1009,18 @@ svg.wc-buysvg.line{fill:none!important;stroke:#767676;stroke-linecap:round;strok
     transform: translateY(calc(-100% - 5px));
   }
 }
+
+/* Nanobar */
+.nanobar-top .bar-nya {
+  background:#f04c78;
+}
+.nanobar-progres {
+    background: linear-gradient(to right, red var(--scroll), transparent 0);
+    background-repeat: no-repeat;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 4px;
+    z-index: 1;
+}
