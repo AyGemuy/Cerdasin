@@ -164,7 +164,7 @@ transition:top .3s ease}
 #header.show{top:-70px}}
 
 /* Sticky header */
-.mnBrs{
+.mobMn{
 
   -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -179,7 +179,7 @@ left:5px;
 bottom:5px;
 transition:top .3s ease}
 @media screen and (max-width:640px){
-.mnBrs.show{bottom:-70px}}
+.mobMn.show{bottom:-70px}}
 
 /* Google translate */
 body{top:0!important}
