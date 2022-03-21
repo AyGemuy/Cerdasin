@@ -145,14 +145,14 @@
 .dark-mode .notif-wrap{border-color:#444}
 .dark-mode .notif-details span,.dark-mode .notif-details p{color:#e2e2e2}
 
-/* Sticky header */
+/* Sticky Atas */
 #header{
 
   -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(5px);
-  border-radius: 25px;
+  border-radius: 50px;
   border: 2px solid rgba(255, 255, 255, 0.4);
   
 position:fixed;position:-webkit-sticky;
@@ -163,14 +163,14 @@ transition:top .3s ease}
 @media screen and (max-width:640px){
 #header.show{top:-70px}}
 
-/* Sticky header */
+/* Sticky Bawah */
 .mobMn{
 
   -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(5px);
-  border-radius: 25px;
+  border-radius: 50px;
   border: 2px solid rgba(255, 255, 255, 0.4);
   
 position:fixed;position:-webkit-sticky;
@@ -1043,7 +1043,7 @@ svg.wc-buysvg.line{fill:none!important;stroke:#767676;stroke-linecap:round;strok
 
 /* Nanobar */
 .my-class .bar {
-  background:#f04c78;
+  background: #f04c78;
 }
 .progress-bar {
     background: linear-gradient(to right, red var(--scroll), transparent 0);
