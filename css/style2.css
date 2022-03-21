@@ -156,15 +156,15 @@
   border: 2px solid rgba(255, 255, 255, 0.4);
   
 position:fixed;position:-webkit-sticky;
-right:4px;
-left:4px;
-top:4px;
+right:5px;
+left:5px;
+top:5px;
 transition:top .3s ease}
 @media screen and (max-width:640px){
 #header.show{top:-70px}}
 
 /* Sticky header */
-#mnBrs{
+.mnBrs{
 
   -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -174,12 +174,12 @@ transition:top .3s ease}
   border: 2px solid rgba(255, 255, 255, 0.4);
   
 position:fixed;position:-webkit-sticky;
-right:4px;
-left:4px;
-bottom:4px;
+right:5px;
+left:5px;
+bottom:5px;
 transition:top .3s ease}
 @media screen and (max-width:640px){
-#mnBrs.show{bottom:-70px}}
+.mnBrs.show{bottom:-70px}}
 
 /* Google translate */
 body{top:0!important}
