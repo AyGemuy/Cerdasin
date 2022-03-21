@@ -1,20 +1,20 @@
-var pengaturan = {
-	classname: 'nanobar-top',
-    id: 'nanobar-id'
+var options = {
+	classname: 'my-class',
+    id: 'my-id'
 };
-var oke-nanobar = new Nanobar( pengaturan );
-oke-nanobar.go( 30 );
-oke-nanobar.go( 76 );
-oke-nanobar.go(100);
+var nanobar = new Nanobar( options );
+nanobar.go( 30 );
+nanobar.go( 76 );
+nanobar.go(100);
 
-var elemen-nya = document.documentElement,
+var element = document.documentElement,
   body = document.body,
   scrollTop = 'scrollTop',
   scrollHeight = 'scrollHeight',
-  progress = document.querySelector('.nanobar-progres'),
+  progress = document.querySelector('.progress-bar'),
   scroll;
 
 document.addEventListener('scroll', function() {
-  scroll = (elemen-nya[scrollTop]||body[scrollTop]) / ((elemen-nya[scrollHeight]||body[scrollHeight]) - elemen-nya.clientHeight) * 100;
+  scroll = (element[scrollTop]||body[scrollTop]) / ((element[scrollHeight]||body[scrollHeight]) - element.clientHeight) * 100;
   progress.style.setProperty('--scroll', scroll + '%');
 });
