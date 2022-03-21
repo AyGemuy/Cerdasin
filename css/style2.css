@@ -30,7 +30,7 @@
 
 /* ajax search */
 .ajax-search.hidden{display:none}
-.ajax-search{background:rgba(255,255,255,.89)!important;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);text-align:center;box-shadow:0 15px 10px -10px rgba(155,155,155,0.15),0 -15px 10px -10px rgba(155,155,155,0.15);max-height:450px!important;margin:20px auto;border-radius:8px;animation:fadeInDown .5s linear}
+.ajax-search{background:rgba(255,255,255,.89)!important;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);text-align:center;box-shadow:0 15px 10px -10px rgba(155,155,155,0.15),0 -15px 10px -10px rgba(155,155,155,0.15);max-height:450px!important;margin:20px auto;border-radius:50%;animation:fadeInDown .5s linear}
 .ajax-search-results-empty{text-align:center}
 .ajax-search h3{font-family: 'Metal Mania', cursive;color:#000;font-size:14px;font-weight:500;margin:0 10px 20px 10px;text-align:left}
 .ajax-search-results{text-align:left}
@@ -152,13 +152,14 @@
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(5px);
-  border-radius: 8px;
+  border-radius: 50%;
   border: 2px solid rgba(255, 255, 255, 0.4);
   
 position:fixed;position:-webkit-sticky;
 right:5px;
 left:5px;
 top:4px;
+animation:fadeInDown .5s linear;
 transition:top .3s ease}
 @media screen and (max-width:640px){
 #header.show{top:-70px}}
@@ -170,13 +171,14 @@ transition:top .3s ease}
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(5px);
-  border-radius: 8px;
+  border-radius: 50%;
   border: 2px solid rgba(255, 255, 255, 0.4);
   
 position:fixed;position:-webkit-sticky;
 right:5px;
 left:5px;
 bottom:4px;
+animation:fadeInUp .5s linear;
 transition:top .3s ease}
 @media screen and (max-width:640px){
 .mobMn.show{bottom:-70px}}
@@ -188,13 +190,13 @@ transition:top .3s ease}
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(5px);
-  border-radius: 8px;
+  border-radius: 50%;
   border: 2px solid rgba(255, 255, 255, 0.4);
   
 position:fixed;position:-webkit-sticky;
 right:5px;
 left:5px;
-top:4px;
+top:8rem;
 transition:top .3s ease}
 @media screen and (max-width:640px){
 .ajax-search.show{bottom:-70px}}
