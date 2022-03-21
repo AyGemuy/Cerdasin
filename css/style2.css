@@ -30,7 +30,7 @@
 
 /* ajax search */
 .ajax-search.hidden{display:none}
-.ajax-search{background:rgba(255,255,255,.89)!important;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);text-align:center;box-shadow:0 15px 10px -10px rgba(155,155,155,0.15),0 -15px 10px -10px rgba(155,155,155,0.15);max-height:450px!important;margin:20px auto;border-radius:50%;animation:fadeInDown .5s linear}
+.ajax-search{background:rgba(255,255,255,.89)!important;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);text-align:center;box-shadow:0 15px 10px -10px rgba(155,155,155,0.15),0 -15px 10px -10px rgba(155,155,155,0.15);max-height:450px!important;margin:20px auto;border-radius:50px;animation:fadeInDown .5s linear}
 .ajax-search-results-empty{text-align:center}
 .ajax-search h3{font-family: 'Metal Mania', cursive;color:#000;font-size:14px;font-weight:500;margin:0 10px 20px 10px;text-align:left}
 .ajax-search-results{text-align:left}
@@ -152,7 +152,7 @@
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(5px);
-  border-radius: 50%;
+  border-radius: 50px;
   border: 2px solid rgba(255, 255, 255, 0.4);
   
 position:fixed;position:-webkit-sticky;
@@ -171,7 +171,7 @@ transition:top .3s ease}
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(5px);
-  border-radius: 50%;
+  border-radius: 50px;
   border: 2px solid rgba(255, 255, 255, 0.4);
   
 position:fixed;position:-webkit-sticky;
@@ -190,7 +190,7 @@ transition:top .3s ease}
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(5px);
-  border-radius: 50%;
+  border-radius: 50px;
   border: 2px solid rgba(255, 255, 255, 0.4);
   
 position:fixed;position:-webkit-sticky;
@@ -235,7 +235,7 @@ body{top:0!important}
 .post img:hover{animation: nudge 2s infinite;}
 
 /* Back To Top by Cerdasin */
-.BackToTop {visibility:hidden; width:50px; height:50px; position:fixed; bottom:10rem; right: 10px; z-index:99; cursor:pointer; border-radius: 50px 0px 50px 50px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; opacity:0; -webkit-transform:translateZ(0); transition:all .5s; background: #fff url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z' fill='%23000'/%3E%3C/svg%3E") no-repeat center center;}
+.BackToTop {animation:fadeInRight .5s linear;visibility:hidden; width:50px; height:50px; position:fixed; bottom:10rem; right: 10px; z-index:99; cursor:pointer; border-radius: 50px 0px 50px 50px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; opacity:0; -webkit-transform:translateZ(0); transition:all .5s; background: #fff url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z' fill='%23000'/%3E%3C/svg%3E") no-repeat center center;}
 .BackToTop:hover {opacity: 1; background: #fff url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z' fill='%23000'/%3E%3C/svg%3E") no-repeat center center;}
 .BackToTop.show {visibility:visible; bottom:8rem; opacity:1;}
 
@@ -585,6 +585,7 @@ svg.wc-buysvg.line{fill:none!important;stroke:#767676;stroke-linecap:round;strok
   z-index: 1;
   will-change: width;
   border-radius: 0px 50px 50px 50px;
+  animation:fadeInLeft .5s linear;
 }
 #mega-button > .tooltip {
   padding: 5px 10px;
