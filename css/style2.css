@@ -146,7 +146,7 @@
 .dark-mode .notif-details span,.dark-mode .notif-details p{color:#e2e2e2}
 
 /* Sticky header */
-#header{border-radius: 50%;width:50%;padding:20px;background:rgba(255, 255, 255, 0.8);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-radius:30px 30px 0 0;box-shadow:0 -10px 25px -5px rgba(0,0,0,.1);align-items:center;justify-content:center;text-align:center;animation:ckUp 2.5s forwards;animation-delay:1s;-webkit-animation:ckUp 2.5s forwards;-webkit-animation-delay:1s;position:fixed;position:-webkit-sticky;top:2px;transition:top .3s ease}
+#header{border-radius: 5px;width:100%;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);box-shadow:0 -10px 25px -5px rgba(0,0,0,.1);align-items:center;justify-content:center;text-align:center;animation:ckUp 2.5s forwards;animation-delay:1s;-webkit-animation:ckUp 2.5s forwards;-webkit-animation-delay:1s;position:fixed;position:-webkit-sticky;top:2px;transition:top .3s ease}
 @media screen and (max-width:640px){
 #header.show{top:-70px}}
 
