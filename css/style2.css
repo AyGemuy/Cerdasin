@@ -146,8 +146,17 @@
 .dark-mode .notif-details span,.dark-mode .notif-details p{color:#e2e2e2}
 
 /* Sticky header */
-#header{border-radius: 50px;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);animation:ckUp 2.5s forwards;animation-delay:1s;-webkit-animation:ckUp 2.5s forwards;-webkit-animation-delay:1s;position:fixed;position:-webkit-sticky;top:4px;transition:top .3s ease}
-@media screen and (max-width:100%){
+#header{
+
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+	height:15px;
+position:fixed;position:-webkit-sticky;top:2px;transition:top .3s ease}
+@media screen and (max-width:640px){
 #header.show{top:-70px}}
 
 /* Google translate */
