@@ -191,7 +191,7 @@ body{top:0!important}
 
 /* Progress bar */
 .progress-container{width:100%;position:fixed;z-index:99;top:0;left:0;}
-.progress-bar{height:3px;background:linear-gradient(45deg, #f11712, #ffffff);}
+.progress-bar{height:3px;background:linear-gradient(45deg, red, white);}
 
 /* Neon bar */
 /* Bottom Bar Animation by Tech and Fun Zone */ .animeTFZ,.animeBlurTFZ{position:fixed;width:100%;bottom:0;left:0;right:0;height:3px;z-index:23;background:linear-gradient(-45deg, #4086F4, #31A952, #FBBE01, #EB4132,#4086F4, #31A952, #FBBE01, #EB4132);background-size:200%;-webkit-animation:animeBar 5s linear infinite;animation:animeBar 5s linear infinite}.animeBlurTFZ{height:10px;z-index:22;filter:blur(10px);opacity:.7}@-webkit-keyframes animeBar{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}@keyframes animeBar{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}} 
