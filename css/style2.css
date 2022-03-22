@@ -30,19 +30,19 @@
 
 /* ajax search */
 .ajax-search.hidden{display:none}
-.ajax-search{background:rgba(255,255,255,.89)!important;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);text-align:center;box-shadow:0 15px 10px -10px rgba(155,155,155,0.15),0 -15px 10px -10px rgba(155,155,155,0.15);max-height:450px!important;margin:20px auto;border-radius:50px;animation:fadeInDown .5s linear}
+.ajax-search{background:rgba(255,255,255,.89)!important;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);text-align:center;box-shadow:0 15px 10px -10px rgba(155,155,155,0.15),0 -15px 10px -10px rgba(155,155,155,0.15);max-height:450px!important;margin:20px auto;border-radius:var(--braD);animation:fadeInDown .5s linear}
 .ajax-search-results-empty{text-align:center}
 .ajax-search h3{font-family: 'Metal Mania', cursive;color:#000;font-size:14px;font-weight:500;margin:0 10px 20px 10px;text-align:left}
 .ajax-search-results{text-align:left}
-.ajax-search li{background:#fff;position:relative;display:inline-block;width:100%;padding:10px;margin:5px 5px 5px -15px;border-radius:50px;border:1px solid rgba(155,155,155,0.15);overflow:hidden;transition:all .3s}
+.ajax-search li{background:#fff;position:relative;display:inline-block;width:100%;padding:10px;margin:5px 5px 5px -15px;border-radius:var(--braD);border:1px solid rgba(155,155,155,0.15);overflow:hidden;transition:all .3s}
 .ajax-search li:hover{border-color:#0b57cf}
 .ajax-search li h4{font-family: 'Londrina Solid', cursive;font-size:13px;font-weight:500;margin:0 15px 0 0}
 .ajax-search li h4 a{color:#000;transition:all .3s}
 .ajax-search li h4 mark{background-color:transparent;color:#0b57cf;text-decoration:underline;transition:all .3s}
 .ajax-search li h4 a:hover,.ajax-search li h4:hover mark{color:#0b57cf}
 .ajax-search-image{float:left;margin:0 10px 0 0}
-.ajax-search-image img{border-radius:50px}
-.ajax-search-pager a{display:inline-block;clear:both;overflow:hidden;background:#0b57cf;color:#fff;font-size:13px;padding:7px 15px;border-radius:50px;margin:15px 3px 0 3px}
+.ajax-search-image img{border-radius:var(--braD)}
+.ajax-search-pager a{display:inline-block;clear:both;overflow:hidden;background:#0b57cf;color:#fff;font-size:13px;padding:7px 15px;border-radius:var(--braD);margin:15px 3px 0 3px}
 .ajax-search-pager{overflow:hidden;clear:both;position:relative}.ajax-search li:nth-child(odd){animation:bounceInLeft 1.5s}
 .ajax-search li:nth-child(even){animation:bounceInRight 1.5s}
 
@@ -152,7 +152,7 @@
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(5px);
-  border-radius: 50px;
+  border-radius:var(--braD);
   border: 2px solid rgba(255, 255, 255, 0.4);
   
 position:fixed;position:-webkit-sticky;
@@ -171,7 +171,7 @@ transition:top .3s ease}
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(5px);
-  border-radius: 50px;
+  border-radius:var(--braD);
   border: 2px solid rgba(255, 255, 255, 0.4);
   
 position:fixed;position:-webkit-sticky;
@@ -190,7 +190,7 @@ transition:top .3s ease}
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(5px);
-  border-radius: 50px;
+  border-radius:var(--braD);
   border: 2px solid rgba(255, 255, 255, 0.4);
   
 position:fixed;position:-webkit-sticky;
@@ -217,7 +217,7 @@ body{top:0!important}
 .post-relatedText h3, .post-relatedText h4, .post-relatedText b{font-size:13px;font-weight:700; margin:0;padding:2px 14px;background-color: #0b57cf;color:var(--bodyB)border:1px solid #eceff1;border-radius:5px; position:absolute;top:-15.5px;left:20px}
 .post-relatedText ul, .post-relatedText ol{margin:8px 0 0;padding-left:20px}.post-relatedText a{text-decoration: none}
 .post-relatedText a:hover{opacity:.9}
-.post-relatedText{display:flex; max-width:480px;margin:30px 0; padding:12px 12px 15px; background:var(--contentB);border-radius:8px; box-shadow:0 10px 25px -3px rgba(0,0,0,.1)} 
+.post-relatedText{display:flex; max-width:480px;margin:30px 0; padding:12px 12px 15px; background:var(--contentB);border-radius:var(--braD); box-shadow:0 10px 25px -3px rgba(0,0,0,.1)} 
 
 /* Form Email */
 /* Widget FollowByEmail Median-ui 1.6 */
@@ -559,7 +559,7 @@ svg.wc-buysvg.line{fill:none!important;stroke:#767676;stroke-linecap:round;strok
   display: block !important;
   padding: 12px 15px !important;
   background-color: rgba(244, 67, 54, 0.25) !important;
-  border-radius: 8px !important;
+  border-radius:var(--braD) !important;
   font-weight: 500 !important;
   color: #e53935 !important;
   text-align: left !important;
@@ -595,7 +595,7 @@ svg.wc-buysvg.line{fill:none!important;stroke:#767676;stroke-linecap:round;strok
   transform: translateY(-100%);
   white-space: nowrap;
   background-color: #fff;
-  border-radius: 8px;
+  border-radius:var(--braD);
   filter: drop-shadow(0 2px 2px rgba(120, 144, 156, 0.5));
   box-shadow: inset 0 0 0 1px rgba(120, 144, 156, 0.1);
   font-weight: 400;
