@@ -85,11 +85,10 @@
 @media screen and (max-width:500px){.wc-dnt-box .wc-dnt-sw{margin-left:160px}}
 @media screen and (max-width:455px){.wc-dnt-box .wc-dnt-sw{margin:-90px auto auto 130px}#wc-check-dnt:checked ~ .wc-dnt-box .wc-dnt-sw{margin-top:-460px}}
   
-/* CSS darkmode sesuaikan classnya jika berbeda atau hapus bagian ini 
+/* CSS darkmode sesuaikan classnya jika berbeda atau hapus bagian ini */
 .darkMode .wc-dnt-box,.darkMode .wc-dnt-rk,.darkMode .wc-dnt-trn,.darkMode .wc-dnt-pp,.darkMode .wc-dnt-hidden span,.darkMode .wc-dnt-icon{background-color:#2d2d30;color:#fefefe}
 .darkMode .wc-dnt-svg{fill:#fefefe;stroke:#fefefe}
 .darkMode .wc-dnt-box,.darkMode .wc-dnt-sw,.darkMode .wc-dnt-icon{border-color:rgba(255,255,255,.1)}
-*/
 
 /* Komentar Fitur */
 #cm-menu{position:relative;font-family:var(--fontB);font-size:14px;background:var(--contentB);border-radius:4px;padding:20px 20px 50px 20px;margin:0 0 20px -2px;color:var(--bodyC);line-height:1.5em;box-shadow:0 6px 18px 0 rgba(9,32,76,.075)}
@@ -1068,7 +1067,7 @@ svg.wc-buysvg.line{fill:none!important;stroke:#767676;stroke-linecap:round;strok
   background: #f04c78;
 }
 .progress-bar {
-    background: linear-gradient(to right, #4086F4, #31A952, #FBBE01, #EB4132,#4086F4, #31A952, #FBBE01, #EB4132 var(--scroll), transparent 0);
+    background: linear-gradient(to right, red var(--scroll), transparent 0);
     background-repeat: no-repeat;
     width: 100%;
     position: fixed;
