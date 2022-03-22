@@ -1,41 +1,5 @@
-/* notify-badge */
-.notify-badge{
-    position: absolute;
-    right:-20px;
-    top:10px;
-    background:red;
-    text-align: center;
-    border-radius: 30px 30px 30px 30px;
-    color:white;
-    padding:5px 10px;
-    font-size:8px;
-}
-#level {
-  max-height: 220px;
-}
-
-#level g {
-  stroke: turquoise;
-  stroke-linecap: round;
-  transform: translate(10px, 10px);
-}
-
-#level path:first-child {
-  fill: white;
-  stroke-width: 3;
-  stroke-dasharray: var(--arc) 20;
-  stroke-dashoffset: -10;
-}
-
-.segment {
-  fill: none;
-  stroke-width: 8;
-  stroke-dasharray: var(--arc);
-  stroke-dashoffset: var(--yaw);
-  transition: stroke-dashoffset var(--pace);
-  transition-timing-function: linear;
-}
-
-.cloak {
-  visibility: hidden;
+/* Border Author Image */
+.pIm{
+    border: 0.1875em solid #0F1C3F;
+    box-shadow: 0.375em 0.375em 0 0 
 }
