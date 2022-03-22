@@ -8,32 +8,34 @@
     border-radius: 30px 30px 30px 30px;
     color:white;
     padding:5px 10px;
-    font-size:20px;
+    font-size:8px;
+}
+#level {
+  max-height: 220px;
 }
 
-.Pinggir:before{
-content: ' ';
-position: absolute;
-top: -2px;
-left: -2px;
-right: -2px;
-bottom: -2px;
-background: #fff;
-z-index: -1;
+#level g {
+  stroke: turquoise;
+  stroke-linecap: round;
+  transform: translate(10px, 10px);
 }
 
-.Pinggir:after{
-content: ' ';
-position: absolute;
-top: -2px;
-left: -2px;
-right: -2px;
-bottom: -2px;
-background: #fff;
-z-index: -2;
-filter: blur(40px);
+#level path:first-child {
+  fill: white;
+  stroke-width: 3;
+  stroke-dasharray: var(--arc) 20;
+  stroke-dashoffset: -10;
 }
 
-.Pinggir:before, .Pinggir:after {
-background: linear-gradient(235deg,#89ff00,#fff,#00bcd4); 
+.segment {
+  fill: none;
+  stroke-width: 8;
+  stroke-dasharray: var(--arc);
+  stroke-dashoffset: var(--yaw);
+  transition: stroke-dashoffset var(--pace);
+  transition-timing-function: linear;
+}
+
+.cloak {
+  visibility: hidden;
 }
