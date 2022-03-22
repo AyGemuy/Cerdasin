@@ -1,26 +1,20 @@
-function enlargeStars(x) {
-  if(x === 0) { return; }
-  starId = "star" + x;
-  document.getElementById(starId).style.width = "60px";
-  enlargeStars(x-1);
-}
- function shrinkStars(x) {
-   if(x === 0) { return; }
-   starId = "star" + x;
-   document.getElementById(starId).style.width = "50px";
-   shrinkStars(x-1);
- }
+var counterContainer = document.querySelector(".website-counter");
+var resetButton = document.querySelector("#reset");
+var visitCount = localStorage.getItem("page_view");
 
-let oneStarCounter = parseInt(document.getElementById("c1").innerHTML);
-let star1 = document.getElementById("star1");
-star1.onclick = () => {
-  oneStarCounter++;
-  document.getElementById("c1").innerHTML = oneStarCounter;
-  updateBars();
+// Check if page_view entry is present
+if (visitCount) {
+  visitCount = Number(visitCount) + 1;
+  localStorage.setItem("page_view", visitCount);
+} else {
+  visitCount = 1;
+  localStorage.setItem("page_view", 1);
 }
+counterContainer.innerHTML = visitCount;
 
-function updateBars() {
-  let total = fiveStarCounter+fourStarCounter+threeStarCounter+twoStarCounter+oneStarCounter;
-  let bar1height = Math.round((oneStarCounter/total)*100);
-  document.getElementById("bar1").style.height = bar1height+"%";
-}
+// Adding onClick event listener
+resetButton.addEventListener("click", () => {
+  visitCount = 1;
+  localStorage.setItem("page_view", 1);
+  counterContainer.innerHTML = visitCount;
+});
