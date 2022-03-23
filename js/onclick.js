@@ -68,7 +68,7 @@ $('#di-follow').on('click', function () {
             
             Toast.fire({
   icon: 'success',
-  title: ''Your Ip' + AlamatIP + 'ok!''
+  title: 'Your Ip {{AlamatIP}} ok!'
   });
   }
   
