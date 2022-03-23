@@ -1,4 +1,8 @@
 .pIm{
+    border:1px solid blue;    
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
     animation: animate 4s linear infinite;
 }
 @keyframes animate{
