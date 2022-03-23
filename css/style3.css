@@ -3,3 +3,8 @@
     border: 0.1875em solid #0F1C3F;
     box-shadow: 0.375em 0.375em 0 0 
 }
+/* Turbo progress bar */
+.turbo-progress-bar {
+  height: 5px; 
+  background-color: #ff1a94; 
+}
