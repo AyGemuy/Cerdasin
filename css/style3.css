@@ -3,15 +3,17 @@
     0%
     {
         transform: rotate(0deg);
+        border:1px solid red;
     }
     100%
     {
         transform: rotate(360deg);
+        border:1px solid green;
     }
 }
 .pImgB{
     border:1px solid blue;
-    border-radius: var(--braD);
+    border-radius: blue;
     box-shadow:0 10px 25px -3px rgba(0,0,0,.1)
     -moz-border-radius:50%;
     -webkit-border-radius:50%;
