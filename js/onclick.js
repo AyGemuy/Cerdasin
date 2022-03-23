@@ -52,7 +52,7 @@ $('#di-follow').on('click', function () {
             
             $('#check-ip').on('click', function () {
 
-            var { isConfirmed: komfir-ip } = await swals.fire({
+            var { isConfirmed: komfir-ip } = swals.fire({
             title: 'Hai kak :3',
             imageUrl: 'https://cdn.jsdelivr.net/gh/AyGemuy/Blogger/img/chat.png',
             imageWidth: 100,
@@ -66,10 +66,10 @@ $('#di-follow').on('click', function () {
             
             if(komfir-ip){
             
-        fetch('https://api.ipify.org?format=json')
-      .then(response => response.json())
-      .then(data => {
-        alert(data.ip)
+            Toast.fire({
+  icon: 'success',
+  title: 'Your Ip' + AlamatIP + 'ok!'
+  });
   }
   
   });
