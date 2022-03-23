@@ -51,12 +51,22 @@ Toast.fire({
 });
             
             $('#check-ip').on('click', function () {
-Swal.queue([{
-  title: 'Your public IP',
-  confirmButtonText: 'Show my public IP',
-  text:
-    'Your public IP will be received ' +
-    'via AJAX request',
+var { isConfirmed: check-ip } = await swals.fire({
+            title: 'Hai kak :3',
+            imageUrl: 'https://cdn.jsdelivr.net/gh/AyGemuy/Blogger/img/chat.png',
+            imageWidth: 100,
+            imageHeight: 100,
+            imageAlt: 'Hai',
+            text: 'Siap untuk Cek ip!',
+            showCancelButton: true,
+            confirmButtonText: '<i class="fa fa-thumbs-up"></i> Check',
+            footer: 'By <a href="/"> Cerdasin62.</a>'
+            });
+            
+            if(check-ip){
+            await Toast.fire({
+  icon: 'success',
+  title: 'Oke!, Selamat membaca ya'
   onOpen: () => {
     fetch('https://api.ipify.org?format=json')
       .then(response => response.json())
@@ -64,5 +74,6 @@ Swal.queue([{
         Swal.insertQueueStep(data.ip)
       })
   }
-}])
+  });
+            }
   });
