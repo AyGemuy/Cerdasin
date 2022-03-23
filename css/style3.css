@@ -1,6 +1,9 @@
 /* Border Author Image */
-.pIm{
+
+.o-profile{
     position: relative;
+    width: 30px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,16 +11,18 @@
     overflow: hidden;
      border-radius: 20px;
 }
-.pIm::after{
+.o-profile::after{
     content: '';
     position: absolute;
     inset: 4px;
     background: #0e1538;
     border-radius: 16px;
 }
-.pIm::before{
+.o-profile::before{
     content: '';
     position: absolute;
+    width: 30px;
+    height: 40px;
     background: linear-gradient(#00ccff,#d400d4);
     animation: animate 4s linear infinite;
 }
