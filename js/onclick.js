@@ -69,7 +69,7 @@ $('#di-follow').on('click', function () {
         fetch('https://api.ipify.org?format=json')
       .then(response => response.json())
       .then(data => {
-       alert('Your IP :' + data.ip + '')
+        alert(data.ip)
   }
   
   });
