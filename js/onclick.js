@@ -65,9 +65,10 @@ Toast.fire({
             });
             
             if(komfir-ip){
+            
             Toast.fire({
   icon: 'success',
-  title: 'Your Ip '+ AlamatIP +' ok!'
+  title: 'Your Ip' + AlamatIP + 'ok!'
   });
   }
   
