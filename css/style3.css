@@ -1,30 +1,7 @@
-/* Border Author Image */
-
-.o-profile{
-    position: relative;
-    width: 30px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #00000080;
-    overflow: hidden;
-     border-radius: 20px;
-}
-.o-profile::after{
-    content: '';
-    position: absolute;
-    inset: 4px;
-    background: #0e1538;
-    border-radius: 16px;
-}
-.o-profile::before{
-    content: '';
-    position: absolute;
-    width: 30px;
-    height: 40px;
+.pIm{
     background: linear-gradient(#00ccff,#d400d4);
     animation: animate 4s linear infinite;
+    border-radius: 50%;
 }
 @keyframes animate{
     0%
