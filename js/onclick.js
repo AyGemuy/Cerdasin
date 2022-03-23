@@ -60,10 +60,10 @@ Toast.fire({
             
             ngeklik6.addEventListener("click", function () {
             swal.queue([{
-  title: 'Publik IP Anda',
+  title: 'Your public IP',
   confirmButtonText: 'Show my public IP',
   text:
-    'Sukses mendapatkan alamat IP anda ' +
+    'Your public IP will be received ' +
     'via AJAX request',
   showLoaderOnConfirm: true,
   preConfirm: function () {
