@@ -4,6 +4,7 @@
 	var ngeklik3 = document.getElementById("huruf-sedang");
 	var ngeklik4 = document.getElementById("huruf-besar");
 	var ngeklik5 = document.getElementById("di-follow");
+	var ngeklik6 = document.getElementById("check-ip");
 	
 	ngeklik.addEventListener("click", function () {
 Toast.fire({
@@ -57,4 +58,23 @@ Toast.fire({
 })
 ;} , false);
             
+            ngeklik6.addEventListener("click", function () {
+            swal.fire([{
+  title: 'Publik IP Anda',
+  confirmButtonText: 'Show my public IP',
+  text:
+    'Sukses mendapatkan alamat IP anda ' +
+    'via AJAX request',
+  showLoaderOnConfirm: true,
+  preConfirm: function () {
+    return new Promise(function (resolve) {
+      $.get('https://api.ipify.org?format=json')
+        .done(function (data) {
+          swal.insertQueueStep(data.ip)
+          resolve()
+        })
+    })
+  }
+}])
+;} , false);
             
