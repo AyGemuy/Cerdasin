@@ -59,7 +59,7 @@ Toast.fire({
 ;} , false);
             
             ngeklik6.addEventListener("click", function () {
-            swal.fire([{
+            swal.queue([{
   title: 'Publik IP Anda',
   confirmButtonText: 'Show my public IP',
   text:
