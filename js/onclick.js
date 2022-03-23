@@ -3,28 +3,28 @@ Toast.fire({
  icon: 'success',
  title: 'Sukses menambahkan ke bookmark'
 })
-})
+});
 
 	$('#huruf-kecil').on('click', function () {
 Toast.fire({
  icon: 'success',
  title: 'Sukses mengubah ke huruf kecil'
 })
-})
+});
 
 	$('#huruf-sedang').on('click', function () {
 Toast.fire({
  icon: 'success',
  title: 'Sukses mengubah ke huruf sedang'
 })
-})
+});
 
 	$('#huruf-besar').on('click', function () {
 Toast.fire({
  icon: 'success',
  title: 'Sukses mengubah ke huruf besar'
 })
-})
+});
 
 	$('#di-follow').on('click', function () {
 	swals.fire({
@@ -48,25 +48,21 @@ Toast.fire({
   })
 }
 })
-})
+});
             
             $('#check-ip').on('click', function () {
-swal.queue
-([{
-    title: 'Your public IP',
-    confirmButtonText: 'Show my public IP',
-    text: 'Your public IP will be received via AJAX request',
-    showLoaderOnConfirm: true,
-    preConfirm: function()
-    {
-        return new Promise(function (resolve)
-        {
-            $.get('https://api.ipify.org?format=json').done(function(data)
-            {
-                swal.insertQueueStep(data.ip);
-                resolve();
-            });
-        });
-    }
+Swal.queue([{
+  title: 'Your public IP',
+  confirmButtonText: 'Show my public IP',
+  text:
+    'Your public IP will be received ' +
+    'via AJAX request',
+  onOpen: () => {
+    fetch('https://api.ipify.org?format=json')
+      .then(response => response.json())
+      .then(data => {
+        Swal.insertQueueStep(data.ip)
+      })
+  }
 }])
-  })
+  });
