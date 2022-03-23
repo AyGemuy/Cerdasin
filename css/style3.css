@@ -1,7 +1,5 @@
 .pIm{
-    background: linear-gradient(#00ccff,#d400d4);
     animation: animate 4s linear infinite;
-    border-radius: 50%;
 }
 @keyframes animate{
     0%
