@@ -1,6 +1,4 @@
 .pIm{
-justify-content: center;
-    align-items: center;
     animation: animate 4s linear infinite;
 }
 @keyframes animate{
@@ -18,9 +16,7 @@ justify-content: center;
     border-radius:50%;
     -moz-border-radius:50%;
     -webkit-border-radius:50%;
-    width: 40px;
-    height: 40px;
-    justify-content: center;
-    align-items: center;
+    width: 30px;
+    height: 30px;
     border-radius: 8px;
 }
