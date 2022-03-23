@@ -1,32 +1,32 @@
-$('.add-bookmark').on('click', function () {
+$('#add-bookmark').on('click', function () {
 Toast.fire({
  icon: 'success',
  title: 'Sukses menambahkan ke bookmark'
 })
-;} , false);
+})
 
-	$('.huruf-kecil').on('click', function () {
+	$('#huruf-kecil').on('click', function () {
 Toast.fire({
  icon: 'success',
  title: 'Sukses mengubah ke huruf kecil'
 })
-;} , false);
+})
 
-	$('.huruf-sedang').on('click', function () {
+	$('#huruf-sedang').on('click', function () {
 Toast.fire({
  icon: 'success',
  title: 'Sukses mengubah ke huruf sedang'
 })
-;} , false);
+})
 
-	$('.huruf-besar').on('click', function () {
+	$('#huruf-besar').on('click', function () {
 Toast.fire({
  icon: 'success',
  title: 'Sukses mengubah ke huruf besar'
 })
-;} , false);
+})
 
-	$('.di-follow').on('click', function () {
+	$('#di-follow').on('click', function () {
 	swals.fire({
             title: 'Follow yuk kak :3',
             imageUrl: 'https://cdn.jsdelivr.net/gh/AyGemuy/Blogger/img/chat.png',
@@ -48,9 +48,9 @@ Toast.fire({
   })
 }
 })
-;} , false);
+})
             
-            $('.check-ip').on('click', function () {
+            $('#check-ip').on('click', function () {
     swal.queue([
       {
         title: 'Your public IP',
