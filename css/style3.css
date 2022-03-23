@@ -1,4 +1,6 @@
 .pIm{
+justify-content: center;
+    align-items: center;
     animation: animate 4s linear infinite;
 }
 @keyframes animate{
@@ -12,7 +14,7 @@
     }
 }
 .pIm-b{
-    border:1px solid var(--contentB);    
+    border:1px solid linear-gradient(#00ccff,#d400d4);
     border-radius:50%;
     -moz-border-radius:50%;
     -webkit-border-radius:50%;
