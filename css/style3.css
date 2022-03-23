@@ -18,18 +18,13 @@
 }
 
 .pImgB {
-	position: relative;
-	margin: 300px auto 0;
 	background: linear-gradient(0deg, #000, #272727);
 }
 
 .pImgB:before, .pImgB:after {
-	content: '';
-	position: absolute;
 	background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
 		#0000ff, #00ff00,#ffff00, #ff0000);
 	background-size: 400%;
-	z-index: -1;
 	animation: steam 20s linear infinite;
 }
 
