@@ -15,8 +15,7 @@
     box-shadow:5px;
     -moz-border-radius:50%;
     -webkit-border-radius:50%;
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     border-radius: 8px;
-    animation: muter 4s linear infinite;
 }
