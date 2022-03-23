@@ -5,28 +5,28 @@ Toast.fire({
 })
 });
 
-	$('#huruf-kecil').on('click', function () {
+$('#huruf-kecil').on('click', function () {
 Toast.fire({
  icon: 'success',
  title: 'Sukses mengubah ke huruf kecil'
 })
 });
 
-	$('#huruf-sedang').on('click', function () {
+$('#huruf-sedang').on('click', function () {
 Toast.fire({
  icon: 'success',
  title: 'Sukses mengubah ke huruf sedang'
 })
 });
 
-	$('#huruf-besar').on('click', function () {
+$('#huruf-besar').on('click', function () {
 Toast.fire({
  icon: 'success',
  title: 'Sukses mengubah ke huruf besar'
 })
 });
 
-	$('#di-follow').on('click', function () {
+$('#di-follow').on('click', function () {
 	swals.fire({
             title: 'Follow yuk kak :3',
             imageUrl: 'https://cdn.jsdelivr.net/gh/AyGemuy/Blogger/img/chat.png',
@@ -68,7 +68,7 @@ Toast.fire({
             
             Toast.fire({
   icon: 'success',
-  title: 'Your Ip' + AlamatIP + 'ok!'
+  title: ''Your Ip' + AlamatIP + 'ok!''
   });
   }
   
