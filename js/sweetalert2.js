@@ -22,9 +22,9 @@ const Toast = Swal.mixin({
             async function mulai(){
             var { isConfirmed: ke_satu } = await swals.fire({
             title: 'Hai kak :3',
-            imageUrl: 'https://cdn.jsdelivr.net/gh/AyGemuy/Blogger/img/chat.png',
-            imageWidth: 100,
-            imageHeight: 100,
+            imageUrl: '//cerdasin.netlify.app/img/chat.png',
+            imageWidth: 40,
+            imageHeight: 40,
             imageAlt: 'Hai',
             text: 'Siap untuk membaca!',
             showCancelButton: true,
@@ -34,12 +34,12 @@ const Toast = Swal.mixin({
             });
             
             if(ke_satu){
-            await Toast.fire({
+            await swals.fire({
   icon: 'success',
   title: 'Oke!, Selamat membaca ya'
   });
             } else {
-            await Toast.fire({
+            await swals.fire({
   icon: 'warning',
   title: 'Gak bisa kak, isi dulu!'
   });
