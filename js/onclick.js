@@ -65,15 +65,13 @@ Toast.fire({
             });
             
             if(komfir-ip){
-            onOpen: () => {
     fetch('https://api.ipify.org?format=json')
       .then(response => response.json())
       .then(data => {
-        Swal.fire({
+        Toast.fire({
   icon: 'success',
   title: 'Your Ip '+ data.ip +' ok!'
   });
       })
   }
-     }
   });
