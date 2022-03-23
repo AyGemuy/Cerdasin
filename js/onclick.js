@@ -66,10 +66,12 @@ $('#di-follow').on('click', function () {
             
             if(komfir-ip){
             
-            Toast.fire({
-  icon: 'success',
-  title: 'Your Ip' + AlamatIP + 'ok!'
-  });
+        fetch('https://api.ipify.org?format=json')
+      .then(response => response.json())
+      .then(data => {
+        alert(data.ip)
+  })
+  
   }
   
   });
