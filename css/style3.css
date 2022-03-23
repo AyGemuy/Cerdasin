@@ -32,3 +32,9 @@
     height:40px;
     animation:muter 15s infinite;
 }
+
+/* Turbo progress bar */
+.turbo-progress-bar {
+  height: 4px; /*ukuran progress bar*/
+  background-color: red; /*warna progress bar*/
+}
