@@ -58,7 +58,7 @@ async function mulai(){
             var katanyo = ["Lemot gak?","Delay kah?","Lambat kah?","Ngeleg kah?","Pasti leg ya?"]
             var tadoo = katanyo[Math.floor(Math.random()*katanyo.length)];
             var { isConfirmed: ke_satu } = await swals.fire({
-            title: `${tadoo}`
+            title: `${tadoo}`,
             icon: 'question',
             text: 'Silahkan jawab oke!',
             showCancelButton: true,
