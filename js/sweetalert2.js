@@ -81,7 +81,6 @@ async function mulai(){
   icon: 'info',
   title: `${tadee}`
   });
-            mulai();
             }
             }
             mulai();
