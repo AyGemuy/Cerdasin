@@ -70,14 +70,14 @@ async function mulai(){
             let tadaa = Math.floor(Math.random() * katanya);
             await swals.fire({
   icon: 'info',
-  title: ' + tadaa + '
+  title: `${tadaa}`
   });
             } else {
             let katanye = ["Alhamdulilah ya","Makasih","Oke","Ingfo di terima"]
             let tadee = Math.floor(Math.random() * katanye);
             await swals.fire({
   icon: 'info',
-  title: ' + tadee + '
+  title: `${tadee}`
   });
             mulai();
             }
