@@ -55,8 +55,10 @@ const Toast = Swal.mixin({
 
 /* Sweet Alert */
 async function mulai(){
+            var katanyo = ["Lemot gak?","Delay kah?","Lambat kah?","Ngeleg kah?","Pasti leg ya?"]
+            var tadoo = katanyo[Math.floor(Math.random()*katanyo.length)];
             var { isConfirmed: ke_satu } = await swals.fire({
-            title: 'Apakah halaman lambat?',
+            title: `${tadoo}`
             icon: 'question',
             text: 'Silahkan jawab oke!',
             showCancelButton: true,
@@ -66,14 +68,14 @@ async function mulai(){
             });
             
             if(ke_satu){
-            var katanya = ["Maklum masih pemula","Mohon maaf jika lemot","Oke","Ingfo di terima"]
+            var katanya = ["Maklum masih pemula","Apa.. Tidak mungkin","Mohon maaf jika lemot","Oke","Ingfo di terima"]
             var tadaa = katanya[Math.floor(Math.random()*katanya.length)];
             await swals.fire({
-  icon: 'info',
+  icon: 'warning',
   title: `${tadaa}`
   });
             } else {
-            var katanye = ["Alhamdulilah ya","Makasih","Oke","Ingfo di terima"]
+            var katanye = ["Alhamdulilah ya","Makasih","Mantap lur","Uraa.."]
             var tadee = katanye[Math.floor(Math.random()*katanye.length)];
             await swals.fire({
   icon: 'info',
