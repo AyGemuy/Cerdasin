@@ -235,7 +235,7 @@ body{top:0!important}
 .post img:hover{animation: nudge 2s infinite;}
 
 /* Back To Top by Cerdasin */
-.BackToTop {z-index: 1;animation:fadeInRight .5s linear;visibility:hidden; width:50px; height:50px; position:fixed; bottom:10rem; right: 10px; z-index:99; cursor:pointer; border-radius: 50px 0px 50px 50px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; opacity:0; -webkit-transform:translateZ(0); transition:all .5s; background: #fff url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z' fill='%23000'/%3E%3C/svg%3E") no-repeat center center;}
+.BackToTop {z-index: 1;animation:fadeInRight .5s linear;visibility:hidden; width:34px; height:34px; position:fixed; bottom:10rem; right: 10px; z-index:99; cursor:pointer; border-radius: 50px 0px 50px 50px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; opacity:0; -webkit-transform:translateZ(0); transition:all .5s; background: #fff url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z' fill='%23000'/%3E%3C/svg%3E") no-repeat center center;}
 .BackToTop:hover {opacity: 1; background: #fff url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z' fill='%23000'/%3E%3C/svg%3E") no-repeat center center;}
 .BackToTop.show {visibility:visible; bottom:8rem; opacity:1;}
 
@@ -578,8 +578,8 @@ svg.wc-buysvg.line{fill:none!important;stroke:#767676;stroke-linecap:round;strok
   position: fixed;
   bottom: 8rem;
   left: 15px;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   cursor: default;
   transition: all 0.15s ease-out;
   z-index: 1;
@@ -632,8 +632,8 @@ svg.wc-buysvg.line{fill:none!important;stroke:#767676;stroke-linecap:round;strok
   position: absolute;
   left: 0;
   top: 0;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   padding-top: 4px;
   background: 100% 100%/250% 100% #fff linear-gradient(135deg, transparent 33%, #2c92c8 66%, #892cc8) no-repeat;
   border-radius: 0px 50px 50px 50px;
@@ -660,7 +660,7 @@ svg.wc-buysvg.line{fill:none!important;stroke:#767676;stroke-linecap:round;strok
   width: 40px;
   height: 40px;
   background: var(--contentB);
-  border-radius: 0px 50px 50px 50px;
+  border-radius: var(--braD);
   text-decoration: none !important;
   box-shadow: 0 10px 20px -10px #1a237e;
   transform: translate(-50%, -50%) scale(0.75);
@@ -788,7 +788,7 @@ svg.wc-buysvg.line{fill:none!important;stroke:#767676;stroke-linecap:round;strok
   height: 28px;
   z-index: -1;
   background-color: #546e7a;
-  border-radius: 0px 50px 50px 50px;
+  border-radius: var(--braD);
   font-family: "Font Awesome 5 Pro";
   font-size: 18px;
   font-weight: 400;
@@ -834,7 +834,7 @@ svg.wc-buysvg.line{fill:none!important;stroke:#767676;stroke-linecap:round;strok
 .modal .modal-content .modal-body label {
   margin-bottom: 4px;
   font-weight: 500;
-  color: #78909c;
+  color: #0b57cf;
 }
 .modal .modal-content .modal-body label:not(:first-of-type) {
   margin-top: 10px;
@@ -914,22 +914,22 @@ svg.wc-buysvg.line{fill:none!important;stroke:#767676;stroke-linecap:round;strok
 }
 .modal .modal-content .modal-body input:focus::-webkit-input-placeholder, .modal .modal-content .modal-body input:valid::-webkit-input-placeholder {
   font-weight: inherit;
-  color: #78909c;
+  color: #0b57cf;
 }
 
 .modal .modal-content .modal-body input:focus:-moz-placeholder, .modal .modal-content .modal-body input:valid:-moz-placeholder {
   font-weight: inherit;
-  color: #78909c;
+  color: #0b57cf;
 }
 
 .modal .modal-content .modal-body input:focus::-moz-placeholder, .modal .modal-content .modal-body input:valid::-moz-placeholder {
   font-weight: inherit;
-  color: #78909c;
+  color: #0b57cf;
 }
 
 .modal .modal-content .modal-body input:focus:-ms-input-placeholder, .modal .modal-content .modal-body input:valid:-ms-input-placeholder {
   font-weight: inherit;
-  color: #78909c;
+  color: #0b57cf;
 }
 
 .modal .modal-content .modal-body input:valid:not(:focus) {
@@ -957,25 +957,25 @@ svg.wc-buysvg.line{fill:none!important;stroke:#767676;stroke-linecap:round;strok
 .modal .modal-content .modal-body textarea::-webkit-input-placeholder {
   font-family: "Font Awesome 5 Pro", "Poppins", sans-serif;
   font-weight: inherit;
-  color: #78909c;
+  color: #0b57cf;
 }
 
 .modal .modal-content .modal-body textarea:-moz-placeholder {
   font-family: "Font Awesome 5 Pro", "Poppins", sans-serif;
   font-weight: inherit;
-  color: #78909c;
+  color: #0b57cf;
 }
 
 .modal .modal-content .modal-body textarea::-moz-placeholder {
   font-family: "Font Awesome 5 Pro", "Poppins", sans-serif;
   font-weight: inherit;
-  color: #78909c;
+  color: #0b57cf;
 }
 
 .modal .modal-content .modal-body textarea:-ms-input-placeholder {
   font-family: "Font Awesome 5 Pro", "Poppins", sans-serif;
   font-weight: inherit;
-  color: #78909c;
+  color: #0b57cf;
 }
 
 .modal .modal-content .modal-body .modal-actions {
