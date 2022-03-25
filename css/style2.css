@@ -4,7 +4,7 @@
 .pop-area.open{opacity:1;visibility:visible}
 .pop-area .pop-html{background:#fff;padding-bottom:10px;display:block;margin:auto auto;width:calc(100% - 20px);max-width:500px;visibility:hidden;opacity:0;overflow:hidden;transition:all 0.5s ease-in-out;transform:scale(.5);border-radius:7px;box-shadow:0 9px 46px 8px rgba(0,0,0,.14),0 11px 15px -7px rgba(0,0,0,.12),0 24px 38px 3px rgba(0,0,0,.2)}
 .pop-area.open .pop-html{opacity:1;transform:scale(1);visibility:visible}
-.pop-area .head-pop:after{font-family: Akronim;content:"Bookmark";color:#fefefe;font-weight:bold}
+.pop-area .head-pop:after{font-family: var(--fontAk); content:"Bookmark";color:#fefefe;font-weight:bold}
 .pop-area .head-pop{width:-webkit-fill-available;padding:12px 30px;overflow:hidden;background:#0b57cf}
 .pop-area .close-btn{float:right;cursor:pointer;fill:#7e7e7e;color:#fefefe;font-weight:bold}
 .pop-area .body-content{padding:10px}
@@ -19,24 +19,24 @@
 .pop-area .img-left{width:150px}
 .pop-area .item-left{padding-right:10px}
 .pop-area .btn-remove{cursor:pointer}
-.show-bookmark{font-family: Libre Barcode 128 Text;font-size:11px;line-height:18px;padding:0 5px;border-radius:10px;background:#e6e6e6;color:var(--bodyC);position:absolute;top:-5px;right:0;z-index:2}
+.show-bookmark{font-family: var(--fontLib);font-size:11px;line-height:18px;padding:0 5px;border-radius:10px;background:#e6e6e6;color:var(--bodyC);position:absolute;top:-5px;right:0;z-index:2}
 .pop-area .counterStat{color:white;font-size:16px}
 .drK .pop-area.open .pop-html,.drK .pop-area .body-content,.drK .pop-area .table a{background-color:#1e1e1e;color:#fefefe}
 
 /* css tambahan untuk tombol bookmark muncul di beranda pada template median ui 1.6 */
 .iFxd .hartomy-bookmark-btn:hover::before{content:'add to bookmark';right:15px;display:block}
-.iFxd .hartomy-bookmark-btn:before{font-family: Boogaloo;content:'';font-size:12px;color:#767676;width:150px;padding-left:30px;padding:5px 0 5px 30px;background-color:var(--bodyB);border-radius:5px;position:absolute;right:0;display:none}
+.iFxd .hartomy-bookmark-btn:before{font-family: var(--fontBo);content:'';font-size:12px;color:#767676;width:150px;padding-left:30px;padding:5px 0 5px 30px;background-color:var(--bodyB);border-radius:5px;position:absolute;right:0;display:none}
 .iFxd .hartomy-bookmark-btn{position:relative;transition:var(--trans-4)}
 
 /* ajax search */
 .ajax-search.hidden{display:none}
 .ajax-search{background:rgba(255,255,255,.89)!important;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);text-align:center;box-shadow:0 15px 10px -10px rgba(155,155,155,0.15),0 -15px 10px -10px rgba(155,155,155,0.15);max-height:450px!important;margin:20px auto;border-radius:var(--braD);animation:fadeInDown .5s linear}
 .ajax-search-results-empty{text-align:center}
-.ajax-search h3{font-family: Metal Mania;color:#000;font-size:14px;font-weight:500;margin:0 10px 20px 10px;text-align:left}
+.ajax-search h3{font-family: var(--fontMe);color:#000;font-size:14px;font-weight:500;margin:0 10px 20px 10px;text-align:left}
 .ajax-search-results{text-align:left}
 .ajax-search li{background:#fff;position:relative;display:inline-block;width:100%;padding:10px;margin:5px 5px 5px -15px;border-radius:var(--braD);border:1px solid rgba(155,155,155,0.15);overflow:hidden;transition:all .3s}
 .ajax-search li:hover{border-color:#0b57cf}
-.ajax-search li h4{font-family: Londrina Solid;font-size:13px;font-weight:500;margin:0 15px 0 0}
+.ajax-search li h4{font-family: var(--fontLo);font-size:13px;font-weight:500;margin:0 15px 0 0}
 .ajax-search li h4 a{color:#000;transition:all .3s}
 .ajax-search li h4 mark{background-color:transparent;color:#0b57cf;text-decoration:underline;transition:all .3s}
 .ajax-search li h4 a:hover,.ajax-search li h4:hover mark{color:#0b57cf}
@@ -62,7 +62,7 @@
 .drK .ajax-search h3{color:#fff}
 
 /* kotak donasi by Cerdasin */
-.wc-dnt-box{font-family: Metal Mania;position:relative;max-width:500px;background-color:var(--contentB);box-shadow:0 5px 12px -2px rgb(0 0 0 / 12%); border:1px solid #eceff1;border-radius:5px; padding:15px;margin:20px 0; display:flex;align-items:center;font-size:13px;transition:all .2s ease;}  
+.wc-dnt-box{font-family: var(--fontB);position:relative;max-width:500px;background-color:var(--contentB);box-shadow:0 5px 12px -2px rgb(0 0 0 / 12%); border:1px solid #eceff1;border-radius:5px; padding:15px;margin:20px 0; display:flex;align-items:center;font-size:13px;transition:all .2s ease;}  
 .wc-dnt-box .wc-dnt-icon{flex-shrink:0;display:flex;align-items:center;justify-content:center;width:50px;height:50px;padding:10px; background:#f1f1f0;border-radius:5px;border:1px solid transparent}
 .wc-dnt-box .wc-dnt-txt{flex-grow:1; width:calc(100% - 150px);padding:0 15px;line-height:20px}
 .wc-dnt-box .wc-dnt-sw{position:absolute;padding:1px 3px;margin-top:-80px;margin-left:230px;width:30px;height:30px;background:#0b57cf;border-radius:50%;border:1px solid #eceff1;transition:all .2s ease;z-index:1}  
@@ -74,7 +74,7 @@
 #wc-check-bnk:checked ~ .wc-dnt-pp{visibility:hidden;opacity:0;position:relative}
 #wc-check-bnk:checked ~ .wc-dnt-rk{visibility:visible;opacity:1;position:absolute;margin-top:-43px}
 .wc-dnt-hidden{position:absolute;width:calc(100% - 30px);background-color:transparent;margin:-250px auto auto -15px;visibility:hidden;opacity:0;transition:all .2s ease}
-.wc-dnt-hidden h2{font-family: Luckiest Guy;font-size:20px;margin:10px auto;text-align:center}
+.wc-dnt-hidden h2{font-family: var(--fontLu);font-size:20px;margin:10px auto;text-align:center}
 .wc-dnt-hidden span{font-size:17px;color:#767676;margin-left:35px}
 .wc-dnt-trn,.wc-dnt-pp,.wc-dnt-rk{display:inline-block;width:calc(100% - 30px);border:1px solid #999;background:#fefefe;border-radius:3px;margin:10px 25px 0;padding:10px;transition:all .2s ease}
 .wc-dnt-pp{position:absolute}
@@ -133,7 +133,7 @@
 .notif-content{display:flex;align-items:center}
 .notif-icon .notiflogo{max-width:60px;border-radius:100%;transition:all 0.3s ease}
 .notif-content .notif-details{margin-left:15px;text-decoration:none;outline:none}
-.notif-details span{font-family: Fredericka the Great;position:relative;font-size:18px;font-weight:600;color:#000000;top:10px}
+.notif-details span{font-family: var(--fontH);position:relative;font-size:18px;font-weight:600;color:#000000;top:10px}
 .notif-details p{color:#878787;font-size:12px}
 .notif-closeIcon svg{position:absolute;fill:#878787;font-size:20px;cursor:pointer;height:28px;width:28px;text-align:center;right:13px;top:8px;border-radius:50%;background:#f2f2f2;transition:all 0.3s ease}
 .notif-wrap:hover .notif-icon img{-webkit-transform:rotate(360deg);transform:rotate(360deg)}
@@ -213,7 +213,7 @@ body{top:0!important}
 .tocC:before{content:'';display:block;width:12px;height:12px;background-color:var(--linkC);border:2px solid var(--bodyB);border-radius:50%;position:absolute;top:5px;left:12px;animation:indicator 1s ease infinite;-webkit-animation:indicator 1s ease infinite;z-index:1}@-webkit-keyframes indicator{0%{opacity:0}50%{opacity:1}100%{opacity:0}}@keyframes indicator{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
 
 /* Baca Juga */
-.post-relatedText{font-family: Bubblegum Sans;position:relative; margin:42px 0;padding:1.5em 0; border:1px solid #eceff1;border-left:0;border-right:0; font-size:14px;line-height:1.8em;}
+.post-relatedText{font-family: var(--fontBa);position:relative; margin:42px 0;padding:1.5em 0; border:1px solid #eceff1;border-left:0;border-right:0; font-size:14px;line-height:1.8em;}
 .post-relatedText h3, .post-relatedText h4, .post-relatedText b{font-size:13px;font-weight:700; margin:0;padding:2px 14px;background-color: #0b57cf;color:var(--bodyB)border:1px solid #eceff1;border-radius:5px; position:absolute;top:-15.5px;left:20px}
 .post-relatedText ul, .post-relatedText ol{margin:8px 0 0;padding-left:20px}.post-relatedText a{text-decoration: none}
 .post-relatedText a:hover{opacity:.9}
@@ -221,7 +221,7 @@ body{top:0!important}
 
 /* Form Email */
 /* Widget FollowByEmail Median-ui 1.6 */
-.FollowByEmail{font-family: Bubblegum Sans;position:relative;padding:18px 20px 25px;border:1px solid var(--contentL);border-radius:4px;font-size:90%}
+.FollowByEmail{font-family: var(--fontBa);position:relative;padding:18px 20px 25px;border:1px solid var(--contentL);border-radius:4px;font-size:90%}
 .FollowByEmail .title{font-size:14px;margin-bottom:15px;color:#48525c}
 .FollowByEmail .follow-text{display:block;margin-bottom:18px}
 .FollowByEmail .follow-label{position:absolute;top:0;right:0;display:flex;align-items:center;padding:0 15px;height:54px;cursor:pointer}
@@ -274,7 +274,7 @@ body{top:0!important}
 
 /* Comment Button */
 .cmBtn {
-font-family: Iceland;
+font-family: var(--fontH);
 font-weight: bold;
 font-size: 25px;
 border-radius: 0px 50px 50px 50px;
@@ -412,7 +412,7 @@ canvas {
  
   /* Title */
   .pTtl {
-  font-family: Metal Mania;
+  font-family: var(--fontMe);
   text-align: center;
 	animation: nudge 2s infinite;
 }
@@ -492,7 +492,7 @@ svg.wc-buysvg.line{fill:none!important;stroke:#767676;stroke-linecap:round;strok
 @media screen and (max-width:420px){.wc-pc-pop{width:300px;line-height:20px}.wc-pc-pop:before{top:250px;width:300px}.wc-buy-left{margin-bottom:0}.wc-buyi{line-height:20px}.wc-pc-close:before{top:5px}.wc-buyd:before,.wc-buyh:before{margin-bottom:10px}svg.wc-buysvg{margin-top:0}}
 
 /* table spesifikasi by wendy code ubah warna orange cari kode #f89000 */
-.wc-sp{position:relative;width:100%;line-height:15px;font-family:'Noto Sans', sans-serif;font-size:12px;color:#455065;font-weight:400;background:#ebeff3;margin-top:5px;padding:12px 0 12px 70px}
+.wc-sp{position:relative;width:100%;line-height:15px;font-family:var(--fontB);font-size:12px;color:#455065;font-weight:400;background:#ebeff3;margin-top:5px;padding:12px 0 12px 70px}
 .wc-sp:before{content:'';position:absolute;height:100%;width:50px;left:0;top:0;padding:10px;z-index:2}
 .wc-sp.icon-battery:before{content:'';background:url("data:image/svg+xml,<svg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path fill='%23fff' d='M16 20H8V6H16M16.67 4H15V2H9V4H7.33C6.6 4 6 4.6 6 5.33V20.67C6 21.4 6.6 22 7.33 22H16.67C17.41 22 18 21.41 18 20.67V5.33C18 4.6 17.4 4 16.67 4M15 16H9V19H15V16M15 7H9V10H15V7M15 11.5H9V14.5H15V11.5Z' /></svg>") center / 12px no-repeat;background-size:20px 20px;background-color:#f89000} 
 .wc-sp.icon-dimension:before{content:'';background:url("data:image/svg+xml,<svg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path fill='%23fff' d='M4,6H20V16H4M20,18A2,2 0 0,0 22,16V6C22,4.89 21.1,4 20,4H4C2.89,4 2,4.89 2,6V16A2,2 0 0,0 4,18H0V20H24V18H20Z' /></svg>") center / 12px no-repeat;background-size:20px 20px;background-color:#f89000}
