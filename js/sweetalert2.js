@@ -11,7 +11,7 @@ showClass: {
 /* Toast */
 const Toast = Swal.mixin({
   toast: true,
-  position: 'center',
+  position: 'top-end',
   showConfirmButton: false,
   timer: 3000,
   timerProgressBar: true,
@@ -53,7 +53,7 @@ const Toast = Swal.mixin({
             mulai();
 */
 
-/* Sweet Alert */
+/* Sweet Alert Nanya */
 async function mulai(){
             var katanyo = ["Lemot gak?","Delay kah?","Lambat kah?","Ngeleg kah?","Pasti leg ya?"]
             var tadoo = katanyo[Math.floor(Math.random()*katanyo.length)];
@@ -70,14 +70,14 @@ async function mulai(){
             if(ke_satu){
             var katanya = ["Maklum masih pemula","Apa.. Tidak mungkin","Mohon maaf jika lemot","Oke","Ingfo di terima"]
             var tadaa = katanya[Math.floor(Math.random()*katanya.length)];
-            await swals.fire({
+            await Toast.fire({
   icon: 'warning',
   title: `${tadaa}`
   });
             } else {
             var katanye = ["Alhamdulilah ya","Makasih","Mantap lur","Uraa.."]
             var tadee = katanye[Math.floor(Math.random()*katanye.length)];
-            await swals.fire({
+            await Toast.fire({
   icon: 'info',
   title: `${tadee}`
   });
