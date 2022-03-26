@@ -61,5 +61,5 @@ svg.wc-adblock{fill:#e00000;width:50px;height:50px}
 .drK .tNtf span{box-shadow:0 10px 40px rgba(0,0,0,.2)}
 
 /* profile post*/
-.pInf .pIc >*{width:34px;height:34px;border:1px solid #989b9f;border-radius:12px;cursor:pointer}
-.pInf .pIc svg{width:20px;height:20px;opacity:.8;z-index:1} .pInf .pIc .cmnt::before{content:attr(data-text);font-size:11px;line-height:18px;padding:5px;border-radius:10px;background:#e6e6e6;color:var(--bodyC);position:absolute;top:-5px;right:0;z-index:2;border-radius:10px;background:#e6e6e6;color:var(--bodyC);animation:indicator 4s ease infinite;-webkit-animation:indicator 1s ease infinite}
+.pImgL{width:34px;height:34px;border:1px solid #989b9f;border-radius:12px;cursor:pointer}
+.pImgL svg{width:20px;height:20px;opacity:.8;z-index:1} .pImgL .pIc .cmnt::before{content:attr(data-text);font-size:11px;line-height:18px;padding:5px;border-radius:10px;background:#e6e6e6;color:var(--bodyC);position:absolute;top:-5px;right:0;z-index:2;border-radius:10px;background:#e6e6e6;color:var(--bodyC);animation:indicator 4s ease infinite;-webkit-animation:indicator 1s ease infinite}
