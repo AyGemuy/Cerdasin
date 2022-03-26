@@ -47,73 +47,13 @@
 .wc-adblock-knt h2{margin-top:15px;font-size:17px}
 svg.wc-adblock{fill:#e00000;width:50px;height:50px}
 
-/* Widget Side ToC */ 
-.sideL{position:fixed;
-top:0;
-bottom:0;
-left:-280px;
-width:280px;
-transition:var(--trans-1);
-z-index:1} 
-.sideLi{width:100%;
-height:100%;
-position:relative;
-background:var(--contentB);
-box-shadow:0 5px 30px 0 rgba(0,0,0,.05);
-z-index:1;
-border-radius:12px 0 0 12px} 
-.sideLs{position:relative;
-top:20px;
-background:inherit} 
-.sideIn{padding:60px 0 0;
-overflow-y:scroll;
-overflow-x:hidden;
-width:100%;
-height:calc(100vh - var(--headerH))} 
-.sideC{position:absolute;
-left:-45px;
-top:105px;
-transition:var(--trans-1)} 
-.sideC span{display:flex;
-align-items:center;
-justify-content:center;
-width:45px;
-height:40px;
-border-radius:20px 0 0 20px;
-background:var(--contentB);
-transition:inherit;
-z-index:1;
-box-shadow:0 5px 20px 0 rgba(0,0,0,.1)} 
-.sideL svg.rad{width:20px;
-height:20px;
-position:absolute;
-left:-2px;
-top:-19px;
-fill:var(--contentB);
-transform:rotate(92deg);
-transition:inherit} 
-.sideL svg.rad.in{top:auto;
-bottom:-19px;
-transform:rotate(-2deg)} 
-.sideC span svg{opacity:.8} 
-.sideT{display:flex;
-width:100%} 
-.sideL ol{margin:0;
-padding-inline-start:35px;
-line-height:1.6em} 
-.sideL li ol{margin:5px 0 10px;
-list-style:lower-roman} 
-.sideL a{color:inherit;
-opacity:.8} 
-.sideL a:hover{text-decoration:underline} 
-.sideI:checked ~ 
-.sideL{left:0;
-z-index:1} 
-.sideI:checked ~ 
-.sideL 
-.sideC{opacity:0;
-visibility:hidden} 
-.sideI:checked ~ 
-.sideL .fCls{background:rgba(0,0,0,.25);
-opacity:1;
-visibility:visible}
+/* Vote Postibgan *.
+.pRate{display:none;padding:30px 0 10px 0}
+.pRateC{display:flex;max-width:400px;margin-top:30px;padding:25px 17px;line-height:25px;background:#fff;border-radius:5px;box-shadow:0 5px 35px rgba(149,157,165,.3);font-size:16px;font-family:inherit;color:#08102b;text-align:center;justify-content:center}
+.pRateC .ld{display:inline-flex;align-items:center;font-size:13px;opacity:.8}
+.pRateC .ld svg{width:18px;height:18px;margin-right:5px;stroke:none !important;fill:#08102b}
+.pRateS{background:#fff;position:absolute}
+.drK .pRateC, .drK .pRateS{background:#252526}
+.drK .pRateC{box-shadow:0 10px 40px rgba(0,0,0,.2);color:#fefefe}
+.drK .pRateC .ld svg{fill:#fefefe}
+
