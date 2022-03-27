@@ -240,7 +240,6 @@ body{top:0!important}
 }
 
 #rocketmeluncur {
-box-shadow: 0px 0px 5px 0px #000000;
   position: fixed;
   bottom: 8rem;
   z-index: 7;
@@ -257,7 +256,6 @@ box-shadow: 0px 0px 5px 0px #000000;
 }
 
 #rocketmeluncur i {
-box-shadow: 0px 0px 5px 0px #000000;
   display: block;
   margin-top: 48px;
   height: 14px;
