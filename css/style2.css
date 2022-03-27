@@ -248,8 +248,6 @@ body{top:0!important}
   width: 26px;
   height: 48px;
   right: 15px;
-  background: 100% 100%/250% 100% #fff linear-gradient(135deg, transparent 33%, #2c92c8 66%, #892cc8) no-repeat;
-  border-radius:var(--braD);
   background: url(https://3.bp.blogspot.com/-GZOBULN1Q4s/VbNxQrf37EI/AAAAAAAAAPk/rak337seJ70/s1600/Ask.png) no-repeat 50% 0;
   opacity: 0;
   -webkit-transition: visibility .6s cubic-bezier(0.6, 0.04, 0.98, 0.335), opacity .6s cubic-bezier(0.6, 0.04, 0.98, 0.335), -webkit-transform .6s cubic-bezier(0.6, 0.04, 0.98, 0.335);
@@ -261,8 +259,6 @@ body{top:0!important}
   display: block;
   margin-top: 48px;
   height: 14px;
-  background: 100% 100%/250% 100% #fff linear-gradient(135deg, transparent 33%, #2c92c8 66%, #892cc8) no-repeat;
-  border-radius:var(--braD);
   background: url(https://1.bp.blogspot.com/-UR9I7YEuEUY/VXIJn8MrBPI/AAAAAAAAKRE/qZObHBd5zIo/s1600/rocket.png) no-repeat 50% -48px;
   opacity: .5;
   -webkit-transition: -webkit-transform .2s;
@@ -341,7 +337,7 @@ body{top:0!important}
 
 /* Comment Button */
 .cmBtn {
-font-family: var(--fontH);
+font-family: var(--fontAk);
 font-weight: bold;
 font-size: 25px;
 border-radius: 0px 50px 50px 50px;
