@@ -697,7 +697,11 @@ svg.wc-buysvg.line{fill:none!important;stroke:#767676;stroke-linecap:round;strok
   width: 34px;
   height: 34px;
   padding-top: 4px;
-  background: 100% 100%/250% 100% #fff linear-gradient(135deg, transparent 33%, #fff 66%, #892cc8) no-repeat;
+  background: rgb(255,0,0);
+background: -moz-linear-gradient(0deg, rgba(255,0,0,1) 0%, rgba(0,255,255,1) 100%);
+background: -webkit-linear-gradient(0deg, rgba(255,0,0,1) 0%, rgba(0,255,255,1) 100%);
+background: linear-gradient(0deg, rgba(255,0,0,1) 0%, rgba(0,255,255,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff0000",endColorstr="#00ffff",GradientType=1);
   border-radius: 50%;
   content: "";
   font-family: "Font Awesome 5 Pro";
@@ -755,7 +759,11 @@ svg.wc-buysvg.line{fill:none!important;stroke:#767676;stroke-linecap:round;strok
   transform: rotate(45deg) scale(0.675);
   padding-right: 2px;
   box-shadow: 7.5px 7.5px 20px -10px rgba(55, 71, 79, 0);
-  background: -100% 100%/250% 100% rgba(144, 164, 174, 0.625) linear-gradient(135deg, transparent 33%, #fff 66%, #892cc8) no-repeat;
+  background: rgb(255,0,0);
+background: -moz-linear-gradient(0deg, rgba(255,0,0,1) 0%, rgba(0,255,255,1) 100%);
+background: -webkit-linear-gradient(0deg, rgba(255,0,0,1) 0%, rgba(0,255,255,1) 100%);
+background: linear-gradient(0deg, rgba(255,0,0,1) 0%, rgba(0,255,255,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff0000",endColorstr="#00ffff",GradientType=1);
 }
 #mega-button:hover::after, #mega-button:focus::after {
   width: 200px;
