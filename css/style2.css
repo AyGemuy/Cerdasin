@@ -610,7 +610,6 @@ svg.wc-buysvg.line{fill:none!important;stroke:#767676;stroke-linecap:round;strok
 .darkMode .wcSafeClose{color:#fefefe}
 
 /* Left Floating Button */
-
 .modal .modal-content .modal-body {
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -655,12 +654,12 @@ svg.wc-buysvg.line{fill:none!important;stroke:#767676;stroke-linecap:round;strok
   top: -9px;
   transform: translateY(-100%);
   white-space: nowrap;
-  background-color: var(--bodyB);
+  background-color: var(--bodyC);
   border-radius: var(--braD);
   filter: drop-shadow(0 2px 2px rgba(120, 144, 156, 0.5));
   box-shadow: inset 0 0 0 1px rgba(120, 144, 156, 0.1);
   font-weight: 500;
-  color: #fff;
+  color: var(--contentB);
   -webkit-animation: tooltip-hover;
           animation: tooltip-hover;
   -webkit-animation: 1s ease-in-out 0s infinite alternate both tooltip-hover;
@@ -724,7 +723,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff0000",endCo
   left: 15px;
   width: 30px;
   height: 30px;
-  background: #fff;
+  background: var(--contentB);
   border-radius: var(--braD);
   text-decoration: none !important;
   box-shadow: 0 10px 20px -10px #1a237e;
@@ -870,7 +869,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff0000",endCo
   border-top-right-radius: 0;
 }
 .modal .modal-content > .modal-close:hover::after {
-  background-color: var(--bodyB);
+  background-color: var(--bodyC);
 }
 .modal .modal-content .modal-header {
   padding: 10px 5px;
@@ -891,7 +890,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff0000",endCo
   background-color: #eceff1;
 }
 .modal .modal-content .modal-body p {
-  color: #fff;
+  color: var(--contentB);
   text-align: center;
 }
 .modal .modal-content .modal-body p + p, .modal .modal-content .modal-body p + .modal-actions {
@@ -903,7 +902,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff0000",endCo
 .modal .modal-content .modal-body label {
   margin-bottom: 4px;
   font-weight: 500;
-  color: #fff;
+  color: var(--contentB);
 }
 .modal .modal-content .modal-body label:not(:first-of-type) {
   margin-top: 10px;
@@ -928,7 +927,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff0000",endCo
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
-  color: #fff;
+  color: var(--contentB);
   box-sizing: border-box;
   cursor: pointer;
   transition: all 0.15s ease-out;
@@ -983,22 +982,22 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff0000",endCo
 }
 .modal .modal-content .modal-body input:focus::-webkit-input-placeholder, .modal .modal-content .modal-body input:valid::-webkit-input-placeholder {
   font-weight: inherit;
-  color: #fff;
+  color: var(--contentB);
 }
 
 .modal .modal-content .modal-body input:focus:-moz-placeholder, .modal .modal-content .modal-body input:valid:-moz-placeholder {
   font-weight: inherit;
-  color: #fff;
+  color: var(--contentB);
 }
 
 .modal .modal-content .modal-body input:focus::-moz-placeholder, .modal .modal-content .modal-body input:valid::-moz-placeholder {
   font-weight: inherit;
-  color: #fff;
+  color: var(--contentB);
 }
 
 .modal .modal-content .modal-body input:focus:-ms-input-placeholder, .modal .modal-content .modal-body input:valid:-ms-input-placeholder {
   font-weight: inherit;
-  color: #fff;
+  color: var(--contentB);
 }
 
 .modal .modal-content .modal-body input:valid:not(:focus) {
@@ -1013,38 +1012,38 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff0000",endCo
      -moz-appearance: none;
           appearance: none;
   resize: vertical;
-  background-color: var(--bodyB);
+  background-color: var(--bodyC);
   border: none;
   border-radius: var(--braD);
   box-shadow: 0 5px 10px -5px #0b57cf;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
-  color: #fff;
+  color: var(--contentB);
   box-sizing: border-box;
 }
 .modal .modal-content .modal-body textarea::-webkit-input-placeholder {
   font-family: "Font Awesome 5 Pro", "Poppins", sans-serif;
   font-weight: inherit;
-  color: #fff;
+  color: var(--contentB);
 }
 
 .modal .modal-content .modal-body textarea:-moz-placeholder {
   font-family: "Font Awesome 5 Pro", "Poppins", sans-serif;
   font-weight: inherit;
-  color: #fff;
+  color: var(--contentB);
 }
 
 .modal .modal-content .modal-body textarea::-moz-placeholder {
   font-family: "Font Awesome 5 Pro", "Poppins", sans-serif;
   font-weight: inherit;
-  color: #fff;
+  color: var(--contentB);
 }
 
 .modal .modal-content .modal-body textarea:-ms-input-placeholder {
   font-family: "Font Awesome 5 Pro", "Poppins", sans-serif;
   font-weight: inherit;
-  color: #fff;
+  color: var(--contentB);
 }
 
 .modal .modal-content .modal-body .modal-actions {
