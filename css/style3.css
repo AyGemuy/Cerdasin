@@ -73,8 +73,8 @@ select {
   /* Personalize */
   flex: 1;
   padding: 0 1em;
-  color: blue;
-  background-color: red;
+  color: white;
+  background-color: black;
   background-image: none;
   cursor: pointer;
 }
@@ -98,11 +98,11 @@ select::-ms-expand {
   top: 0;
   right: 0;
   padding: 1em;
-  background-color: yellow;
+  background-color: blue;
   transition: .25s all ease;
   pointer-events: none;
 }
 /* Transition */
 .select:hover::after {
-  color: green;
+  color: white;
 }
