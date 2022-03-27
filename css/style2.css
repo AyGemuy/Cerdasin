@@ -720,10 +720,10 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff0000",endCo
   justify-content: center;
   position: absolute;
   top: 50%;
-  left: 25px;
+  left: 15px;
   width: 30px;
   height: 30px;
-  background: #2c92c8;
+  background: #fff;
   border-radius: var(--braD);
   text-decoration: none !important;
   box-shadow: 0 10px 20px -10px #1a237e;
