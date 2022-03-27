@@ -235,9 +235,9 @@ body{top:0!important}
 .post img:hover{animation: nudge 2s infinite;}
 
 /* Back To Top by Cerdasin */
-.back-to-top {z-index: 1;animation:fadeInRight .5s linear;visibility:hidden; width:40px; height:40px; position:fixed; bottom:10rem; right: 10px; z-index:99; cursor:pointer; border-radius:var(--braD); box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; opacity:0; -webkit-transform:translateZ(0); transition:all .5s; background: #fff ;}
-.back-to-top:hover {opacity: 1; background: #fff ;}
-.back-to-top.show {visibility:visible; bottom:8rem; opacity:1;}
+#back-to-top {z-index: 1;animation:fadeInRight .5s linear;visibility:hidden; width:40px; height:40px; position:fixed; bottom:10rem; right: 10px; z-index:99; cursor:pointer; border-radius:var(--braD); box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; opacity:0; -webkit-transform:translateZ(0); transition:all .5s; background: #fff ;}
+#back-to-top:hover {opacity: 1; background: #fff ;}
+#back-to-top.show {visibility:visible; bottom:8rem; opacity:1;}
 
 /* Persentase Scrollbar */
 #scrollPersentase {animation:fadeInLeft .5s linear;display:none;position:fixed;top:0;right:5px;z-index:1;padding:3px 8px;background-color:var(--darkB);color:var(--bodyB);border-radius: 50px 0px 50px 50px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;overflow-x:hidden}
