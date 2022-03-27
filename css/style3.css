@@ -73,8 +73,8 @@ select {
   /* Personalize */
   flex: 1;
   padding: 0 1em;
-  color: #fff;
-  background-color: var(--darkgray);
+  color: var(--bodyB);
+  background-color: var(--contentB);
   background-image: none;
   cursor: pointer;
 }
@@ -98,11 +98,11 @@ select::-ms-expand {
   top: 0;
   right: 0;
   padding: 1em;
-  background-color: #34495e;
+  background-color: var(--bodyBa);
   transition: .25s all ease;
   pointer-events: none;
 }
 /* Transition */
 .select:hover::after {
-  color: #f39c12;
+  color: var(--linkC);
 }
