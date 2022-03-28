@@ -1,23 +1,18 @@
-const rangeInputs = document.querySelectorAll('input[type="range"]')
-const numberInput = document.querySelector('input[type="number"]')
+const elements = document.querySelectorAll(['range-slider']);
 
-function handleInputChange(e) {
-  let target = e.target
-  if (e.target.type !== 'range') {
-    target = document.getElementById('range')
-  } 
-  const min = target.min
-  const max = target.max
-  const val = target.value
-  
-  target.style.backgroundSize = (val - min) * 100 / (max - min) + '% 100%'
-}
+elements.forEach(element => {
+  element.insertAdjacentHTML('afterend', `
+    <output>${element.value}</output>
+  `);
+});
 
-rangeInputs.forEach(input => {
-  input.addEventListener('input', handleInputChange)
-})
-
-numberInput.addEventListener('input', handleInputChange)
+document.addEventListener('input', e => {
+  const input = e.target;
+  const output = input.nextElementSibling;
+  if (output) {
+    output.textContent = input.value;
+  }
+});
 
 $("#fontSize").on("input",function () {
             $('#fontArea').css("font-size", $(this).val() + "px");
