@@ -20,7 +20,7 @@ class Slider {
 
   // Format the money
   asMoney(value) {
-    return 'px' + parseFloat(value)
+    return 'PX ' + parseFloat(value)
       .toLocaleString('en-US', { maximumFractionDigits: 2 })
   }
 
@@ -60,4 +60,7 @@ $('#fontArea').css("font-size", $(this).val() + "px");
 });
 $("#fontStyle").change(function() {
 $('#fontArea').css("font-family", $(this).val());
+});
+$("#fontColor").change(function() {
+$('#fontArea').css("color", #$(this).val());
 });
