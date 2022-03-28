@@ -1,8 +1,8 @@
 /* Range */
 const ini_elements = document.querySelectorAll(['range-slider', 'input']);
-      ini_elements.forEach(element => {
-        element.insertAdjacentHTML('afterend', `
-          <ini_output>${element.value}</ini_output>
+      ini_elements.forEach(ini_element => {
+        ini_element.insertAdjacentHTML('afterend', `
+          <ini_output>${ini_element.value}</ini_output>
         `);
       });
       document.addEventListener('input', ini_e => {
