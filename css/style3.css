@@ -73,8 +73,9 @@ select {
   /* Personalize */
   flex: 1;
   padding: 0 1em;
-  color: white;
-  background-color: black;
+  color: #000;
+  background-color: #fff;
+  border:1px solid #4d90fe;
   background-image: none;
   cursor: pointer;
 }
@@ -93,12 +94,15 @@ select::-ms-expand {
 }
 /* Arrow */
 .select::after {
-  content: '\25BC';
+  border:1px solid #4d90fe;
+  border-radius: var(--braD);
+  content: "\f894";
+  font-family: "Font Awesome 5 Pro";
   position: absolute;
   top: 0;
   right: 0;
   padding: 1em;
-  background-color: blue;
+  background-color: #fff;
   transition: .25s all ease;
   pointer-events: none;
 }
