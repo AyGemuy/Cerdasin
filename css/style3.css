@@ -182,8 +182,9 @@ select {
   /* Personalize */
   flex: 1;
   padding: 0 1em;
-  color: var(--bodyBa);
-  background-color: #303f9f;
+  color: #fff;
+  font-size: 24px;
+  background-color: #000;
   background-image: none;
   cursor: pointer;
 }
@@ -204,18 +205,18 @@ select::-ms-expand {
 .select::after {
   content: "";
   font-family: "Font Awesome 5 Pro";
-  color: #fff;
-  font-size: 1em;
+  color: #000;
+  font-size: 24px;
   position: absolute;
   top: 0;
   right: 0;
-  padding: 1em;
-  background-color: #303f9f;
+  padding: 5px;
+  background-color: #fff;
   border:1px solid #4d90fe;
   transition: .25s all ease;
   pointer-events: none;
 }
 /* Transition */
 .select:hover::after {
-  color: #fff;
+  color: #000;
 }
