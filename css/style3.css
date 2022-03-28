@@ -63,14 +63,11 @@ svg.wc-adblock{fill:#e00000;width:50px;height:50px}
 /* profile post*/
 .line svg{width:20px;height:20px;opacity:.8;z-index:1} .line .pIc .cmnt::before{content:attr(data-text);font-size:11px;line-height:18px;padding:5px;border-radius:10px;background:#e6e6e6;color:var(--bodyC);position:absolute;top:-5px;right:0;z-index:2;border-radius:10px;background:#e6e6e6;color:var(--bodyC);animation:indicator 4s ease infinite;-webkit-animation:indicator 1s ease infinite}
 
-
-/* Font Size */
-
   /* Select */
 select {
   box-shadow: var(--braD);
   flex: 1;
-  color: #000;
+  color: blue;
   font-size: 24px;
   background-color: #fff;
   background-image: none;
@@ -100,8 +97,10 @@ select::-ms-expand {
   position: absolute;
   top: 0;
   right: 0;
+  width: 30px;
+  height: 30px;
   padding: 5px;
-  background-color: #000;
+  background-color: blue;
   transition: .25s all ease;
   pointer-events: none;
   border-radius: var(--braD);
