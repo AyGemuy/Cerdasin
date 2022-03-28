@@ -1,27 +1,58 @@
-var valueBubble = '<output class="rangeslider__value-bubble" />';
+"use strict";
 
-function updateValueBubble(pos, value, context) {
-  pos = pos || context.position;
-  value = value || context.value;
-  var $valueBubble = $('.rangeslider__value-bubble', context.$range);
-  var tempPosition = pos + context.grabPos;
-  var position = (tempPosition <= context.handleDimension) ? context.handleDimension : (tempPosition >= context.maxHandlePos) ? context.maxHandlePos : tempPosition;
+var volumeSlider = document.getElementById('volume');
+var scrubberSlider = document.getElementById('scrubber');
+var sliders = [volumeSlider, scrubberSlider];
 
-  if ($valueBubble.length) {
-    $valueBubble[0].style.left = Math.ceil(position) + 'px';
-    $valueBubble[0].innerHTML = value;
+function Slider(slider) {
+  this.slider = slider;
+  slider.addEventListener('input', function() {
+    this.updateSliderOutput();
+    this.updateSliderLevel();
+  }.bind(this), false);
+  
+  this.level = function() {
+    var level = this.slider.querySelector('.slider-input');
+    return level.value;
+  }
+  
+  this.levelString = function() {
+    return parseInt(this.level());
+  }
+  
+  this.remaining = function() {
+    return 99.5 - this.level();
+  }
+  
+  this.remainingString = function() {
+    return parseInt(this.remaining());
+  }
+  
+  this.updateSliderOutput = function() {
+    var output = this.slider.querySelector('.slider-output');
+    var remaining = this.slider.querySelector('.slider-remaining');
+    var thumb = this.slider.querySelector('.slider-thumb');
+    output.value = this.levelString();
+    output.style.left = this.levelString() + '%';
+    thumb.style.left = this.levelString() + '%';
+    if (remaining) { 
+      remaining.style.width = this.remainingString() + '%';
+    }
+  }
+  
+  this.updateSlider = function(num) {
+    var input = this.slider.querySelector('.slider-input');
+    input.value = num;
+  }
+  
+  this.updateSliderLevel =function() {
+    var level = this.slider.querySelector('.slider-level');
+    level.style.width = this.levelString() + '%';
   }
 }
 
-$('input[type="range"]').rangeslider({
-  polyfill: false,
-  onInit: function() {
-    this.$range.append($(valueBubble));
-    updateValueBubble(null, null, this);
-  },
-  onSlide: function(pos, value) {
-    updateValueBubble(pos, value, this);
-  }
+sliders.forEach(function(slider) {
+  new Slider(slider);
 });
 
 $("#fontSize").on("input",function () {
