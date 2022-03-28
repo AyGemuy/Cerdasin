@@ -177,13 +177,13 @@ input[type="range"]::-ms-track {
 select {
   appearance: none;
   outline: 0;
-  border: 1px solid #000;
+  border:1px solid #4d90fe;
   box-shadow: none;
   /* Personalize */
   flex: 1;
   padding: 0 1em;
   color: var(--bodyBa);
-  background-color: var(--mobB);
+  background-color: #303f9f;
   background-image: none;
   cursor: pointer;
 }
@@ -202,17 +202,20 @@ select::-ms-expand {
 }
 /* Arrow */
 .select::after {
-  content: '\f329';
+  content: "";
   font-family: "Font Awesome 5 Pro";
+  color: #fff;
+  font-size: 1em;
   position: absolute;
   top: 0;
   right: 0;
   padding: 1em;
-  background-color: var(--linkC);
+  background-color: #303f9f;
+  border:1px solid #4d90fe;
   transition: .25s all ease;
   pointer-events: none;
 }
 /* Transition */
 .select:hover::after {
-  color: var(--bodyB);
+  color: #fff;
 }
