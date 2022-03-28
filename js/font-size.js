@@ -18,6 +18,10 @@ $("#fontSize").on("input",function () {
             $('#fontArea').css("font-size", $(this).val() + "px");
     });
     
+$("#fontShadow").on("input",function () {
+            $('#fontArea').css("text-shadow", $(this).val() + "px" + " #ff0000");
+    });
+    
 $("#fontWeight").on("input",function () {
-            $('#fontArea').css("font-weight", $(this).val() + "px");
+            $('#fontArea').css("font-weight", $(this).val());
     });
