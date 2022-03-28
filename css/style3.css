@@ -70,7 +70,7 @@ output {
   display: inline-block;
   vertical-align: middle;
   font-size: 1em;
-  font-family: Arial, sans-serif;
+  font-family: var(--fontRa);
 }
 
 output {
@@ -202,12 +202,12 @@ select::-ms-expand {
 }
 /* Arrow */
 .select::after {
-  content: '\25BC';
+  content: '\f329';
   position: absolute;
   top: 0;
   right: 0;
   padding: 1em;
-  background-color: var(--navBg);
+  background-color: var(--linkC);
   transition: .25s all ease;
   pointer-events: none;
 }
