@@ -76,7 +76,7 @@ output {
 output {
   background: #ff4500;
   padding: 5px 16px;
-  border-radius: 3px;
+  border-radius: var(--braD);
   color: #fff;
 }
 
@@ -84,7 +84,7 @@ input[type="number"] {
   width: 40px;
   padding: 4px 5px;
   border: 1px solid #bbb;
-  border-radius: 3px;
+  border-radius: var(--braD);
 }
 
 /* input[type="range"]:focus,
@@ -99,7 +99,7 @@ input[type="range"] {
   width: 200px;
   height: 7px;
   background: rgba(255, 255, 255, 0.6);
-  border-radius: 5px;
+  border-radius: var(--braD);
   background-image: linear-gradient(#ff4500, #ff4500);
   background-size: 70% 100%;
   background-repeat: no-repeat;
@@ -110,7 +110,7 @@ input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   height: 20px;
   width: 20px;
-  border-radius: 50%;
+  border-radius: var(--braD);
   background: #ff4500;
   cursor: ew-resize;
   box-shadow: 0 0 2px 0 #555;
@@ -121,7 +121,7 @@ input[type="range"]::-moz-range-thumb {
   -webkit-appearance: none;
   height: 20px;
   width: 20px;
-  border-radius: 50%;
+  border-radius: var(--braD);
   background: #ff4500;
   cursor: ew-resize;
   box-shadow: 0 0 2px 0 #555;
@@ -132,7 +132,7 @@ input[type="range"]::-ms-thumb {
   -webkit-appearance: none;
   height: 20px;
   width: 20px;
-  border-radius: 50%;
+  border-radius: var(--braD);
   background: #ff4500;
   cursor: ew-resize;
   box-shadow: 0 0 2px 0 #555;
@@ -182,8 +182,8 @@ select {
   /* Personalize */
   flex: 1;
   padding: 0 1em;
-  color: #fff;
-  background-color: var(--darkgray);
+  color: var(--bodyBa);
+  background-color: var(--mobB);
   background-image: none;
   cursor: pointer;
 }
@@ -207,11 +207,11 @@ select::-ms-expand {
   top: 0;
   right: 0;
   padding: 1em;
-  background-color: #34495e;
+  background-color: var(--navBg);
   transition: .25s all ease;
   pointer-events: none;
 }
 /* Transition */
 .select:hover::after {
-  color: #f39c12;
+  color: var(--bodyB);
 }
