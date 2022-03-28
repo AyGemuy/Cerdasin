@@ -239,8 +239,49 @@ body{top:0!important}
 .back-to-top svg path {fill: #4d90fe;}
 .back-to-top:hover svg path{fill: #f95b41}
 .back-to-top:hover{transform: rotate(-45deg);}
-.back-to-top {background:#fff;padding:9px 9px;font-size:24px;border-radius: 50%;transition:all .30s ease-in-out;;border:2px solid #4d90fe;position: fixed !important;position: absolute;bottom: 8rem;right: 20px;transition:transform .5s ease-out;z-index: 999;box-shadow:0px 2px 10px 0px #aaaaaa}
-
+.back-to-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 8rem;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  cursor: default;
+  transition: all 0.15s ease-out;
+  z-index: 1;
+  will-change: width;
+}
+.back-to-top::before {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  padding-top: 4px;
+  background: rgb(255,0,0);
+background: -moz-linear-gradient(0deg, rgba(255,0,0,1) 0%, rgba(0,0,255,1) 100%);
+background: -webkit-linear-gradient(0deg, rgba(255,0,0,1) 0%, rgba(0,0,255,1) 100%);
+background: linear-gradient(0deg, rgba(255,0,0,1) 0%, rgba(0,0,255,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff0000",endColorstr="#0000ff",GradientType=1);
+  border-radius: var(--braD);
+  content: "";
+  font-family: "Font Awesome 5 Pro";
+  font-size: 32px;
+  font-weight: 400;
+  color: #fff;
+  transition: inherit;
+  box-sizing: border-box;
+  cursor: inherit;
+  box-shadow: 0 10px 20px -10px #1a237e;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  will-change: transform, background-color, box-shadow;
+}
 /* Persentase Scrollbar */
 #scrollPersentase {animation:fadeInLeft .5s linear;display:none;position:fixed;top:0;right:5px;z-index:1;padding:3px 8px;background-color:var(--darkB);color:var(--bodyB);border-radius: 50px 0px 50px 50px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;overflow-x:hidden}
 #scrollPersentase:after {position:absolute;top:50%;right:-8px;height:0;width:0;margin-top:-4px;}
