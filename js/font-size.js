@@ -27,5 +27,5 @@ $("#fontWeight").on("input",function () {
     });
 
 $("#fontStyle").change(function() {
-    $('#fontArea').css("font-family", $(this).val());
+    $('#fontArea').css("font-family", $(this).text());
 });
