@@ -75,3 +75,11 @@ $('#fontArea').css("font-family", $(this).val());
 $("#fontColor").change(function() {
 $('#fontArea').css("color", $(this).val());
 });
+
+var ini_box = document.getElementById('fontArea');
+            let ini_color = document.getElementById('fontColor');
+             setInterval(() => {
+                    let color = ini_color.value;
+                    ini_box.style.color = color;
+                }, 200);
+                
