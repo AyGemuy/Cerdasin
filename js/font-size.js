@@ -72,11 +72,6 @@ $('#fontArea').css("font-size", $(this).val() + "px");
 $("#fontStyle").change(function() {
 $('#fontArea').css("font-family", $(this).val());
 });
-
-/* Color */
-var kotak_kolor = document.getElementById('fontArea');
-            let pilih_kolor = document.getElementById('fontColor');
-             setInterval(() => {
-                    let color = pilih_kolor.value;
-                    kotak_kolor.style.color = color;
-                }, 200);
+$("#fontColor").change(function() {
+$('#fontArea').css("color", $(this).val());
+});
