@@ -76,7 +76,7 @@ select {
   flex: 1;
   padding: 0 1em;
   color: #fff;
-  background-color: var(--darkgray);
+  background-color: #000;
   background-image: none;
   cursor: pointer;
 }
@@ -95,7 +95,8 @@ select::-ms-expand {
 }
 /* Arrow */
 .select::after {
-  content: '\25BC';
+  content: "";
+  font-family: "Font Awesome 5 Pro";
   position: absolute;
   top: 0;
   right: 0;
