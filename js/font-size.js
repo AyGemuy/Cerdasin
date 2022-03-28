@@ -72,10 +72,9 @@ $('#fontArea').css("font-size", $(this).val() + "px");
 $("#fontStyle").change(function() {
 $('#fontArea').css("font-family", $(this).val());
 });
-var ini_box = document.getElementById('fontArea');
-            let ini_color = document.getElementById('fontColor');
-             setInterval(() => {
-                    let color = ini_color.value;
-                    ini_box.style.color = color;
-                }, 200);
-                
+$("#fontColor").change(function() {
+$('#fontArea').css("color", $(this).val());
+});
+$("#fontTiColor").change(function() {
+$('#titlePost').css("color", $(this).val());
+});
