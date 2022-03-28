@@ -65,36 +65,178 @@ svg.wc-adblock{fill:#e00000;width:50px;height:50px}
 
 
 /* Font Size */
-input[type=range] {
-  -webkit-appearance: none;
-  margin: 10px 0;
-  width: 100%;
+.range {
+  position: relative;
 }
-input[type=range]:focus {
+.range input[type=range] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 0;
+  width: 100%;
+  height: 22px;
+  cursor: pointer;
+  display: block;
+}
+.range input[type=range]:focus {
   outline: none;
 }
-input[type=range]::-webkit-slider-runnable-track {
+.range input[type=range][disabled] {
+  opacity: 0.3;
+  cursor: default;
+}
+.range .rangeslider {
+  position: relative;
+  height: 22px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.range .rangeslider:before {
+  box-sizing: border-box;
   width: 100%;
-  height: 12.8px;
-  cursor: pointer;
-  animate: 0.2s;
-  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
-  background: #007bff;
-  border-radius: 25px;
-  border: 0px solid #000101;
+  height: 4px;
+  background: #e6e6e6;
+  border-radius: 100px;
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
-input[type=range]::-webkit-slider-thumb {
-  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
-  border: 0px solid #000000;
-  height: 20px;
-  width: 39px;
-  border-radius: 7px;
-  background: #fff;
+.range input::-webkit-slider-runnable-track {
+  box-sizing: border-box;
+  width: 100%;
+  height: 4px;
+  background: #e6e6e6;
+  border-radius: 100px;
+  margin: 11px 0;
+}
+.range input::-moz-range-track {
+  box-sizing: border-box;
+  width: 100%;
+  height: 4px;
+  background: #e6e6e6;
+  border-radius: 100px;
+  margin: 11px 0;
+}
+.range input::-ms-track {
+  box-sizing: border-box;
+  width: 100%;
+  height: 4px;
+  background: #e6e6e6;
+  border-radius: 100px;
+  color: transparent;
+  padding: 11px 0;
+  background: transparent;
+  border-color: transparent;
+}
+.range input::-ms-fill-lower,
+.range input::-ms-fill-upper {
+  box-sizing: border-box;
+  width: 100%;
+  height: 4px;
+  background: #e6e6e6;
+  border-radius: 100px;
+}
+.range input::-ms-fill-lower {
+  background: #60cd18;
+}
+.range .rangeslider-fill-lower {
+  background-color: #60cd18;
+  border-radius: 100px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 4px;
+  will-change: width;
+}
+.range input::-webkit-slider-thumb {
+  box-sizing: border-box;
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.5);
+  border: 6px solid #fff;
+  height: 24px;
+  width: 24px;
+  border-radius: 100px;
+  background: #333940;
   cursor: pointer;
-  box-shadow: 0px 0px 5px rgb(143, 143, 143);
   -webkit-appearance: none;
-  margin-top: -3.6px;
+          appearance: none;
+  transform: translateY(-50%);
+  margin-top: 2px;
 }
-input[type=range]:focus::-webkit-slider-runnable-track {
-  background: #007bff;
+.range input::-moz-range-thumb {
+  box-sizing: border-box;
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.5);
+  border: 6px solid #fff;
+  height: 24px;
+  width: 24px;
+  border-radius: 100px;
+  background: #333940;
+  cursor: pointer;
+}
+.range input::-ms-thumb {
+  box-sizing: border-box;
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.5);
+  border: 6px solid #fff;
+  height: 24px;
+  width: 24px;
+  border-radius: 100px;
+  background: #333940;
+  cursor: pointer;
+}
+.range .rangeslider-thumb {
+  box-sizing: border-box;
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.5);
+  border: 6px solid #fff;
+  height: 24px;
+  width: 24px;
+  border-radius: 100px;
+  background: #333940;
+  cursor: pointer;
+  position: absolute;
+  touch-action: pan-x;
+  top: 50%;
+  transform: translateY(-50%);
+  will-change: left;
+}
+.range .range-output {
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  transform-origin: 0 0;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.range .range-output .output {
+  display: block;
+  position: absolute;
+  height: 60px;
+  line-height: 60px;
+  min-width: 32px;
+  padding: 0 20px;
+  top: -26px;
+  transform: translate(-50%, -100%);
+  background: #383c42;
+  color: #fff;
+  border-radius: 100px;
+  white-space: nowrap;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-align: center;
+}
+.range .range-output .output:before {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  border: 10px solid #383c42;
+  border-bottom: none;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  transform: translateX(-50%);
 }
