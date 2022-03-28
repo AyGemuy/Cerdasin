@@ -65,90 +65,161 @@ svg.wc-adblock{fill:#e00000;width:50px;height:50px}
 
 
 /* Font Size */
-input[type=range] {
-	width: 300px;
-  	margin: 18px 0;
-  	-webkit-appearance: none;
+.third-bar-p {
+  margin-top: 7vh;
 }
 
-input[type=range] + label {
-	background-color: #fff;
-	border-radius: 4px;
-	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-	padding: 5px 0;
-	position: absolute;
-	top: -25px;
-	left: 110px;
-	text-align: center;
-	width: 80px;
+.perspective {
+  perspective: 70vh;
+  text-align: center;
+  perspective-origin: 50% 50%;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+.perspective:hover {
+  transform: scale(1.04);
 }
 
-input[type=range]:active {
-	outline: none;
+.bar-input {
+  position: absolute;
+  height: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  opacity: 0;
 }
 
-input[type=range]::-webkit-slider-runnable-track {
-	animate: 0.2s;
-	background-color: purple;
-	border-radius: 4px;
-	cursor: pointer;
-	width: 100%;
-	height: 7.5px;
+#first-bar .bar-input {
+  width: 55vh;
 }
 
-input[type=range]::-webkit-slider-thumb {
-	background: #ffffff;
-	border-radius: 50%;
-	border: 1px solid purple;
-  	cursor: pointer;
-	height: 20px;
-	width: 20px;
-	margin-top: -7px;
-	-webkit-appearance: none;
+#second-bar .bar-input {
+  width: 40vh;
 }
 
-input[type=range]:active::-webkit-slider-runnable-track {
-	opacity: 0.8;
-}
-input[type=range]::-moz-range-track {
-	animate: 0.2s;
-	background-color: purple;
-	border-radius: 4px;
-	cursor: pointer;
-	width: 100%;
-	height: 7.5px;
-}
-input[type=range]::-moz-range-thumb {
-	background: #ffffff;
-	border-radius: 50%;
-	border: 1px solid purple;
-  	cursor: pointer;
-	height: 20px;
-	width: 20px;
-}
-input[type=range]::-ms-track {
-	animate: 0.2s;
-	background-color: purple;
-	border-radius: 4px;
-	cursor: pointer;
-	width: 100%;
-	height: 7.5px;
-}
-input[type=range]::-ms-thumb {
-	background: #ffffff;
-	border-radius: 50%;
-	border: 1px solid purple;
-  	cursor: pointer;
-	height: 20px;
-	width: 20px;
-	margin: 0;
-	box-sizing: border-box;
+#third-bar .bar-input {
+  width: 42vh;
 }
 
-input[type=range]:active::-ms-fill-lower {
-  background: purple;
+.bar {
+  display: inline-block;
+  position: relative;
+  transform: rotateX(55deg);
+  transform-style: preserve-3d;
+}
+.bar .bar-face {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  transform-origin: 50% 100%;
+}
+.bar .bar-face.front {
+  transform: rotateX(-90deg);
+}
+.bar .bar-face.percentage:before {
+  height: 100%;
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
 }
 
-input[type=range]:active::-ms-fill-upper {
-  background: purple;
+#first-bar .bar {
+  width: 55vh;
+  height: 7vh;
+}
+#first-bar .bar .bar-face {
+  background: rgba(255, 255, 255, 0.5);
+}
+#first-bar .bar .bar-face.floor {
+  box-shadow: 0 1.3em 1.2em -0.4em rgba(0, 0, 70, 0.25), 0 -2em 15em 0.5em #4d5075, 0 -0.75em 25em 10em rgba(255, 255, 255, 0.4);
+}
+#first-bar .bar .bar-face.percentage:before {
+  box-shadow: 0 1.6em 7em -0.3em rgba(149, 65, 105, 0.5);
+}
+#first-bar .bar .bar-face.roof {
+  transform: translateZ(7vh);
+}
+#first-bar .bar .bar-face.back {
+  transform: rotateX(-90deg) translateZ(-7vh);
+}
+#first-bar .bar .bar-face.percentage:before {
+  background-color: rgba(149, 65, 105, 0.6);
+}
+
+#second-bar .bar {
+  width: 40vh;
+  height: 10vh;
+}
+#second-bar .bar .bar-face {
+  background: rgba(60, 75, 132, 0.5);
+  background-image: linear-gradient(90deg, rgba(134, 114, 146, 0.5), rgba(60, 75, 132, 0.1)), url("https://zephyo.github.io/22Days/code/5/graphics/stars.svg"), url("https://zephyo.github.io/22Days/code/5/graphics/stars2.svg");
+  background-repeat: repeat repeat;
+}
+#second-bar .bar .bar-face.floor {
+  box-shadow: 0 1.3em 1.2em -0.4em rgba(0, 0, 70, 0.25), 0 -2em 15em 0.5em #4d5075, 0 -0.75em 25em 10em rgba(255, 255, 255, 0.4);
+}
+#second-bar .bar .bar-face.percentage:before {
+  box-shadow: 0 1.6em 7em -0.3em rgba(200, 212, 250, 0.5);
+}
+#second-bar .bar .bar-face.roof {
+  transform: translateZ(10vh);
+}
+#second-bar .bar .bar-face.back {
+  transform: rotateX(-90deg) translateZ(-10vh);
+}
+#second-bar .bar .bar-face.percentage:before {
+  background-image: url("https://zephyo.github.io/22Days/code/5/graphics/sky.png");
+  opacity: 0.9;
+}
+
+#third-bar .bar {
+  width: 42vh;
+  height: 8vh;
+}
+#third-bar .bar .bar-face {
+  background: rgba(232, 154, 173, 0.7);
+}
+#third-bar .bar .bar-face.floor {
+  box-shadow: 0 1.3em 1.2em -0.4em rgba(0, 0, 70, 0.25), 0 -2em 15em 0.5em #4d5075, 0 -0.75em 25em 10em rgba(255, 255, 255, 0.4);
+}
+#third-bar .bar .bar-face.percentage:before {
+  box-shadow: 0 1.6em 7em -0.3em rgba(236, 0, 113, 0.5);
+}
+#third-bar .bar .bar-face.roof {
+  transform: translateZ(8vh);
+}
+#third-bar .bar .bar-face.back {
+  transform: rotateX(-90deg) translateZ(-8vh);
+}
+#third-bar .bar .bar-face.percentage:before {
+  background: linear-gradient(90deg, rgba(245, 239, 200, 0.5), #ec0071);
+}
+#third-bar .bar .indicator {
+  box-shadow: 0px 15px 35px rgba(236, 0, 113, 0.3);
+  background: #ec0071;
+  width: 8vh;
+  height: 8vh;
+  color: white;
+  transform: translateY(9.6vh);
+  text-align: center;
+  font-size: 2.5vh;
+  font-weight: 900;
+  line-height: 8vh;
+}
+#third-bar .bar .indicator:before {
+  content: "";
+  position: absolute;
+  background: #ec0071;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: -6px;
+  width: 4vh;
+  height: 4vh;
+  z-index: -1;
+  transform: rotate(45deg);
 }
