@@ -1,36 +1,43 @@
-const meRange = document.getElementById('meRange');
+function initInputs() {
+  var allInputs = document.body.querySelectorAll(".bar-input");
 
-meRange.addEventListener('input', (e) => {
-	// Get the label (which is the nextElementSibling)
-	const label = e.target.nextElementSibling;
-	// Get value of the input
-	const value = +e.target.value;
-	// Get the width value of the input
-	const meRange_width = getComputedStyle(e.target).getPropertyValue('width');
-	// Get the width value of the label
-	const label_width = getComputedStyle(label).getPropertyValue('width');
-	// Remove 'px' and conver to number
-	const num_width = +meRange_width.substring(0, meRange_width.length - 2);
-	const num_label_width = +label_width.substring(0, label_width.length - 2);
-	// Get min and max values
-	const max = +e.target.max;
-	const min = +e.target.min;
-	// Calculate the left value
-	const left = value * (num_width / max) - num_label_width / 2 + scale(value, min, max, 10, -10);
-	
-	label.style.left = `${left}px`;
-	label.innerHTML = value;
-});
+  for (var i = 0; i < allInputs.length; i++) {
+    var input = allInputs[i];
+    var barId = input.parentNode.id;
+    var styleEl = document.head.appendChild(document.createElement("style"));
 
-// From StackOverflow: https://stackoverflow.com/questions/10756313/javascript-jquery-map-a-meRange-of-numbers-to-another-meRange-of-numbers
-const scale = (num, in_min, in_max, out_min, out_max) => {
-  return (num - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+    if (i == allInputs.length - 1) {
+      //set indicator
+      var indicator=input.parentNode.querySelector('.bar .indicator');
+      setBarIndicator(barId, input, styleEl, indicator);
+      input.oninput = setBarIndicator.bind(this, barId, input, styleEl, indicator);
+      input.onchange = setBarIndicator.bind(this, barId, input, styleEl, indicator);
+    } else {
+      setBar(barId, input, styleEl);
+      input.oninput = setBar.bind(this, barId, input, styleEl);
+      input.onchange = setBar.bind(this, barId, input, styleEl);
+    }
+  }
 }
+
+function setBar(barId, input, styleEl) {
+  styleEl.innerHTML =
+    "#" + barId + " .bar-face.percentage:before {width:" + input.value + "%;}";
+}
+
+function setBarIndicator(barId, input, styleEl, indicatorEl) {
+  styleEl.innerHTML =
+    "#" + barId + " .bar-face.percentage:before {width:" + input.value + "%;}";
+  indicatorEl.style.marginLeft = (input.value - 10) + '%';
+  indicatorEl.textContent = input.value + '%';
+}
+
+initInputs();
 
 $("#fontSize").on("input",function () {
             $('#fontArea').css("font-size", $(this).val() + "px");
     });
     
 $("#fontColor").on("input",function () {
-            $('#fontArea').css("font-color", $(this).val());
+            $('#fontArea').css("box-shadow", $(this).val() + "px");
     });
