@@ -578,6 +578,7 @@ svg.wc-buysvg.line{fill:none!important;stroke:#767676;stroke-linecap:round;strok
   justify-content: center;
   position: fixed;
   bottom: 8rem;
+  color: #4d90fe;
   left: 15px;
   width: 40px;
   height: 40px;
@@ -646,6 +647,8 @@ svg.wc-buysvg.line{fill:none!important;stroke:#767676;stroke-linecap:round;strok
   box-sizing: border-box;
   cursor: inherit;
   box-shadow:0px 2px 10px 0px #aaaaaa;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   will-change: transform, background-color, box-shadow;
 }
 #mega-button > .sub-button {
@@ -1063,6 +1066,6 @@ svg.wc-buysvg.line{fill:none!important;stroke:#767676;stroke-linecap:round;strok
 /* Scroll Percent */
 .my-class .bar {
   background: #fff;
-  color: #f95b41;
+  color: #4d90fe;
   border:1px solid #4d90fe;
 }
