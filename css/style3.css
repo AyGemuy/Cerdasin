@@ -84,7 +84,7 @@ select::-ms-expand {
   position: relative;
   display: flex;
   width: 20em;
-  height: 3em;
+  height: 30px;
   border-radius: var(--braD);
   overflow: hidden;
 }
@@ -99,7 +99,7 @@ select::-ms-expand {
   right: 0;
   width: 30px;
   height: 30px;
-  padding: 5px;
+  background-color: #fff;
   transition: .25s all ease;
   pointer-events: none;
   border-radius: var(--braD);
