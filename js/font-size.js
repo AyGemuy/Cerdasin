@@ -67,6 +67,3 @@ $('#fontArea').css("color", $(this).val());
 $("#fontSpace").change(function() {
 $('#fontArea').css("letter-spacing", $(this).val() + "px");
 });
-$("#fontShadow").change(function() {
-$('#fontArea').css("text-shadow", $(this).val() + "px #ff0000");
-});
