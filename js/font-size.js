@@ -1,5 +1,5 @@
 function FungsiHuruf(PilihTag) {
-  var listValue = PilihTag.input[PilihTag.selectedIndex].text;
+  var listValue = PilihTag.label[PilihTag.selectedIndex].text;
   document.getElementById("fontArea").style.fontSize = listValue;
 }
 
