@@ -1,20 +1,20 @@
 /* Range */
-const ini_elements = document.querySelectorAll(['range-slider', 'inpat']);
+const ini_elements = document.getElementById("range_nya");
       ini_elements.forEach(ini_element => {
         ini_element.insertAdjacentHTML('afterend', `
           <ini_output>${ini_element.value}</ini_output>
         `);
       });
-      document.addEventListener('inpat', ini_e => {
-        const ini_inpat = ini_e.target;
-        const ini_output = ini_inpat.nextElementSibling;
-        const ini_valueDisplay = ini_inpat.querySelector('.value-display');
+      document.addEventListener('input', ini_e => {
+        const ini_input = ini_e.target;
+        const ini_output = ini_input.nextElementSibling;
+        const ini_valueDisplay = ini_input.querySelector('.value-display');
         if (ini_output) {
-          ini_output.textContent = ini_inpat.value;
+          ini_output.textContent = ini_input.value;
         }
         if (ini_valueDisplay) {
-          ini_valueDisplay.textContent = ini_inpat.value;
-          ini_inpat.style.setProperty('--value-width', '' + ini_inpat.value.length);
+          ini_valueDisplay.textContent = ini_input.value;
+          ini_input.style.setProperty('--value-width', '' + ini_input.value.length);
         }
       });
 
