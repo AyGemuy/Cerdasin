@@ -43,9 +43,9 @@ let rangeElement = document.querySelector('.range [type="range"]')
 let valueElement = document.querySelector('.range .range__value span') 
 
 let options = {
-  min: 2000,
-  max: 75000,
-  cur: 37500
+  min: 0,
+  max: 100,
+  cur: 10
 }
 
 if (rangeElement) {
