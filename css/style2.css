@@ -263,7 +263,11 @@ body{top:0!important}
   width: 40px;
   height: 40px;
   padding-top: 4px;
-  background:#fff;
+  background: rgb(255,0,0);
+background: -moz-linear-gradient(0deg, rgba(255,0,0,1) 0%, rgba(0,0,255,1) 100%);
+background: -webkit-linear-gradient(0deg, rgba(255,0,0,1) 0%, rgba(0,0,255,1) 100%);
+background: linear-gradient(0deg, rgba(255,0,0,1) 0%, rgba(0,0,255,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff0000",endColorstr="#0000ff",GradientType=1);
   border-radius: 50%;
   font-size: 32px;
   font-weight: 400;
