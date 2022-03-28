@@ -1,4 +1,3 @@
-"use strict";
 
 var volumeSlider = document.getElementById('volume');
 var scrubberSlider = document.getElementById('scrubber');
