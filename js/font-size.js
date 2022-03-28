@@ -1,22 +1,42 @@
-/* Range */
-const ini_elements = document.querySelector('.range-slider');
-      ini_elements.forEach(ini_element => {
-        ini_element.insertAdjacentHTML('afterend', `
-          <ini_output>${ini_element.value}</ini_output>
-        `);
-      });
-      document.addEventListener('input', ini_e => {
-        const ini_input = ini_e.target;
-        const ini_output = ini_input.nextElementSibling;
-        const ini_valueDisplay = ini_input.querySelector('.value-display');
-        if (ini_output) {
-          ini_output.textContent = ini_input.value;
-        }
-        if (ini_valueDisplay) {
-          ini_valueDisplay.textContent = ini_input.value;
-          ini_input.style.setProperty('--value-width', '' + ini_input.value.length);
-        }
-      });
+var range = document.getElementById("month-price");
+var minusButton = document.querySelector(".control-minus");
+var plusButton = document.querySelector(".control-plus");
+var tooltip = document.querySelector(".current-value");
+var steps = 16, padding = 15;
+// There's a small error due to pixel truncating in Chrome
+var subpixelCorrection = 0.4;
+
+// All browsers but IE
+range.addEventListener("input", function(evt) {  
+  updateTooltip ();
+}, false);
+// IE10
+range.addEventListener("change", function(evt) {  
+  updateTooltip ();
+}, false);
+
+function updateTooltip () {
+  tooltip.firstElementChild.textContent = range.value;
+  
+  var startPosition = - (tooltip.clientWidth)/2 + padding + 4;
+  var stepWidth = (range.getBoundingClientRect().width - padding*2)/steps - subpixelCorrection;  
+  var currentStep =  range.value - range.min;
+  
+  // Reposition tooltip on top of the thumb
+  tooltip.style.visibility = "visible";
+  tooltip.style.left = Math.round(stepWidth*currentStep + startPosition) + "px";
+    
+}
+
+minusButton.addEventListener("click", function() {
+  range.stepDown();
+  updateTooltip ();
+}, false);
+
+plusButton.addEventListener("click", function() {
+  range.stepUp();
+  updateTooltip ();
+}, false);
 
 /* Font */
 $("#fontSize").change(function() {
