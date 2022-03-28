@@ -202,7 +202,7 @@ select::-ms-expand {
 }
 /* Arrow */
 .select::after {
-  content: '\f329';
+  content: '\f32d';
   position: absolute;
   top: 0;
   right: 0;
