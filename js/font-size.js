@@ -26,7 +26,6 @@ $("#fontWeight").on("input",function () {
             $('#fontArea').css("font-weight", $(this).val());
     });
 
-$("#getTextID").on("select",function () {
-var HasilText   = optionSelected.text();
-            $('#fontArea').css("font-family", HasilText);
-    });
+$("#fontStyle").change(function() {
+    $('#fontArea').css("font-family", $(this).val());
+});
