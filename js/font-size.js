@@ -21,7 +21,7 @@ class Slider {
   // Format the money
   asMoney(value) {
     return 'PX ' + parseFloat(value)
-      .toLocaleString('en-US', { maximumFractionDigits: 2 })
+      .toLocaleString('id-ID', { maximumFractionDigits: 2 })
   }
 
   generateBackground(rangeElement) {   
@@ -55,17 +55,6 @@ if (rangeElement) {
 }
 
 /* Font */
-document.querySelectorAll('input[type=color]').forEach(function(picker) {
-  var targetLabel = document.querySelector('label[for="' + picker.id + '"]'),
-    codeArea = document.createElement('span');
-  codeArea.innerHTML = picker.value;
-  targetLabel.appendChild(codeArea);
-  picker.addEventListener('change', function() {
-    codeArea.innerHTML = picker.value;
-    targetLabel.appendChild(codeArea);
-  });
-});
-
 $("#fontSize").change(function() {
 $('#fontArea').css("font-size", $(this).val() + "px");
 });
