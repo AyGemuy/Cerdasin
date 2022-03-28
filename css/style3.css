@@ -64,19 +64,49 @@ svg.wc-adblock{fill:#e00000;width:50px;height:50px}
 .line svg{width:20px;height:20px;opacity:.8;z-index:1} .line .pIc .cmnt::before{content:attr(data-text);font-size:11px;line-height:18px;padding:5px;border-radius:10px;background:#e6e6e6;color:var(--bodyC);position:absolute;top:-5px;right:0;z-index:2;border-radius:10px;background:#e6e6e6;color:var(--bodyC);animation:indicator 4s ease infinite;-webkit-animation:indicator 1s ease infinite}
 
   /* Select */
+select {
+  /* Reset Select */
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: 0;
+  border: 0;
+  box-shadow: none;
+  /* Personalize */
+  flex: 1;
+  padding: 0 1em;
+  color: #fff;
+  background-color: var(--darkgray);
+  background-image: none;
+  cursor: pointer;
+}
+/* Remove IE arrow */
+select::-ms-expand {
+  display: none;
+}
+/* Custom Select wrapper */
 .select {
-  content: "";
-  font-family: "Font Awesome 5 Pro";
-  color: #000;
-  font-size: 20px;
+  position: relative;
+  display: flex;
+  width: 20em;
+  height: 3em;
+  border-radius: .25em;
+  overflow: hidden;
+}
+/* Arrow */
+.select::after {
+  content: '\25BC';
   position: absolute;
   top: 0;
   right: 0;
-  width: 30px;
-  height: 30px;
-  background-color: #fff;
+  padding: 1em;
+  background-color: #34495e;
   transition: .25s all ease;
   pointer-events: none;
+}
+/* Transition */
+.select:hover::after {
+  color: #f39c12;
 }
 
 /* Range */
