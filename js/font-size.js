@@ -74,44 +74,9 @@ $('#fontArea').css("font-family", $(this).val());
 });
 
 /* Color */
-const colorSwitcher = document.querySelector(".color-switcher input");
-const resultantColor = document.querySelector("#resultant-color");
-
-function hexToRgb(hex) {
-  const shortHexRegExp = /^#?([a-f\d])([a-f\d])([a-f\d])$/i;
-  hex = hex.replace(shortHexRegExp, (_, r, g, b) => r + r + g + g + b + b);
-  const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
-
-  if (!result) throw Error('A valid HEX must be provided');
-
-    return {
-        r: parseInt(result[1], 16),
-        g: parseInt(result[2], 16),
-        b: parseInt(result[3], 16)
-    };
-}
-
-function setMainColor(color) {
-    const { r, g, b } = hexToRgb(color);
-    const yiq = (r * 299 + g * 587 + b * 114) / 1000;
-    // https://en.wikipedia.org/wiki/YIQ
-
-    let contrastColor;
-
-    if (yiq >= 128) {
-        contrastColor = "#000";
-    } else {
-        contrastColor = "#fff";
-    }
-
-    document.documentElement.style.setProperty("--primaryColor", color);
-    document.documentElement.style.setProperty(
-        "--primaryContrastColor",
-        contrastColor
-    );
-}
-
-colorSwitcher.addEventListener("input", ({ target }) => {
-    setMainColor(target.value);
-    resultantColor.innerHTML = `<h1>${target.value}</h1>`;
-});
+var kotak_kolor = document.getElementById('fontArea');
+            let pilih_kolor = document.getElementById('fontColor');
+             setInterval(() => {
+                    let color = pilih_kolor.value;
+                    kotak_kolor.style.color = color;
+                }, 200);
