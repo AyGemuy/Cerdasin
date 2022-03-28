@@ -1,14 +1,8 @@
-function FungsiHuruf(PilihTag) {
-  var listValue = PilihTag.label[PilihTag.selectedIndex].text;
-  document.getElementById("fontArea").style.fontSize = listValue;
+function FungsiSize(PilihSize) {
+  var listSize = PilihSize.option[PilihSize.selectedIndex].text;
+  document.getElementById("fontArea").style.fontSize = listSize;
 }
-
-$('.dropdown-el').click(function(e) {
-  e.preventDefault();
-  e.stopPropagation();
-  $(this).toggleClass('expanded');
-  $('#'+$(e.target).attr('for')).prop('checked',true);
-});
-$(document).click(function() {
-  $('.dropdown-el').removeClass('expanded');
-});
+function FungsiWar(PilihWar) {
+  var listWar = PilihWar.option[PilihWar.selectedIndex].text;
+  document.getElementById("fontArea").style.color = listWar;
+}
