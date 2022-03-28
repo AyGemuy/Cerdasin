@@ -20,7 +20,7 @@ $("#fontSize").change(function() {
             $('#fontArea').css("font-size", $(this).val() + "px");
     });
 $("#fontShadow").change(function() {
-            $('#fontArea').css("text-shadow", $(this).val() + "px");
+            $('#fontArea').css("color", "px" + $(this).val());
     });
 $("#fontWeight").change(function() {
             $('#fontArea').css("font-weight", $(this).val());
@@ -29,6 +29,5 @@ $("#fontStyle").change(function() {
     $('#fontArea').css("font-family", $(this).val());
 });
 $("#borRad").change(function() {
-const IniRad = document.querySelectorAll(['border-radius'])
-    (IniRad, $(this).val() + "%");
+document.querySelectorAll(['border-radius']).val() + "px");
 });
