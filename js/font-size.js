@@ -1,25 +1,24 @@
 /* Range */
-const elements = document.querySelectorAll(['range-slider']);
+const ini_elements = document.querySelectorAll(['range-slider']);
 
-elements.forEach(element => {
+ini_elements.forEach(element => {
   element.insertAdjacentHTML('afterend', `
     <output>${element.value}</output>
   `);
 });
 
-document.addEventListener('input', e => {
-  const input = e.target;
-  const output = input.nextElementSibling;
+document.addEventListener('input', ini_e => {
+  const ini_input = ini_e.target;
+  const ini_output = ini_input.nextElementSibling;
   if (output) {
-    output.textContent = input.value;
+    ini_output.textContent = ini_input.value;
   }
 });
 
 /* Font */
 $("#fontSize").change(function() {
-            $('#fontArea').css("font-size", $(this).val() + "px");
-    });
-
+$('#fontArea').css("font-size", $(this).val() + "px");
+});
 $("#fontStyle").change(function() {
-    $('#fontArea').css("font-family", $(this).val());
+$('#fontArea').css("font-family", $(this).val());
 });
