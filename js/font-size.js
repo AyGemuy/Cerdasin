@@ -1,19 +1,19 @@
-const elements = document.querySelectorAll(['range-slider']);
-
-elements.forEach(element => {
-  element.insertAdjacentHTML('afterend', `
-    <output>${element.value}</output>
+/* Range */
+const iniElemen = document.querySelectorAll(['range-slider']);
+iniElemen.forEach(iniElement => {
+  iniElement.insertAdjacentHTML('afterend', `
+    <output>${iniElement.value}</output>
   `);
 });
-
-document.addEventListener('input', e => {
-  const input = e.target;
-  const output = input.nextElementSibling;
-  if (output) {
-    output.textContent = input.value;
+document.addEventListener('input', iniE => {
+  const iniInput = iniE.target;
+  const iniOutput = iniInput.nextElementSibling;
+  if (iniOutput) {
+    iniOutput.textContent = iniInput.value;
   }
 });
 
+/* Font */
 $("#fontSize").on("input",function () {
             $('#fontArea').css("font-size", $(this).val() + "px");
     });
@@ -28,4 +28,9 @@ $("#fontWeight").on("input",function () {
 
 $("#fontStyle").change(function() {
     $('#fontArea').css("font-family", $(this).val());
+});
+
+$("#borRad").on("input",function () {
+const IniRad = document.querySelectorAll(['border-radius'])
+    (IniRad, $(this).val() + "%");
 });
