@@ -1,5 +1,5 @@
 /* Range */
-const ini_elements = document.getElementById("range_nya");
+const ini_elements = .querySelector('.range-slider');
       ini_elements.forEach(ini_element => {
         ini_element.insertAdjacentHTML('afterend', `
           <ini_output>${ini_element.value}</ini_output>
