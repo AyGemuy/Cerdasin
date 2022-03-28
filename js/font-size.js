@@ -19,9 +19,12 @@ $("#fontSize").on("input",function () {
     });
     
 $("#fontShadow").on("input",function () {
-            $('#fontArea').css("text-shadow", $(this).val() + "px" + " #ff0000");
+            $('#fontArea').css("text-shadow", $(this).val() + "px");
     });
     
 $("#fontWeight").on("input",function () {
             $('#fontArea').css("font-weight", $(this).val());
     });
+
+var getText = document.getElementById("getTextID");
+getText.options[getText.selectedIndex].text;
