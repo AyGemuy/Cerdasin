@@ -1,38 +1,28 @@
-function initInputs() {
-  var allInputs = document.body.querySelectorAll(".bar-input");
+var valueBubble = '<output class="rangeslider__value-bubble" />';
 
-  for (var i = 0; i < allInputs.length; i++) {
-    var input = allInputs[i];
-    var barId = input.parentNode.id;
-    var styleEl = document.head.appendChild(document.createElement("style"));
+function updateValueBubble(pos, value, context) {
+  pos = pos || context.position;
+  value = value || context.value;
+  var $valueBubble = $('.rangeslider__value-bubble', context.$range);
+  var tempPosition = pos + context.grabPos;
+  var position = (tempPosition <= context.handleDimension) ? context.handleDimension : (tempPosition >= context.maxHandlePos) ? context.maxHandlePos : tempPosition;
 
-    if (i == allInputs.length - 1) {
-      //set indicator
-      var indicator=input.parentNode.querySelector('.bar .indicator');
-      setBarIndicator(barId, input, styleEl, indicator);
-      input.oninput = setBarIndicator.bind(this, barId, input, styleEl, indicator);
-      input.onchange = setBarIndicator.bind(this, barId, input, styleEl, indicator);
-    } else {
-      setBar(barId, input, styleEl);
-      input.oninput = setBar.bind(this, barId, input, styleEl);
-      input.onchange = setBar.bind(this, barId, input, styleEl);
-    }
+  if ($valueBubble.length) {
+    $valueBubble[0].style.left = Math.ceil(position) + 'px';
+    $valueBubble[0].innerHTML = value;
   }
 }
 
-function setBar(barId, input, styleEl) {
-  styleEl.innerHTML =
-    "#" + barId + " .bar-face.percentage:before {width:" + input.value + "%;}";
-}
-
-function setBarIndicator(barId, input, styleEl, indicatorEl) {
-  styleEl.innerHTML =
-    "#" + barId + " .bar-face.percentage:before {width:" + input.value + "%;}";
-  indicatorEl.style.marginLeft = (input.value - 10) + '%';
-  indicatorEl.textContent = input.value + '%';
-}
-
-initInputs();
+$('input[type="range"]').rangeslider({
+  polyfill: false,
+  onInit: function() {
+    this.$range.append($(valueBubble));
+    updateValueBubble(null, null, this);
+  },
+  onSlide: function(pos, value) {
+    updateValueBubble(pos, value, this);
+  }
+});
 
 $("#fontSize").on("input",function () {
             $('#fontArea').css("font-size", $(this).val() + "px");
