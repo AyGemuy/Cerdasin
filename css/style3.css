@@ -65,133 +65,86 @@ svg.wc-adblock{fill:#e00000;width:50px;height:50px}
 
 
 /* Font Size */
-
-.giveRange {
-  display: flex;
-  justify-content: center;
-  margin: 20px 20px 70px 20px;
-}
-.giveRange input {
-  border: none;
-  border-radius: 10px;
-  text-align: center;
-}
-.giveRange input:focus {
-  outline: none;
-}
-.giveRange button {
-  border: none;
-  position: relative;
-  margin-left: -15px;
-  border-radius: 0 10px 10px 0;
-  padding: 0 15px;
-  background: #1687a7;
-  color: #fff;
-  padding: 10px;
-}
-.giveRange button:focus {
-  outline: none;
-}
-.giveRange button:before {
-  content: "set max";
-  font-size: 15px;
-  font-weight: 100;
-}
-
-.slider-range {
-  width: 100%;
-  height: 150px;
-}
-
-/*IE slider */
-input[type=range]::-ms-track, input[type=range]::-ms-thumb, input[type=range]::-ms-fill-lower {
-  color: transparent;
+input[type="range"] {
+  -webkit-appearance: none;
   background: transparent;
-  border-color: transparent;
+  width: 90%;
+  max-width: 500px;
   outline: none;
 }
-input[type=range]::-ms-tooltip {
-  display: none;
+input[type="range"]:focus,
+input[type="range"]:active,
+input[type="range"]::-moz-focus-inner,
+input[type="range"]::-moz-focus-outer {
+  border: 0;
+  outline: none;
 }
-
-input[type=range] {
-  transition: 0.1s ease-in;
+input[type="range"]::-moz-range-thumb {
+  border: none;
+  height: 50px;
+  width: 50px;
+  background-color: transparent;
+  background-image: url("https://storage.googleapis.com/pw-stuff/thumbs-sprite.png");
+  background-position: 0 0;
+  background-size: cover;
+  transform: scale(1.9) rotateZ(var(--thumb-rotate, 10deg));
+  cursor: pointer;
+}
+input[type="range"]::-moz-range-thumb:active {
+  background-position: 100% 0px;
+  transform: scale(2) rotateZ(var(--thumb-rotate, 10deg));
+}
+input[type="range"]::-moz-range-track {
+  width: 100%;
+  height: 20px;
+  background: #eee;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+  cursor: pointer;
+}
+input[type="range"]::-moz-range-progress {
+  height: 20px;
+  background: #4685d7;
+  border-radius: 10px;
+  cursor: pointer;
+}
+input[type="range"]::-webkit-slider-thumb {
+  border: none;
+  height: 50px;
+  width: 50px;
+  background-color: transparent;
+  background-image: url("https://storage.googleapis.com/pw-stuff/thumbs-sprite.png");
+  background-position: 0 0;
+  background-size: cover;
+  transform: scale(1.9) rotateZ(var(--thumb-rotate, 10deg));
+  cursor: pointer;
+  margin-top: -15px;
+  -webkit-appearance: none;
+}
+input[type="range"]::-webkit-slider-thumb:active {
+  background-position: 100% 0px;
+  transform: scale(2) rotateZ(var(--thumb-rotate, 10deg));
+}
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 20px;
+  background: #eee;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
   cursor: pointer;
   -webkit-appearance: none;
-  width: 102%;
-  height: 15px;
-  border-radius: 25px;
-  background: white;
 }
-input[type=range]:focus {
-  outline: none;
-}
-input[type=range]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  height: 30px;
-  width: 30px;
-  border-radius: 25px;
-}
-
-.tooltip {
-  width: 50px;
-  height: 50px;
-  background: #1687a7;
-  border-radius: 50% 50% 50% 0px;
-  margin: -50px 0 0 -20px;
-  transform: rotate(-45deg);
-  position: relative;
-  transition: 800ms cubic-bezier(0.52, 0.04, 0.13, 1.29);
-}
-
-.innertooltip {
-  height: 30px;
-  width: 30px;
-  position: relative;
-  top: 12px;
-  left: 10%;
-  transform: rotate(45deg);
-  color: white;
+label {
+  background: #eee;
+  border-radius: 50%;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+  padding: 14px;
+  margin-left: 10px;
+  font-family: Roboto, 'Helvetica Neue', Arial;
+  font-size: 20px;
+  width: 25px;
   text-align: center;
-  font-size: 120%;
-  font-family: "Helvetica";
-  font-weight: 100;
-}
-
-/* thumb */
-.slider__thumb {
-  pointer-events: none;
-  position: relative;
-  border-style: solid;
-  border-width: 4px;
-  border-color: white;
-  border-radius: 30px;
-  height: 30px;
-  width: 30px;
-  background: #1687a7;
-  z-index: 1;
-  bottom: -26px;
-  box-shadow: 0 0px 0px 2px #1687a7;
-  margin-left: -15px;
-  transition: 0.5s ease-out;
-}
-
-/* progression track */
-.slider__tail {
-  pointer-events: none;
-  position: relative;
-  height: 15px;
-  width: 100%;
-  border-radius: 25px;
-  top: -19px;
-  background: #1687a7;
-  transition: 0.5s ease-out;
-}
-
-.data {
-  margin: 20px;
-}
-
-.value {
-  margin-left: 30px;
+  color: #2968bb;
+  font-weight: bold;
+  content: '';
 }
