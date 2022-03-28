@@ -177,7 +177,7 @@ input[type="range"]::-ms-track {
 select {
   appearance: none;
   outline: 0;
-  border: 0;
+  border: 1px solid #000;
   box-shadow: none;
   /* Personalize */
   flex: 1;
@@ -202,7 +202,8 @@ select::-ms-expand {
 }
 /* Arrow */
 .select::after {
-  content: '\f32d';
+  content: '\f329';
+  font-family: "Font Awesome 5 Pro";
   position: absolute;
   top: 0;
   right: 0;
