@@ -8,29 +8,25 @@ iniElemen.forEach(iniElement => {
 document.addEventListener('input', iniE => {
   const iniInput = iniE.target;
   const iniOutput = iniInput.nextElementSibling;
-  if (iniOutput) {
+  if (output) {
     iniOutput.textContent = iniInput.value;
   }
 });
 
 /* Font */
-$("#fontSize").on("input",function () {
+$("#fontSize").change(function() {
             $('#fontArea').css("font-size", $(this).val() + "px");
     });
-    
-$("#fontShadow").on("input",function () {
+$("#fontShadow").change(function() {
             $('#fontArea').css("text-shadow", $(this).val() + "px");
     });
-    
-$("#fontWeight").on("input",function () {
+$("#fontWeight").change(function() {
             $('#fontArea').css("font-weight", $(this).val());
     });
-
 $("#fontStyle").change(function() {
     $('#fontArea').css("font-family", $(this).val());
 });
-
-$("#borRad").on("input",function () {
+$("#borRad").change(function() {
 const IniRad = document.querySelectorAll(['border-radius'])
     (IniRad, $(this).val() + "%");
 });
