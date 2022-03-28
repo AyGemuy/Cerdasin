@@ -1,42 +1,58 @@
-var range = document.getElementById("month-price");
-var minusButton = document.querySelector(".control-minus");
-var plusButton = document.querySelector(".control-plus");
-var tooltip = document.querySelector(".current-value");
-var steps = 16, padding = 15;
-// There's a small error due to pixel truncating in Chrome
-var subpixelCorrection = 0.4;
+/* Slider */
+class Slider {
+  constructor (rangeElement, valueElement, options) {
+    this.rangeElement = rangeElement
+    this.valueElement = valueElement
+    this.options = options
 
-// All browsers but IE
-range.addEventListener("input", function(evt) {  
-  updateTooltip ();
-}, false);
-// IE10
-range.addEventListener("change", function(evt) {  
-  updateTooltip ();
-}, false);
+    // Attach a listener to "change" event
+    this.rangeElement.addEventListener('input', this.updateSlider.bind(this))
+  }
 
-function updateTooltip () {
-  tooltip.firstElementChild.textContent = range.value;
-  
-  var startPosition = - (tooltip.clientWidth)/2 + padding + 4;
-  var stepWidth = (range.getBoundingClientRect().width - padding*2)/steps - subpixelCorrection;  
-  var currentStep =  range.value - range.min;
-  
-  // Reposition tooltip on top of the thumb
-  tooltip.style.visibility = "visible";
-  tooltip.style.left = Math.round(stepWidth*currentStep + startPosition) + "px";
-    
+  // Initialize the slider
+  init() {
+    this.rangeElement.setAttribute('min', options.min)
+    this.rangeElement.setAttribute('max', options.max)
+    this.rangeElement.value = options.cur
+
+    this.updateSlider()
+  }
+
+  // Format the money
+  asMoney(value) {
+    return 'px' + parseFloat(value)
+      .toLocaleString('en-US', { maximumFractionDigits: 2 })
+  }
+
+  generateBackground(rangeElement) {   
+    if (this.rangeElement.value === this.options.min) {
+      return
+    }
+
+    let percentage =  (this.rangeElement.value - this.options.min) / (this.options.max - this.options.min) * 100
+    return 'background: linear-gradient(to right, #50299c, #7a00ff ' + percentage + '%, #d3edff ' + percentage + '%, #dee1e2 100%)'
+  }
+
+  updateSlider (newValue) {
+    this.valueElement.innerHTML = this.asMoney(this.rangeElement.value)
+    this.rangeElement.style = this.generateBackground(this.rangeElement.value)
+  }
 }
 
-minusButton.addEventListener("click", function() {
-  range.stepDown();
-  updateTooltip ();
-}, false);
+let rangeElement = document.querySelector('.range [type="range"]')
+let valueElement = document.querySelector('.range .range__value span') 
 
-plusButton.addEventListener("click", function() {
-  range.stepUp();
-  updateTooltip ();
-}, false);
+let options = {
+  min: 2000,
+  max: 75000,
+  cur: 37500
+}
+
+if (rangeElement) {
+  let slider = new Slider(rangeElement, valueElement, options)
+
+  slider.init()
+}
 
 /* Font */
 $("#fontSize").change(function() {
