@@ -72,27 +72,23 @@ output {
   font-size: 1em;
   font-family: var(--fontRa);
 }
-
 output {
   background: #ff4500;
   padding: 5px 16px;
   border-radius: var(--braD);
   color: #fff;
 }
-
 input[type="number"] {
   width: 40px;
   padding: 4px 5px;
   border: 1px solid #bbb;
   border-radius: var(--braD);
 }
-
-/* input[type="range"]:focus,
+input[type="range"]:focus,
 input[type="number"]:focus {
   box-shadow: 0 0 3px 1px #4b81dd;
   outline: none;
-} */
-
+}
 input[type="range"] {
   -webkit-appearance: none;
   margin-right: 15px;
@@ -116,7 +112,6 @@ input[type="range"]::-webkit-slider-thumb {
   box-shadow: 0 0 2px 0 #555;
   transition: background .3s ease-in-out;
 }
-
 input[type="range"]::-moz-range-thumb {
   -webkit-appearance: none;
   height: 20px;
@@ -127,7 +122,6 @@ input[type="range"]::-moz-range-thumb {
   box-shadow: 0 0 2px 0 #555;
   transition: background .3s ease-in-out;
 }
-
 input[type="range"]::-ms-thumb {
   -webkit-appearance: none;
   height: 20px;
@@ -138,15 +132,12 @@ input[type="range"]::-ms-thumb {
   box-shadow: 0 0 2px 0 #555;
   transition: background .3s ease-in-out;
 }
-
 input[type="range"]::-webkit-slider-thumb:hover {
   background: #ff0200;
 }
-
 input[type="range"]::-moz-range-thumb:hover {
   background: #ff0200;
 }
-
 input[type="range"]::-ms-thumb:hover {
   background: #ff0200;
 }
@@ -158,14 +149,12 @@ input[type=range]::-webkit-slider-runnable-track  {
   border: none;
   background: transparent;
 }
-
 input[type=range]::-moz-range-track {
   -webkit-appearance: none;
   box-shadow: 0 0 2px 0 #555;
   border: none;
   background: transparent;
 }
-
 input[type="range"]::-ms-track {
   -webkit-appearance: none;
   box-shadow: 0 0 2px 0 #555;
@@ -178,7 +167,6 @@ select {
   appearance: none;
   outline: 0;
   box-shadow: none;
-  /* Personalize */
   flex: 1;
   padding: 0 1em;
   color: #000;
@@ -207,7 +195,7 @@ select::-ms-expand {
   content: "";
   font-family: "Font Awesome 5 Pro";
   color: #fff;
-  font-size: 24px;
+  font-size: 20px;
   position: absolute;
   top: 0;
   right: 0;
