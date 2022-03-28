@@ -1,15 +1,17 @@
 /* Range */
-const iniElemen = document.querySelectorAll(['range-slider']);
-iniElemen.forEach(iniElement => {
-  iniElement.insertAdjacentHTML('afterend', `
-    <output>${iniElement.value}</output>
+const elements = document.querySelectorAll(['range-slider']);
+
+elements.forEach(element => {
+  element.insertAdjacentHTML('afterend', `
+    <output>${element.value}</output>
   `);
 });
-document.addEventListener('input', iniE => {
-  const iniInput = iniE.target;
-  const iniOutput = iniInput.nextElementSibling;
+
+document.addEventListener('input', e => {
+  const input = e.target;
+  const output = input.nextElementSibling;
   if (output) {
-    iniOutput.textContent = iniInput.value;
+    output.textContent = input.value;
   }
 });
 
@@ -22,7 +24,7 @@ $("#fontShadow").change(function() {
     });
 $("#fontWeight").change(function() {
             $('#fontArea').css("font-weight", $(this).val());
-    });
+    });    
 $("#fontStyle").change(function() {
     $('#fontArea').css("font-family", $(this).val());
 });
