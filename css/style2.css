@@ -239,10 +239,10 @@ body{top:0!important}
 .back-to-top svg path {fill: #4d90fe;}
 .back-to-top:hover svg path{fill: #f95b41}
 .back-to-top:hover{transform: rotate(-45deg);}
-.back-to-top {background:#fff;padding:6px;width:40px;height:40px;border-radius: var(--braD);transition:all .30s ease-in-out;;border:2px solid #4d90fe;position: fixed;bottom: 8rem;right: 15px;transition:transform .5s ease-out;z-index: 1;box-shadow:0px 2px 10px 0px #aaaaaa}
+.back-to-top {background:#fff;padding:6px;width:40px;height:40px;border-radius: var(--braD);transition:all .30s ease-in-out;;border:2px solid #4d90fe;position: fixed;bottom: 8rem;right: 15px;transition:transform .5s ease-out;animation:fadeInRight .5s linear;z-index: 1;box-shadow:0px 2px 10px 0px #aaaaaa}
 
 /* Persentase Scrollbar */
-#scrollPersentase {animation:fadeInLeft .5s linear;display:none;position:fixed;top:0;right:5px;z-index:1;padding:3px 8px;background-color:var(--darkB);color:var(--bodyB);border-radius: 50px 0px 50px 50px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;overflow-x:hidden}
+#scrollPersentase {animation:fadeInRight .5s linear;display:none;position:fixed;top:0;right:5px;z-index:1;padding:3px 8px;background-color:var(--darkB);color:var(--bodyB);border-radius: 50px 0px 50px 50px;border:2px solid #4d90fe;overflow-x:hidden}
 #scrollPersentase:after {position:absolute;top:50%;right:-8px;height:0;width:0;margin-top:-4px;}
  
 /* Neon bar */
@@ -583,6 +583,7 @@ svg.wc-buysvg.line{fill:none!important;stroke:#767676;stroke-linecap:round;strok
   height: 40px;
   cursor: default;
   transition: all 0.15s ease-out;
+  animation:fadeInLeft .5s linear;
   z-index: 1;
   will-change: width;
 }
