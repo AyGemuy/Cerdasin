@@ -1,4 +1,4 @@
-
+=
 @keyframes muter{
     0%
     {
@@ -64,49 +64,86 @@ svg.wc-adblock{fill:#e00000;width:50px;height:50px}
 .line svg{width:20px;height:20px;opacity:.8;z-index:1} .line .pIc .cmnt::before{content:attr(data-text);font-size:11px;line-height:18px;padding:5px;border-radius:10px;background:#e6e6e6;color:var(--bodyC);position:absolute;top:-5px;right:0;z-index:2;border-radius:10px;background:#e6e6e6;color:var(--bodyC);animation:indicator 4s ease infinite;-webkit-animation:indicator 1s ease infinite}
 
 
-select {
-  /* Reset Select */
-  appearance: none;
-  outline: 0;
-  border: 0;
-  box-shadow: none;
-  /* Personalize */
-  flex: 1;
-  padding: 0 1em;
-  color: #000;
-  background-color: #fff;
-  border:1px solid #4d90fe;
-  background-image: none;
-  cursor: pointer;
+  /* Select */
+.vodiapicker{
+  display: none; 
 }
-/* Remove IE arrow */
-select::-ms-expand {
+
+#sDrop{
+  padding-left: 0px;
+}
+
+#sDrop img, .btn-select img{
+  width: 12px;
+  
+}
+
+#sDrop li{
+  list-style: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#sDrop li:hover{
+ background-color: #F4F3F3;
+}
+
+#sDrop li img{
+  margin: 5px;
+}
+
+#sDrop li span, .btn-select li span{
+  margin-left: 30px;
+}
+
+/* item list */
+
+.bDrop{
   display: none;
+  width: 100%;
+  max-width: 350px;
+  box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: 5px;
+  
 }
-/* Custom Select wrapper */
-.select {
-  position: relative;
-  display: flex;
-  width: 20em;
-  height: 3em;
-  border-radius: .25em;
-  overflow: hidden;
+
+.open{
+  display: show !important;
 }
-/* Arrow */
-.select::after {
-  border:1px solid #4d90fe;
-  border-radius: var(--braD);
-  content: "\f894";
-  font-family: "Font Awesome 5 Pro";
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 1em;
+
+.btn-select{
+  margin-top: 10px;
+  width: 100%;
+  max-width: 350px;
+  height: 34px;
+  border-radius: 5px;
   background-color: #fff;
-  transition: .25s all ease;
-  pointer-events: none;
+  border: 1px solid #ccc;
+ 
 }
-/* Transition */
-.select:hover::after {
-  color: white;
+.btn-select li{
+  list-style: none;
+  float: left;
+  padding-bottom: 0px;
+}
+
+.btn-select:hover li{
+  margin-left: 0px;
+}
+
+.btn-select:hover{
+  background-color: #F4F3F3;
+  border: 1px solid transparent;
+  box-shadow: inset 0 0px 0px 1px #ccc;
+  
+  
+}
+
+.btn-select:focus{
+   outline:none;
+}
+
+.lang-select{
+  margin-left: 50px;
 }
