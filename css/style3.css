@@ -66,7 +66,7 @@ svg.wc-adblock{fill:#e00000;width:50px;height:50px}
 
 /* Font Size */
 
-.dropdown-el {
+.select {
   margin-top: 20vh;
   min-width: 12em;
   position: relative;
@@ -86,17 +86,17 @@ svg.wc-adblock{fill:#e00000;width:50px;height:50px}
   background-color: #cde4f5;
   transition: 0.3s all ease-in-out;
 }
-.dropdown-el input:focus + label {
+.select input:focus + label {
   background: #def;
 }
-.dropdown-el input {
+.select input {
   width: 1px;
   height: 1px;
   display: inline-block;
   position: absolute;
   opacity: 0.01;
 }
-.dropdown-el label {
+.select label {
   border-top: 0.06em solid #d9d9d9;
   display: block;
   height: 2em;
@@ -107,22 +107,22 @@ svg.wc-adblock{fill:#e00000;width:50px;height:50px}
   position: relative;
   transition: 0.3s color ease-in-out;
 }
-.dropdown-el label:nth-child(2) {
+.select label:nth-child(2) {
   margin-top: 2em;
   border-top: 0.06em solid #d9d9d9;
 }
-.dropdown-el input:checked + label {
+.select input:checked + label {
   display: block;
   border-top: none;
   position: absolute;
   top: 0;
   width: 100%;
 }
-.dropdown-el input:checked + label:nth-child(2) {
+.select input:checked + label:nth-child(2) {
   margin-top: 0;
   position: relative;
 }
-.dropdown-el::after {
+.select::after {
   content: "";
   position: absolute;
   right: 0.8em;
@@ -131,7 +131,7 @@ svg.wc-adblock{fill:#e00000;width:50px;height:50px}
   border-color: #3694d7 transparent transparent transparent;
   transition: 0.4s all ease-in-out;
 }
-.dropdown-el.expanded {
+.select.expanded {
   border: 0.06em solid #3694d7;
   background: #fff;
   border-radius: 0.25em;
@@ -139,16 +139,16 @@ svg.wc-adblock{fill:#e00000;width:50px;height:50px}
   box-shadow: rgba(0, 0, 0, 0.1) 3px 3px 5px 0px;
   max-height: 15em;
 }
-.dropdown-el.expanded label {
+.select.expanded label {
   border-top: 0.06em solid #d9d9d9;
 }
-.dropdown-el.expanded label:hover {
+.select.expanded label:hover {
   color: #3694d7;
 }
-.dropdown-el.expanded input:checked + label {
+.select.expanded input:checked + label {
   color: #3694d7;
 }
-.dropdown-el.expanded::after {
+.select.expanded::after {
   transform: rotate(-180deg);
   top: 0.55em;
 }
