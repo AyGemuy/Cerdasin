@@ -109,3 +109,220 @@ select::-ms-expand {
 .select:hover::after {
   color: #f39c12;
 }
+
+/* Range Slider */
+:root {
+  --bg: #f1f1f1;
+  --fg: #171717;
+  --fgT: #17171700;
+  --rageLight: #f13d17;
+  --rageDark: #962417;
+  --track: #969696;
+  --animDur: 0.2s;
+  --transDur: 0.1s;
+  font-size: calc(32px + (48 - 32) * (100vw - 320px) / (2560 - 320));
+}
+form {
+  margin: auto;
+  width: 8.5em;
+}
+.rage {
+  position: relative;
+}
+.rage__input,
+.rage__track,
+.rage__flame-area {
+  width: 100%;
+}
+.rage__input {
+  background: transparent;
+  display: block;
+  outline: transparent;
+  margin: 2.25em 0;
+  height: 0.75em;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.rage__input::-webkit-slider-thumb {
+  background: transparent;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 1.5em;
+  height: 1.5em;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.rage__input::-moz-range-thumb {
+  background: transparent;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 1.5em;
+  height: 1.5em;
+}
+.rage__input::-moz-focus-outer {
+  border: 0;
+}
+
+/* .rage__input--active is for keyboard interaction */
+.rage__input:active + .rage__track,
+.rage__input--active + .rage__track {
+  background: var(--rageDark);
+}
+.rage__input:active ~ .rage__face,
+.rage__input--active ~ .rage__face,
+.rage__input:active ~ .rage__face:after,
+.rage__input--active ~ .rage__face:after {
+  background: var(--rageLight);
+}
+.rage__input:active ~ .rage__face:before,
+.rage__input--active ~ .rage__face:before {
+  animation: pulse var(--animDur) var(--transDur) linear infinite;
+  transform: scale(1);
+}
+.rage__input:active ~ .rage__face:after,
+.rage__input--active ~ .rage__face:after {
+  transform: scaleY(1);
+}
+.rage__input:active ~ .rage__face .rage__face-mouth,
+.rage__input--active ~ .rage__face .rage__face-mouth {
+  transform: scaleY(-1);
+}
+.rage__track,
+.rage__flame-area,
+.rage__face,
+.rage__face:before,
+.rage__face:after,
+.rage__value {
+  position: absolute;
+}
+.rage__track,
+.rage__flame-area,
+.rage__face {
+  left: 0;
+}
+.rage__track,
+.rage__face {
+  transition: background var(--transDur) linear;
+}
+.rage__track,
+.rage__face:before,
+.rage__face:after {
+  content: "";
+  display: block;
+}
+.rage__track {
+  background: var(--track);
+  border-radius: 0.75em;
+  top: 0;
+  height: 0.75em;
+  z-index: -3;
+}
+.rage__flame-area {
+  bottom: -0.375em;
+  width: 100%;
+  height: 3em;
+  z-index: -2;
+}
+.rage__face,
+.rage__face:before {
+  border-radius: 50%;
+}
+.rage__face {
+  background: #f1f1f1;
+  box-shadow: 0 0 0 0.1em #0003 inset;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  top: -0.375em;
+  width: 1.5em;
+  height: 1.5em;
+  will-change: transform;
+  z-index: -1;
+}
+.rage__face:before,
+.rage__face-mouth {
+  transition: transform var(--transDur) linear;
+}
+.rage__face:before {
+  background-image: radial-gradient(
+      100% 100% at 50% 0,
+      var(--fgT) 16%,
+      var(--fg) 18% 31%,
+      var(--fgT) 33%
+    ),
+    radial-gradient(
+      100% 100% at 100% 50%,
+      var(--fgT) 16%,
+      var(--fg) 18% 31%,
+      var(--fgT) 33%
+    ),
+    radial-gradient(
+      100% 100% at 50% 100%,
+      var(--fgT) 16%,
+      var(--fg) 18% 31%,
+      var(--fgT) 33%
+    ),
+    radial-gradient(
+      100% 100% at 0 50%,
+      var(--fgT) 16%,
+      var(--fg) 18% 31%,
+      var(--fgT) 33%
+    );
+  top: -0.2em;
+  right: -0.2em;
+  width: 0.6em;
+  height: 0.6em;
+  transform: scale(0);
+}
+.rage__face:after {
+  background: #f1f1f1;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 50% 100%);
+  top: 0.3em;
+  left: calc(50% - 0.4em);
+  width: 0.8em;
+  height: 0.4em;
+  transition: background var(--transDur) linear,
+    transform var(--transDur) linear;
+  transform: scaleY(0);
+  transform-origin: 50% 0;
+}
+.rage__face-eye {
+  background: #171717;
+  border-radius: 50%;
+  margin: 0 0.125em 0.2em;
+  width: 0.2em;
+  height: 0.4em;
+}
+.rage__face-mouth {
+  border-radius: 0 0 50% 50% / 0 0 100% 100%;
+  box-shadow: 0 -0.1em 0 #171717 inset;
+  width: 0.75em;
+  height: 0.25em;
+}
+.rage__value {
+  top: 100%;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #242424;
+    --fg: #f1f1f1;
+    --fgT: #f1f1f100;
+    --track: #575757;
+  }
+}
+
+@keyframes pulse {
+  from,
+  to {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.25);
+  }
+}
