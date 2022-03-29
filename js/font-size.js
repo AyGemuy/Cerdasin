@@ -1,49 +1,3 @@
-/* Slider Range */
-Vue.component('no-ui-slider', {
-  template:
-  `
-  <div class='slider-container'>
-    <div ref='slider' class='slider'></div>
-    <span>{{value}}</span>
-    <button @click="setValue(1)">Min</button>
-    <button @click="setValue(100)">Max</button>
-  </div>
-  `,
-  props: ['value'], // regular "value" prop to v-model become alive
-  watch: {
-    value(newValue, oldValue) {
-      // Prevent infinit loop with common noUilSlider event
-      if (this.$refs.slider.noUiSlider.get() != newValue) {
-        this.$refs.slider.noUiSlider.set(newValue); // Set value manually
-      }
-    } },
-
-  mounted() {
-
-    // Create a slider from ref
-    noUiSlider.create(this.$refs.slider, {
-      start: this.value,
-      step: 1,
-      connect: 'lower',
-      range: { 'min': 10, 'max': 100 } });
-
-
-    // Emit regular "input" event with
-    this.$refs.slider.noUiSlider.on(
-    'update', (values, handle) => this.$emit('input', values[handle]));
-  },
-  methods: {
-    setValue(value) {
-      this.$refs.slider.noUiSlider.set(value);
-    } } });
-
-
-
-new Vue({
-  el: '#app',
-  data: {
-    first: 50,
-    second: 70 } });
 
 /* Font Setting */
 $("#fontSize").change(function() {
@@ -57,4 +11,28 @@ $('#fontArea').css("color", $(this).val());
 });
 $("#fontSpace").change(function() {
 $('#fontArea').css("letter-spacing", $(this).val() + "px");
+});
+
+/* Slider Range */
+$(function() {
+    var $document   = $(document),
+        $inputRange = $('input[type="range"]');
+    
+    // Example functionality to demonstrate a value feedback
+    function valueOutput(element) {
+        var value = element.value,
+            output = element.parentNode.getElementsByTagName('output')[0];
+        output.innerHTML = value;
+    }
+    for (var i = $inputRange.length - 1; i >= 0; i--) {
+        valueOutput($inputRange[i]);
+    };
+    $document.on('input', 'input[type="range"]', function(e) {
+        valueOutput(e.target);
+    });
+    // end
+  
+    $inputRange.rangeslider({
+      polyfill: false 
+    });
 });
