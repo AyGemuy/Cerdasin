@@ -1,58 +1,18 @@
 /* Slider */
-class Slider {
-  constructor (rangeElement, valueElement, options) {
-    this.rangeElement = rangeElement
-    this.valueElement = valueElement
-    this.options = options
+let rangeInput = document.querySelector(".range-input input");
+let rangeValue = document.querySelector(".range-input .value div");
 
-    // Attach a listener to "change" event
-    this.rangeElement.addEventListener('input', this.updateSlider.bind(this))
-  }
+let  start = parseFloat(rangeInput.min);
+let end = parseFloat(rangeInput.max);
+let step = parseFloat(rangeInput.step);
 
-  // Initialize the slider
-  init() {
-    this.rangeElement.setAttribute('min', options.min)
-    this.rangeElement.setAttribute('max', options.max)
-    this.rangeElement.value = options.cur
-
-    this.updateSlider()
-  }
-
-  // Format the money
-  asMoney(value) {
-    return 'PX ' + parseFloat(value)
-      .toLocaleString('id-ID', { maximumFractionDigits: 2 })
-  }
-
-  generateBackground(rangeElement) {   
-    if (this.rangeElement.value === this.options.min) {
-      return
-    }
-
-    let percentage =  (this.rangeElement.value - this.options.min) / (this.options.max - this.options.min) * 100
-    return 'background: linear-gradient(to right, #50299c, #7a00ff ' + percentage + '%, #d3edff ' + percentage + '%, #dee1e2 100%)'
-  }
-
-  updateSlider (newValue) {
-    this.valueElement.innerHTML = this.asMoney(this.rangeElement.value)
-    this.rangeElement.style = this.generateBackground(this.rangeElement.value)
-  }
+for(let i=start;i<=end;i+=step){
+  rangeValue.innerHTML += '<div>'+i+'</div>';
 }
-
-let rangeElement = document.querySelector('.range [type="range"]')
-let valueElement = document.querySelector('.range .range__value span') 
-
-let options = {
-  min: 0,
-  max: 100,
-  cur: 10
-}
-
-if (rangeElement) {
-  let slider = new Slider(rangeElement, valueElement, options)
-
-  slider.init()
-}
+rangeInput.addEventListener("input",function(){
+  let top = parseFloat(rangeInput.value)/step * -40;
+  rangeValue.style.marginTop = top+"px";
+});
 
 /* Font */
 $("#fontSize").change(function() {
