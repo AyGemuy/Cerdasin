@@ -70,7 +70,8 @@ select {
      -moz-appearance: none;
           appearance: none;
   outline: 0;
-  border:1px solid #4d90fe;
+  border:0;
+  align-items:center;text-align:center;justify-content:center;
   box-shadow: none;
   /* Personalize */
   flex: 1;
@@ -90,7 +91,7 @@ select::-ms-expand {
   display: flex;
   width: 20em;
   height: 3em;
-  border-radius: .25em;
+  border-radius: var(--braD);
   overflow: hidden;
 }
 /* Arrow */
@@ -137,11 +138,11 @@ select::-ms-expand {
 }
 .form-group > span:not(:first-child):not(:last-child),
 .form-group .form-field:not(:first-child):not(:last-child) {
-  border-radius: 0;
+  border-radius: var(--braD);
 }
 .form-group > span:first-child,
 .form-group .form-field:first-child {
-  border-radius: 6px 0 0 6px;
+  border-radius: var(--braD);
 }
 .form-group > span:last-child,
 .form-group .form-field:last-child {
@@ -161,7 +162,7 @@ select::-ms-expand {
 }
 .form-group > span {
   text-align: center;
-  padding: 8px 12px;
+  padding: 5px;
   font-size: 14px;
   line-height: 25px;
   color: var(--group-color);
