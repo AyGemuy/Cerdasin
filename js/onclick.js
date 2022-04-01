@@ -5,27 +5,6 @@ Toast.fire({
 })
 });
 
-$('#huruf-kecil').on('click', function () {
-Toast.fire({
- icon: 'success',
- title: 'Sukses mengubah ke huruf kecil'
-})
-});
-
-$('#huruf-sedang').on('click', function () {
-Toast.fire({
- icon: 'success',
- title: 'Sukses mengubah ke huruf sedang'
-})
-});
-
-$('#huruf-besar').on('click', function () {
-Toast.fire({
- icon: 'success',
- title: 'Sukses mengubah ke huruf besar'
-})
-});
-
 $('#di-follow').on('click', function () {
 	swals.fire({
  title: 'Follow yuk kak :3',
@@ -54,6 +33,6 @@ $('#check-ip').on('click', function () {
  fetch('https://api.ipify.org?format=json')
  .then(response => response.json())
  .then(data => {
- alert(data.ip)
+ alert(data.ip + ' Your Ip')
  })
  });
