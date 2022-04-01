@@ -115,14 +115,18 @@ select::-ms-expand {
   display: inline-block;
   border:1px solid #4d90fe;
   border-radius: var(--braD);
+  width: 100%;
+  height: 100%;
   outline: none;
   opacity: 0;
   margin: 50px;
 }
 
 .custom {
+width: 100%;
+  height: 100%;
   border-radius: var(--braD);
-  border: 5px solid white;
+  border:1px solid #4d90fe;
 }
 
 .custom:hover {
