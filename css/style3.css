@@ -109,3 +109,45 @@ select::-ms-expand {
 .select:hover::after {
   color: #f39c12;
 }
+
+/* Input Color Style */
+  .color-input {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border: none;
+  outline: none;
+  opacity: 0;
+  margin: 50px;
+}
+
+.custom {
+  width: 50px;
+  height: 50px;
+  border-radius: var(--braD);
+  margin-top: -96px;
+  margin-left: 38px;
+  border: 5px solid white;
+}
+
+.custom:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 50px 5px #4e4e4e;
+}
+
+.color-input:hover {
+  cursor: pointer;
+}
+
+.color-input:hover + .custom {
+  box-shadow: 0px 0px 50px 5px #4e4e4e;
+}
+
+/* various id hacks to properly style each input element */
+#grad-input-1 {
+  margin-top: 0;
+}
+
+#custom-input-1 {
+  background-color: #88d1e0;
+}
