@@ -113,8 +113,8 @@ select::-ms-expand {
 /* Input Color Style */
   .color-input {
   display: inline-block;
-  width: 32px;
-  height: 32px;
+  width: 100%;
+  height: 50px;
   border: none;
   outline: none;
   opacity: 0;
@@ -122,7 +122,7 @@ select::-ms-expand {
 }
 
 .custom {
-  width: 50px;
+  width: 100%;
   height: 50px;
   border-radius: var(--braD);
   margin-top: -96px;
@@ -141,11 +141,6 @@ select::-ms-expand {
 
 .color-input:hover + .custom {
   box-shadow: 0px 0px 50px 5px #4e4e4e;
-}
-
-/* various id hacks to properly style each input element */
-#grad-input-1 {
-  margin-top: 0;
 }
 
 #custom-input-1 {
