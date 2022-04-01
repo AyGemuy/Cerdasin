@@ -64,8 +64,8 @@ Swal.fire({
   icon: 'info',
   html:
     'You can use <b>size text</b>, ' +
-    '<input id="fontSize" type="range" min="0" max="100" step="1" value="5"/>
-   <output class="output"></output>',
+    `<input id="fontSize" type="range" min="0" max="100" step="1" value="5"/>
+   <output class="output"></output>`,
   showCloseButton: true,
   showCancelButton: true,
   focusConfirm: false,
@@ -84,8 +84,8 @@ Swal.fire({
   icon: 'info',
   html:
     'You can use <b>size text</b>, ' +
-    '<input id="fontSpace" type="range" min="0" max="100" step="1" value="5"/>
-   <output class="output"></output>',
+    `<input id="fontSpace" type="range" min="0" max="100" step="1" value="5"/>
+   <output class="output"></output>`,
   showCloseButton: true,
   showCancelButton: true,
   focusConfirm: false,
