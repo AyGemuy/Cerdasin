@@ -22,6 +22,7 @@ const Toast = Swal.mixin({
   });
 
 /* Sweet Alert Nanya */
+/*
 async function mulai(){
             var katanyo = ["Lemot gak?","Delay kah?","Lambat kah?","Ngeleg kah?","Pasti leg ya?"]
             var tadoo = katanyo[Math.floor(Math.random()*katanyo.length)];
@@ -52,6 +53,7 @@ async function mulai(){
             }
             }
             mulai();
+            */
 
 /* Sweet Alert Toast */
 async function mulai(){
