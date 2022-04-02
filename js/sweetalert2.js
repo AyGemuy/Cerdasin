@@ -55,11 +55,27 @@ async function mulai(){
 
 /* Sweet Alert Toast */
 async function mulai(){
-            var katanye = ["Alhamdulilah ya","Makasih","Mantap lur","Uraa.."]
-            var tadee = katanye[Math.floor(Math.random()*katanye.length)];
-            await Toast.fire({
-  icon: 'info',
-  title: `${tadee}`
-  });
+            let timerInterval
+Swal.fire({
+  title: 'Ntar dulu bang !',
+  html: 'Menutup dalam <dtk_></dtk_> milidetik.',
+  timer: 2000,
+  timerProgressBar: true,
+  didOpen: () => {
+    Swal.showLoading()
+    const dtk_ = Swal.getHtmlContainer().querySelector('dtk_')
+    timerInterval = setInterval(() => {
+      dtk_.textContent = Swal.getTimerLeft()
+    }, 100)
+  },
+  willClose: () => {
+    clearInterval(timerInterval)
+  }
+}).then((result) => {
+  /* Read more about handling dismissals below */
+  if (result.dismiss === Swal.DismissReason.timer) {
+    console.log('Ok')
+  }
+})
             }
             mulai();
