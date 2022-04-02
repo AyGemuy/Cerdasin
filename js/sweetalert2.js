@@ -59,15 +59,15 @@ async function mulai(){
 async function mulai(){
             let timerInterval
 Swal.fire({
-  title: 'Ntar dulu bang !',
-  html: 'Menutup dalam <dtk_></dtk_> milidetik.',
-  timer: 2000,
+  title: 'Ntar dulu bang!',
+  html: 'Menutup dalam <b></b> milidetik.',
+  timer: 3000,
   timerProgressBar: true,
   didOpen: () => {
     Swal.showLoading()
-    const dtk_ = Swal.getHtmlContainer().querySelector('dtk_')
+    const b = Swal.getHtmlContainer().querySelector('b')
     timerInterval = setInterval(() => {
-      dtk_.textContent = Swal.getTimerLeft()
+      b.textContent = Swal.getTimerLeft()
     }, 100)
   },
   willClose: () => {
@@ -76,7 +76,7 @@ Swal.fire({
 }).then((result) => {
   /* Read more about handling dismissals below */
   if (result.dismiss === Swal.DismissReason.timer) {
-    console.log('Ok')
+    console.log('I was closed by the timer')
   }
 })
             }
