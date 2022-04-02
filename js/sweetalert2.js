@@ -21,38 +21,6 @@ const Toast = Swal.mixin({
   }
   });
 
-/* Sweet Alert Img */
-/*
-            async function mulai(){
-            var { isConfirmed: ke_satu } = await swals.fire({
-            title: 'Hai kak :3',
-            imageUrl: '//cerdasin.netlify.app/img/chat.png',
-            imageWidth: 40,
-            imageHeight: 40,
-            imageAlt: 'Hai',
-            text: 'Siap untuk membaca!',
-            showCancelButton: true,
-            confirmButtonText: '<i class="fa fa-thumbs-up"></i> Yups',
-            cancelButtonText: '<i class="fa fa-thumbs-down"></i> Tydack',
-            footer: 'By <a href="/"> Cerdasin62.</a>'
-            });
-            
-            if(ke_satu){
-            await swals.fire({
-  icon: 'success',
-  title: 'Oke!, Selamat membaca ya'
-  });
-            } else {
-            await swals.fire({
-  icon: 'warning',
-  title: 'Gak bisa kak, isi dulu!'
-  });
-            mulai();
-            }
-            }
-            mulai();
-*/
-
 /* Sweet Alert Nanya */
 async function mulai(){
             var katanyo = ["Lemot gak?","Delay kah?","Lambat kah?","Ngeleg kah?","Pasti leg ya?"]
@@ -82,5 +50,16 @@ async function mulai(){
   title: `${tadee}`
   });
             }
+            }
+            mulai();
+
+/* Sweet Alert Toast */
+async function mulai(){
+            var katanye = ["Alhamdulilah ya","Makasih","Mantap lur","Uraa.."]
+            var tadee = katanye[Math.floor(Math.random()*katanye.length)];
+            await Toast.fire({
+  icon: 'info',
+  title: `${tadee}`
+  });
             }
             mulai();
