@@ -1,4 +1,4 @@
-
+/* Profil image */
 @keyframes muter{
     0%
     {
@@ -174,28 +174,4 @@ select::-ms-expand {
   color: var(--group-color-focus);
   background: var(--group-background-focus);
   border-color: var(--group-border-focus);
-}
-
- /*Custom Caption Widget by www.bloggerspice.com */
-table.tr-caption-container {
-padding:5px;
-background: #ffffff;
-color: #222222;
-border: 1px solid #eeeeee;
--moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
--webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
-box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
-}
-table.tr-caption-container img {
-padding: 0;
-background: transparent;
-border: none;
--moz-box-shadow: 0 0 0 rgba(0, 0, 0, .1);
--webkit-box-shadow: 0 0 0 rgba(0, 0, 0, .1);
-box-shadow: 0 0 0 rgba(0, 0, 0, .1);
-}
-td.tr-caption {
-font:100% 'Oswald',Sans-Serif;
-font-style: bold;
-text-transform: capitalize;
 }
