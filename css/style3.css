@@ -177,8 +177,5 @@ select::-ms-expand {
 }
 
 /* tittle img */
-.postEntry .separator{position:relative}
-.relatedPosts .itemThumbnail div{z-index:2}
-.onPost .postEntry .separator:before{bottom:7px}
-.postThumbnail a:before, .postEntry .separator:before,.relatedPosts .itemThumbnail > *:after{content: '62';position:absolute;right:0;bottom:0;display:flex;font-size:8px;font-weight:bold;color:#fff;z-index:2;border-radius:var(--braD);background-color:#3a3a3a;padding:5px 7px;opacity:.7}
-
+ /* Watermark by Ilmuinternet.com */
+.separator{position:relative}.separator::before{content:'<data:post.title/>';color:#fff;font-size:8px;font-weight:bold;position:absolute;right:0px;bottom:8px;border:1px solid #3a3a3a;border-radius: var(--braD);background-color:#3a3a3a;padding:4px;opacity:.8;height:14px;line-height:14px}
