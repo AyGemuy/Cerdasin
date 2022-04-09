@@ -179,7 +179,7 @@ select::-ms-expand {
 /* tittle img */
  /* Post body img start */
 .post-body img:after {
-    content: '<data:post.title/>';
+    content: "watermark";
     position: absolute;
     bottom: 8px;
     left: 16px;
