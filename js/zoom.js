@@ -1,32 +1,45 @@
+jQuery(document).ready(function($) {
+    // Set initial zoom level
+    var zoom_level = 100;
 
- window.onload = function() {
- var currFFZoom = 1;
- var currIEZoom = 100;
+    // Click events
+    $('#zoom_in').click(function() {
+        zoom_page(10, $(this))
+    });
+    $('#zoom_out').click(function() {
+        zoom_page(-10, $(this))
+    });
+    $('#zoom_reset').click(function() {
+        zoom_page(0, $(this))
+    });
 
- $('#In').on('click',function(){
-     if (navigator.userAgent.indexOf('Firefox') != -1 && parseFloat(navigator.userAgent.substring(navigator.userAgent.indexOf('Firefox') + 8)) >= 3.6){//Firefox
-         var step = 0.02;
-         currFFZoom += step; 
-         $('body').css('MozTransform','scale(' + currFFZoom + ')');
-     } else {
-         var step = 2;
-         currIEZoom += step;
-         $('body').css('zoom', ' ' + currIEZoom + '%');
-     }
- });
+    // Zoom function
+    function zoom_page(step, trigger) {
+        // Zoom just to steps in or out
+        if (zoom_level >= 120 && step > 0 || zoom_level <= 80 && step < 0) return;
 
- $('#Out').on('click',function(){
-     if (navigator.userAgent.indexOf('Firefox') != -1 && parseFloat(navigator.userAgent.substring(navigator.userAgent.indexOf('Firefox') + 8)) >= 3.6){//Firefox
-         var step = 0.02;
-         currFFZoom -= step;                 
-         $('body').css('MozTransform','scale(' + currFFZoom + ')');
+        // Set / reset zoom
+        if (step == 0) zoom_level = 100;
+        else zoom_level = zoom_level + step;
 
-     } else {
-         var step = 2;
-         currIEZoom -= step;
-         $('body').css('zoom', ' ' + currIEZoom + '%');
-     }
- });};
+        // Set page zoom via CSS
+        $('body').css({
+            transform: 'scale(' + (zoom_level / 100) + ')', // set zoom
+            transformOrigin: '50% 0' // set transform scale base
+        });
 
- <input type="button" id="Out" alt="Zoom Out"/>
- <input type="button" id="In" alt="Zoom In"/>
+        // Adjust page to zoom width
+        if (zoom_level > 100) $('body').css({
+            width: (zoom_level * 1.2) + '%'
+        });
+        else $('body').css({
+            width: '100%'
+        });
+
+        // Activate / deaktivate trigger (use CSS to make them look different)
+        if (zoom_level >= 120 || zoom_level <= 80) trigger.addClass('disabled');
+        else trigger.parents('ul').find('.disabled').removeClass('disabled');
+        if (zoom_level != 100) $('#zoom_reset').removeClass('disabled');
+        else $('#zoom_reset').addClass('disabled');
+    }
+});
