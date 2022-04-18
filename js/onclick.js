@@ -67,15 +67,8 @@ swals.fire({
 'Yellowtail': 'Yellowtail'
   },
   inputPlaceholder: 'Select Style',
-  showCancelButton: true,
-  inputValidator: function (value) {
-    return new Promise(function (resolve, reject) {
-      if (value != null) {
-        resolve()
-      }
-    })
-  }
-}).then(function (result) {
+  showCancelButton: true
+}).then(function (var result: inputOptions) {
   swals.fire({
     type: 'success',
     html: 'You selected: ' + result
