@@ -182,7 +182,7 @@ a.link_mod {cursor:help;text-decoration:none;}
 a.link_mod.btn_mod {border-color #d900ae;}
 a.link_mod:hover {background-color: #0085a6; color: #fff; text-decoration:none;}
 
-[data-ml-modal] {
+.data-ml-modal {
 	position:fixed;
 	top:0;
 	bottom:0;
@@ -196,14 +196,14 @@ a.link_mod:hover {background-color: #0085a6; color: #fff; text-decoration:none;}
 	height:0;
 	opacity:0;
 }
-[data-ml-modal]:target {
+.data-ml-modal:target {
 	width:auto;
 	height:auto;
 	opacity:1;
 	-webkit-transition:  opacity 1s ease;
 	transition: opacity 1s ease;
 }
-[data-ml-modal]:target .mod-overlay {
+.data-ml-modal:target .mod-overlay {
 	position:fixed;
 	top:0;
 	bottom:0;
@@ -214,7 +214,7 @@ a.link_mod:hover {background-color: #0085a6; color: #fff; text-decoration:none;}
 	background-color:rgba(0, 0, 0, 0.7);
 	z-index:1;
 }
-[data-ml-modal] .mod-dialog {
+.data-ml-modal .mod-dialog {
 	border-radius:6px;
 	box-shadow:0 11px 15px -7px rgba(0, 0, 0, 0.2), 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12);
 	position:relative;
@@ -228,7 +228,7 @@ a.link_mod:hover {background-color: #0085a6; color: #fff; text-decoration:none;}
 }
 .mod-dialog-lg {max-width:820px !important;}
 
-[data-ml-modal] .mod-dialog > h3 {
+.data-ml-modal .mod-dialog > h3 {
 	background-color:#eee;
 	border-bottom:1px solid #b3b3b3;
 	font-size:24px;
@@ -236,8 +236,8 @@ a.link_mod:hover {background-color: #0085a6; color: #fff; text-decoration:none;}
 	margin:0;
 	padding:0.8em 56px .8em 27px; 
 }
-[data-ml-modal] .mod-content {background:#fff; padding:23px 27px;}
-[data-ml-modal] .mod-close {
+.data-ml-modal .mod-content {background:#fff; padding:23px 27px;}
+.data-ml-modal .mod-close {
   	position:absolute;
 	top:13px;
 	right:13px;
@@ -252,10 +252,10 @@ a.link_mod:hover {background-color: #0085a6; color: #fff; text-decoration:none;}
 	-webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
-[data-ml-modal] .mod-close:hover {background-color:#0085a6; color:#fff; cursor:pointer;}
-[data-ml-modal] p:first-child, [data-ml-modal] p:last-child {margin:0;}
+.data-ml-modal .mod-close:hover {background-color:#0085a6; color:#fff; cursor:pointer;}
+.data-ml-modal p:first-child, .data-ml-modal p:last-child {margin:0;}
 @media (max-width:767px) {
-	[data-ml-modal] .mod-dialog {margin:20% auto;}
+	.data-ml-modal .mod-dialog {margin:20% auto;}
 }
 /* End Modals ------------------------------*/
 
