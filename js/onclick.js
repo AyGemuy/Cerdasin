@@ -38,7 +38,7 @@ $('#check-ip').on('click', function () {
  });
 
 $('#fontStyle').on('click', function () {
-swal({
+swals.fire({
   title: 'Select Font Style',
   input: 'select',
   inputOptions: {
@@ -76,7 +76,7 @@ swal({
     })
   }
 }).then(function (result) {
-  swal({
+  swals.fire({
     type: 'success',
     html: 'You selected: ' + result
   })
