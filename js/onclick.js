@@ -36,3 +36,49 @@ $('#check-ip').on('click', function () {
  alert(data.ip + ' Your Ip')
  })
  });
+
+$('#fontStyle').on('click', function () {
+swal({
+  title: 'Select Font Style',
+  input: 'select',
+  inputOptions: {
+    'Akronim': 'Akronim',
+'Bad Script': 'Bad Script',
+'Black Ops One': 'Black Ops One',
+'Boogaloo': 'Boogaloo',
+'Bubblegum Sans': 'Bubblegum Sans',
+'Fira Mono': 'Fira Mono',
+'Fredericka the Great': 'Fredericka the Great',
+'Karantina': 'Karantina',
+'Kumar One Outline': 'Kumar One Outline',
+'League Script': 'League Script',
+'Libre Barcode 128 Text': 'Libre Barcode 128 Text',
+'Londrina Outline': 'Londrina Outline',
+'Londrina Solid': 'Londrina Solid',
+'Luckiest Guy': 'Luckiest Guy',
+'Material Icons': 'Material Icons',
+'Metal Mania': 'Metal Mania',
+'Monoton': 'Monoton',
+'Odibee Sans': 'Odibee Sans',
+'Rancho': 'Rancho',
+'Road Rage': 'Road Rage',
+'Special Elite': 'Special Elite',
+'Sriracha': 'Sriracha',
+'Yellowtail': 'Yellowtail'
+  },
+  inputPlaceholder: 'Select Style',
+  showCancelButton: true,
+  inputValidator: function (value) {
+    return new Promise(function (resolve, reject) {
+      if (value != null) {
+        resolve()
+      }
+    })
+  }
+}).then(function (result) {
+  swal({
+    type: 'success',
+    html: 'You selected: ' + result
+  })
+})
+});
