@@ -111,7 +111,7 @@ select::-ms-expand {
   color: #f39c12;
 }
 
-/* Input Color Style
+/* Input Color Style */
 :root {
   --input-color: #99A3BA;
   --input-border: #CDD9ED;
@@ -175,4 +175,3 @@ select::-ms-expand {
   background: var(--group-background-focus);
   border-color: var(--group-border-focus);
 }
-*/
