@@ -56,7 +56,6 @@ async function mulai(){
             */
 
 /* Sweet Alert Toast */
-/*
 async function mulai(){
             let timerInterval
 Swal.fire({
@@ -82,4 +81,3 @@ Swal.fire({
 })
             }
             mulai();
-*/
