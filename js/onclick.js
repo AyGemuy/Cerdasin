@@ -1,7 +1,7 @@
 $('#add-bookmark').on('click', function () {
 Toast.fire({
  icon: 'success',
- title: 'Sukses menambahkan ke bookmark'
+ title: 'Menambahkan ke bookmark'
 })
 });
 
@@ -33,45 +33,9 @@ $('#check-ip').on('click', function () {
  fetch('https://api.ipify.org?format=json')
  .then(response => response.json())
  .then(data => {
- alert(data.ip + ' Your Ip')
+ Toast.fire({
+ icon: 'info',
+ title: 'Alamat IP Anda' + data.ip
+ })
  })
  });
-
-$('#fontStyle').on('click', function () {
-swals.fire({
-  title: 'Select Font Style',
-  input: 'select',
-  inputOptions: {
-    'Akronim': 'Akronim',
-'Bad Script': 'Bad Script',
-'Black Ops One': 'Black Ops One',
-'Boogaloo': 'Boogaloo',
-'Bubblegum Sans': 'Bubblegum Sans',
-'Fira Mono': 'Fira Mono',
-'Fredericka the Great': 'Fredericka the Great',
-'Karantina': 'Karantina',
-'Kumar One Outline': 'Kumar One Outline',
-'League Script': 'League Script',
-'Libre Barcode 128 Text': 'Libre Barcode 128 Text',
-'Londrina Outline': 'Londrina Outline',
-'Londrina Solid': 'Londrina Solid',
-'Luckiest Guy': 'Luckiest Guy',
-'Material Icons': 'Material Icons',
-'Metal Mania': 'Metal Mania',
-'Monoton': 'Monoton',
-'Odibee Sans': 'Odibee Sans',
-'Rancho': 'Rancho',
-'Road Rage': 'Road Rage',
-'Special Elite': 'Special Elite',
-'Sriracha': 'Sriracha',
-'Yellowtail': 'Yellowtail'
-  },
-  inputPlaceholder: 'Select Style',
-  showCancelButton: true
-}).then(function (var result: inputOptions) {
-  swals.fire({
-    type: 'success',
-    html: 'You selected: ' + result
-  })
-})
-});
