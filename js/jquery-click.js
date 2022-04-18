@@ -1,4 +1,4 @@
-$(function() {
+  $(function() {
 
     function log_modal_event(event, modal) {
       if(typeof console != 'undefined' && console.log) console.log("[event] " + event.type);
