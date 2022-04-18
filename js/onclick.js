@@ -35,7 +35,7 @@ $('#check-ip').on('click', function () {
  .then(data => {
  Toast.fire({
  icon: 'info',
- title: 'Alamat IP Anda' + data.ip
+ title: 'IP Anda : ' + data.ip
  })
  })
  });
