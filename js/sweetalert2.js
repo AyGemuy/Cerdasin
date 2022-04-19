@@ -57,16 +57,9 @@ async function mulai(){
 
 /* Sweet Alert Nanya */
 async function mulai(){
-//ajax call
-$.ajax({
-    .....
-    success: function(response){
-        Toast.fire({
-            type: 'success',
-            title: response.message,
-            customClass: { popup: 'adjust' }
-        })
-    }
+swals.fire("Good job!", "Semoga harimu menyenangkan!", "success").then(function(){
+    location.reload();
 });
+
 }
 mulai();
