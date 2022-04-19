@@ -5,7 +5,7 @@ if (mun_cul > hil_ang){
 $("#header, #mega-button, #step-button, #HTML11, #mobile-menu").show();
 }
 else {
-$("#header, #mega-button, #step-button, #HTML11, #mobile-menu").hide();
+$("#header, #mega-button, #step-button, #HTML11, #mobile-menu, #rocket-atas").hide();
 }
 mun_cul = hil_ang
 }
