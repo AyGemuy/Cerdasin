@@ -1,10 +1,9 @@
 var prevScrollpos = window.pageYOffset;window.onscroll = function(){
-var ids = ['header','mega-button','step-button'];
 var currentScrollPos = window.pageYOffset;if (prevScrollpos > currentScrollPos){
-document.getElementById(ids).classList.remove('show');
+$("#header, #mega-button, #mega-button").hide();
 }
 else {
-document.getElementById(ids).classList.add('show');
+$("#header, #mega-button, #mega-button").show();
 }
 prevScrollpos = currentScrollPos
 }
