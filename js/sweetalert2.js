@@ -55,14 +55,18 @@ async function mulai(){
             mulai();
             */
 
-/* Sweet Alert */
+/* Sweet Alert Nanya */
 async function mulai(){
-swals.fire({
-  title: "Good job!",
-  text: "Semoga harimu menyenangkan!",
-  icon: "success"
-}, function(value){
-    window.location=url;
+//ajax call
+$.ajax({
+    .....
+    success: function(response){
+        Toast.fire({
+            type: 'success',
+            title: response.message,
+            customClass: { popup: 'adjust' }
+        })
+    }
 });
 }
 mulai();
