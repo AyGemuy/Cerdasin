@@ -654,7 +654,7 @@ svg.wc-buysvg.line{fill:none!important;stroke:#767676;stroke-linecap:round;strok
   align-items: center;
   justify-content: center;
   position: fixed;
-  bottom: 12rem;
+  bottom: 10rem;
   left: 15px;
   width: 40px;
   height: 40px;
@@ -715,7 +715,7 @@ svg.wc-buysvg.line{fill:none!important;stroke:#767676;stroke-linecap:round;strok
   background:#fff;
   border:1px solid #4d90fe;
   border-radius: var(--braD);
-  content: "\f7d9";
+  content: "\f30f";
   font-family: "Font Awesome 5 Pro";
   font-size: 24px;
   font-weight: 400;
