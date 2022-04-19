@@ -2,13 +2,13 @@ $(document).ready(function(){
 var wakTunya = null;
 $(window).scroll(function() {
 $('.back-to-top')
-.fadeIn(480);
+.fadeIn(100);
 if (wakTunya !== null) {
 clearTimeout(wakTunya);
 }
 wakTunya = setTimeout(function() {
 $('.back-to-top').fadeOut();
-}, 4800);
+}, 1500);
 });
 
  $('.back-to-top').hide().click(function(){
