@@ -57,9 +57,12 @@ async function mulai(){
 
 /* Sweet Alert Nanya */
 async function mulai(){
-swals.fire("Good job!", "Semoga harimu menyenangkan!", "success").then(function(){
-    location.reload();
+swals.fire({
+  title: "Good job!",
+  text: "Semoga harimu menyenangkan!",
+  icon: "success"
+}, function(value){
+    window.location=url;
 });
-
 }
 mulai();
