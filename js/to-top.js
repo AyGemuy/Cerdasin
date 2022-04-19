@@ -1,14 +1,14 @@
 $(document).ready(function(){
-var scrollTimer = null;
+var wakTunya = null;
 $(window).scroll(function() {
 $('.back-to-top')
-.fadeIn(100);
-if (scrollTimer !== null) {
-clearTimeout(scrollTimer);
+.fadeIn(240);
+if (wakTunya !== null) {
+clearTimeout(wakTunya);
 }
-scrollTimer = setTimeout(function() {
+wakTunya = setTimeout(function() {
 $('.back-to-top').fadeOut();
-}, 1500);
+}, 2400);
 });
 
  $('.back-to-top').hide().click(function(){
