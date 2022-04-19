@@ -4,14 +4,14 @@ $(document).ready(function(){
   // Show button after 100px
   var showAfter = 100;
   if ($(this).scrollTop() > showAfter ) { 
-   $('.back-to-top .rocket-atas').fadeIn();
+   $('.back-to-top, .rocket-atas').fadeIn();
   } else { 
-   $('.back-to-top .rocket-atas').fadeOut();
+   $('.back-to-top, .rocket-atas').fadeOut();
   }
  });
  
  //Click event to scroll to top
- $('.back-to-top .rocket-atas').hide().click(function(){
+ $('.back-to-top, .rocket-atas').hide().click(function(){
   $('html, body').animate({scrollTop : 0},800);
   return false;
  });
