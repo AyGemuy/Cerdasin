@@ -437,55 +437,15 @@ input:checked + .toglex:before {
 }
 
 /* Loading Screen */
-.preloaders {
-  margin: 100px auto;
-  width: 50px;
-  height: 40px;
-  text-align: center;
-  font-size: 10px;
-}
-
-.preloaders > div {
-  background-color: #333;
-  height: 100%;
-  width: 6px;
-  display: inline-block;
-  
-  -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
-  animation: sk-stretchdelay 1.2s infinite ease-in-out;
-}
-
-.preloaders .gars2 {
-  -webkit-animation-delay: -1.1s;
-  animation-delay: -1.1s;
-}
-
-.preloaders .gars3 {
-  -webkit-animation-delay: -1.0s;
-  animation-delay: -1.0s;
-}
-
-.preloaders .gars4 {
-  -webkit-animation-delay: -0.9s;
-  animation-delay: -0.9s;
-}
-
-.preloaders .gars5 {
-  -webkit-animation-delay: -0.8s;
-  animation-delay: -0.8s;
-}
-
-@-webkit-keyframes sk-stretchdelay {
-  0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
-  20% { -webkit-transform: scaleY(1.0) }
-}
-
-@keyframes sk-stretchdelay {
-  0%, 40%, 100% { 
-    transform: scaleY(0.4);
-    -webkit-transform: scaleY(0.4);
-  }  20% { 
-    transform: scaleY(1.0);
-    -webkit-transform: scaleY(1.0);
-  }
+.loading_screen {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 9999;
+   background-image: url('https://www.g-indonesia.com/images/loader2.gif');
+   background-repeat: no-repeat; 
+   background-color: #FFF;
+   background-position: center;
 }
