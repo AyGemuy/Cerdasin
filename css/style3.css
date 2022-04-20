@@ -435,3 +435,14 @@ input:checked + .toglex:before {
 	-webkit-text-fill-color: #CDC6FF;
 	-webkit-text-stroke: 1px #B4AFE2;
 }
+
+/* Loading Screen */
+.loading_screen {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    background: url('https://www.g-indonesia.com/images/loader2.gif') 50% 50% no-repeat rgb(249,249,249);
+}
