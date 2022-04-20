@@ -12,6 +12,18 @@ $('#fontArea').css("color", $(this).val());
 $("#fontSpace").change(function() {
 $('#fontArea').css("letter-spacing", $(this).val() + "px");
 });
+$("#sample-1").click(function(){
+$('#fontArea').toggleClass( "decorated sample-1" );
+});
+$("#sample-2").click(function(){
+$('#fontArea').toggleClass( "decorated sample-2" );
+});
+$("#sample-3").click(function(){
+$('#fontArea').toggleClass( "decorated sample-3" );
+});
+$("#sample-4").click(function(){
+$('#fontArea').toggleClass( "decorated sample-4" );
+});
 
 /* Slider Range */
 $(function() {
