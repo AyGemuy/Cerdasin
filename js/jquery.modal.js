@@ -201,8 +201,8 @@
   $.modal.getCurrent = getCurrent;
 
   $.modal.defaults = {
-    closeExisting: true,
-    escapeClose: true,
+    closeExisting: false,
+    escapeClose: false,
     clickClose: true,
     closeText: 'Close',
     closeClass: '',
@@ -211,7 +211,7 @@
     spinnerHtml: '<div class="rect1"></div><div class="rect2"></div><div class="rect3"></div><div class="rect4"></div>',
     showSpinner: true,
     showClose: true,
-    fadeDuration: null,   // Number of milliseconds the fade animation takes.
+    fadeDuration: 250,   // Number of milliseconds the fade animation takes.
     fadeDelay: 1.0        // Point during the overlay's fade-in that the modal begins to fade in (.5 = 50%, 1.5 = 150%, etc.)
   };
 
