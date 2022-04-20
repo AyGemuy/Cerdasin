@@ -295,6 +295,55 @@ select::-ms-expand {
 	-webkit-text-fill-color: transparent;
 }
 
+/* Toggle Switch */
+.switx {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+}
+
+.switx input {
+  display:none;
+}
+
+.toglex {
+  background-color: blue;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+}
+
+.toglex:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 26px;
+}
+
+input:checked + .toglex {
+  background-color: red;
+}
+
+input:checked + .toglex:before {
+  transform: translateX(26px);
+}
+
+.toglex.round {
+  border-radius: 34px;
+}
+
+.toglex.round:before {
+  border-radius: 50%;
+}
 
 /* sample : LOLLIPOP */
 .sample-1 {
