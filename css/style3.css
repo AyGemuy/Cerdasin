@@ -271,3 +271,116 @@ select::-ms-expand {
     width: 160px;
   }  
 }
+
+/* base */
+.decorated {
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	margin: 0;
+}
+
+.decorated:before {
+	content: attr(data-text);
+	position: absolute;
+	z-index: 2;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.decorated:after {
+	content: attr(data-text);
+	position: absolute;
+	z-index: 3;
+	-webkit-text-fill-color: transparent;
+}
+
+
+/* sample : LOLLIPOP */
+.sample-1 {
+	color: #FEBA61;
+}
+
+.sample-1:before {
+	top: 0;
+	left: 0;
+	background:
+		radial-gradient(white 25%, transparent 0),
+		radial-gradient(circle farthest-side, #FD9BE2, #FEBA61);
+	background-size: 20px 20px, 100% auto;
+	-webkit-background-clip: text;
+}
+
+.sample-1:after {
+	top: -6px;
+	left: -6px;
+	-webkit-text-stroke: 5px #F32B93;
+}
+
+/* sample : ROCK YOU */
+.sample-2 {
+	font-size: 1.2em;
+	letter-spacing: .05em;
+	background: linear-gradient(to right, #AA201B 50%, #841A16 0);
+	background-size: 6px 100%;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	filter:
+		drop-shadow(1px 1px 0 #222)
+		drop-shadow(1px 1px 0 #222)
+		drop-shadow(2px 2px 0 #222)
+		drop-shadow(2px 2px 0 #222)
+}
+
+.sample-2:before {
+	-webkit-text-stroke: 4px #AA201B;
+	filter: drop-shadow(1px 1px 0 #222);
+}
+
+.sample-2:after {
+	display: none;
+}
+
+/* sample : NEON */
+.sample-3 {
+	font-weight: bold;
+	filter:
+		drop-shadow(10px 10px 5px rgba(255, 255, 255, .1))
+		drop-shadow(10px 10px 10px rgba(255, 255, 255, .05));
+}
+
+.sample-3:before {
+	left: 0;
+	top: 0;
+	background: linear-gradient(to right, #bfe5ff 0%,#87ffdb 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	filter: blur(10px);
+	opacity: .6;
+}
+
+.sample-3:after {
+	left: 0;
+	top: 0;
+	background: linear-gradient(to right, #bfe5ff 0%,#87ffdb 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke: 2px rgba(255, 255, 255, .2);
+}
+
+/* sample : Shadow */
+.sample-4 {
+	left: 8px;
+	top: 8px;
+	background: linear-gradient(-45deg, #CDC6FF 25%, #fff 25.1%, #fff 50%, #CDC6FF 50.1%, #CDC6FF 75%, #fff 75.1%, #fff 0);
+	background-size: 4px 4px;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.sample-4:before {
+	left: -8px;
+	top: -8px;
+	-webkit-text-fill-color: #CDC6FF;
+	-webkit-text-stroke: 1px #B4AFE2;
+}
