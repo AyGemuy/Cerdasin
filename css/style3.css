@@ -175,3 +175,22 @@ select::-ms-expand {
   background: var(--group-background-focus);
   border-color: var(--group-border-focus);
 }
+
+/* input-color-style */
+.input-color-style{
+    border-radius: var(--braD);
+    position: center;
+    height: 40px;
+    width: 80px;
+    border: 1px solid #000;
+    outline: none;
+    -webkit-appearance: none;
+}
+
+.input-color-style::-webkit-color-swatch-wrapper {
+    padding: 5px; 
+}
+.input-color-style::-webkit-color-swatch {
+    border: 1px solid #fff;
+    border-radius: var(--braD);
+}
