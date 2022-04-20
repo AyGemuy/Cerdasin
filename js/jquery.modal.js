@@ -201,8 +201,8 @@
   $.modal.getCurrent = getCurrent;
 
   $.modal.defaults = {
-    closeExisting: false,
-    escapeClose: false,
+    closeExisting: true,
+    escapeClose: true,
     clickClose: true,
     closeText: 'Close',
     closeClass: '',
