@@ -446,28 +446,6 @@ input:checked + .toglex:before {
   height: 100%;
   z-index: 9999;
 }
-/*Text Loading */
-h2{
-display: block;
-position: relative;
-top: 13%;
-font-size: 50px;
-font-family: Brush Script Std;
-text-align: center;
-color: blue;
-z-index: 10000;
-animation: mymove 1.5s infinite alternate;
-}
-
-@keyframes mymove{
-  0%{
-     opacity: 100; 
-  }
-
-  100%{
-     opacity: 0;
-  }
-}
 
 /*Loader Animation*/
 #loader {
