@@ -445,71 +445,72 @@ input:checked + .toglex:before {
     height: 100%;
     z-index: 9999;
 }
-.loader {
-  width: 150px;
-  height: 150px;
-}
-
-svg {
-  width: 90%;
-  fill: none;
-}
-
-.load {
-  transform-origin: 50% 50%;
-  stroke-dasharray: 570;
-  stroke-width: 20px;
-}
-.load.one {
-  stroke: #554d73;
-  animation: load 1.5s infinite;
-}
-.load.two {
-  stroke: #a496a4;
-  animation: load 1.5s infinite;
-  animation-delay: 0.1s;
-}
-.load.three {
-  stroke: #a5a7bb;
-  animation: load 1.5s infinite;
-  animation-delay: 0.2s;
-}
-
-.point {
-  animation: bounce 1s infinite ease-in-out;
-}
-.point.one {
-  fill: #a5a7bb;
-  animation-delay: 0s;
-}
-.point.two {
-  fill: #a496a4;
-  animation-delay: 0.1s;
-}
-.point.three {
-  fill: #554d73;
-  animation-delay: 0.2s;
-}
-
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
-}
-@keyframes load {
+@-moz-keyframes throbber-loader {
   0% {
-    stroke-dashoffset: 570;
+    background: #dde2e7;
   }
-  50% {
-    stroke-dashoffset: 530;
+  10% {
+    background: #6b9dc8;
   }
-  100% {
-    stroke-dashoffset: 570;
-    transform: rotate(360deg);
+  40% {
+    background: #dde2e7;
   }
+}
+@-webkit-keyframes throbber-loader {
+  0% {
+    background: #dde2e7;
+  }
+  10% {
+    background: #6b9dc8;
+  }
+  40% {
+    background: #dde2e7;
+  }
+}
+@keyframes throbber-loader {
+  0% {
+    background: #dde2e7;
+  }
+  10% {
+    background: #6b9dc8;
+  }
+  40% {
+    background: #dde2e7;
+  }
+}
+/* :not(:required) hides these rules from IE9 and below */
+.throbber-loader:not(:required) {
+  -moz-animation: throbber-loader 2000ms 300ms infinite ease-out;
+  -webkit-animation: throbber-loader 2000ms 300ms infinite ease-out;
+  animation: throbber-loader 2000ms 300ms infinite ease-out;
+  background: #dde2e7;
+  display: inline-block;
+  position: relative;
+  text-indent: -9999px;
+  width: 0.9em;
+  height: 1.5em;
+  margin: 0 1.6em;
+}
+.throbber-loader:not(:required):before, .throbber-loader:not(:required):after {
+  background: #dde2e7;
+  content: '\x200B';
+  display: inline-block;
+  width: 0.9em;
+  height: 1.5em;
+  position: absolute;
+  top: 0;
+}
+.throbber-loader:not(:required):before {
+  -moz-animation: throbber-loader 2000ms 150ms infinite ease-out;
+  -webkit-animation: throbber-loader 2000ms 150ms infinite ease-out;
+  animation: throbber-loader 2000ms 150ms infinite ease-out;
+  left: -1.6em;
+}
+.throbber-loader:not(:required):after {
+  -moz-animation: throbber-loader 2000ms 450ms infinite ease-out;
+  -webkit-animation: throbber-loader 2000ms 450ms infinite ease-out;
+  animation: throbber-loader 2000ms 450ms infinite ease-out;
+  right: -1.6em;
 }
     #loader-wrapper .loader-section {
         position: fixed;
