@@ -301,7 +301,6 @@ select::-ms-expand {
   height: 34px;
   position: relative;
   width: 60px;
-  box-shadow:0 10px 25px -3px rgba(0,0,0,.1)
 }
 
 .switx input {
@@ -317,13 +316,13 @@ select::-ms-expand {
   right: 0;
   top: 0;
   transition: .4s;
-  box-shadow:0 10px 25px -3px rgba(0,0,0,.1)
 }
 
 .toglex:before {
   background-color: #fff;
   bottom: 4px;
   content: "\f013";
+  font-family: "Font Awesome 5 Pro";
   height: 26px;
   left: 4px;
   position: absolute;
@@ -336,7 +335,7 @@ input:checked + .toglex {
 }
 
 input:checked + .toglex:before {
-  transform: translateX(24px);
+  transform: translateX(20px);
 }
 
 .toglex.round {
