@@ -806,3 +806,19 @@ background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/6963bbf342d8
  transform: translateY(-100%);
  transition: all 0.3s 1s ease-out;
  }
+
+/* Rangeslider */
+.rangeslider,
+input[type=range] {
+  max-width: 400px;
+}
+
+.rangeslider__handle {
+  border-radius: 22px;
+  min-width: 62px;
+  line-height: 42px;
+  text-align: center;
+}
+.rangeslider__handle:after {
+  background: 0;
+}
