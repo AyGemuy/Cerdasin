@@ -446,37 +446,47 @@ input:checked + .toglex:before {
     z-index: 9999;
 }
 .loader {
+  width: 150px;
+  height: 150px;
+}
+
+svg {
+  width: 90%;
+  fill: none;
+}
+
+.load {
   transform-origin: 50% 50%;
   stroke-dasharray: 570;
   stroke-width: 20px;
 }
-.loader.one {
+.load.one {
   stroke: #554d73;
   animation: load 1.5s infinite;
 }
-.loader.two {
+.load.two {
   stroke: #a496a4;
   animation: load 1.5s infinite;
   animation-delay: 0.1s;
 }
-.loader.three {
+.load.three {
   stroke: #a5a7bb;
   animation: load 1.5s infinite;
   animation-delay: 0.2s;
 }
 
-.poiner {
+.point {
   animation: bounce 1s infinite ease-in-out;
 }
-.poiner.one {
+.point.one {
   fill: #a5a7bb;
   animation-delay: 0s;
 }
-.poiner.two {
+.point.two {
   fill: #a496a4;
   animation-delay: 0.1s;
 }
-.poiner.three {
+.point.three {
   fill: #554d73;
   animation-delay: 0.2s;
 }
