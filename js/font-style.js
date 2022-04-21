@@ -24,6 +24,15 @@ $('#fontArea').toggleClass( "decorated sample-3" );
 $("#sample-4").click(function(){
 $('#fontArea').toggleClass( "decorated sample-4" );
 });
+$("#sample-5").click(function(){
+$('#fontArea').toggleClass( "decorated sample-5" );
+});
+$("#sample-6").click(function(){
+$('#fontArea').toggleClass( "decorated sample-6" );
+});
+$("#sample-7").click(function(){
+$('#fontArea').toggleClass( "decorated sample-7" );
+});
 
 /* Slider Range */
 $(function() {
