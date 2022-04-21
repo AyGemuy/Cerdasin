@@ -33,6 +33,9 @@ $('#fontArea').toggleClass( "decorated sample-6" );
 $("#sample-7").click(function(){
 $('#fontArea').toggleClass( "decorated sample-7" );
 });
+$("#sample-8").click(function(){
+$('#fontArea').toggleClass( "decorated sample-8" );
+});
 
 /* Slider Range */
 $(function() {
