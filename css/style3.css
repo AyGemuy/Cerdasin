@@ -811,12 +811,14 @@ background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/6963bbf342d8
 .rangeslider,
 input[type=range] {
   max-width: 400px;
+  width: 44px;
+  height: 44px;
 }
 
 .rangeslider__handle {
   border-radius: 22px;
-  min-width: 62px;
-  line-height: 42px;
+  width: 42px;
+  height: 42px;
   text-align: center;
 }
 .rangeslider__handle:after {
