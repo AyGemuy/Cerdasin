@@ -1,13 +1,4 @@
-
-.tg-list {
-  text-align: center;
-  display: flex;
-  align-items: center;
-}
-
-.tg-list-item {
-  margin: 0 2em;
-}
+/* Toggle button */
 .tgl {
   display: none;
 }
