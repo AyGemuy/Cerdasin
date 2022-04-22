@@ -148,6 +148,12 @@ mkrx_f.addEventListener("keyup", () => {
     }
 });
 
+const mkr_g = document.querySelector(".mkr_g"),
+mkrx_g = mkr_g.querySelector(".frm_g input"),
+mbtn_g = mkr_g.querySelector(".frm_g button"),
+mimg_g = mkr_g.querySelector(".cdimg_g img");
+let prvl_g;
+
 mbtn_g.addEventListener("click", () => {
     let mkvl_g = mkrx_g.value.trim();
     if(!mkvl_g || prvl_g === mkvl_g) return;
