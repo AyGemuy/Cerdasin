@@ -223,9 +223,12 @@ mbtn_g.addEventListener("click", () => {
 `https://hadi-api.herokuapp.com/api/photoxy/grafiti-text-cover?text=${mkvl_g}`,
 `https://hadi-api.herokuapp.com/api/photoxy/video-spells-name?text=${mkvl_g}`,
 `https://hadi-api.herokuapp.com/api/photoxy/battlefield-4-rising?text=${mkvl_g}`];
-for (var i = 0; i < link_img.length; i++) {
-$("#array_img").innerHTML = link_img[i].src;
-}
+var tot_url = 0;
+
+var imeg = document.createElement('img')
+   imeg.src = link_img[tot_url];
+   document.getElementById('cdimg_g').appendChild(img);
+   
     mimg_g.addEventListener("load", () => {
         mkr_g.classList.add("active");
         mbtn_g.innerText = "Create";
