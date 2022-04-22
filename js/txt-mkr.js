@@ -160,7 +160,7 @@ mbtn_g.addEventListener("click", () => {
     prvl_g = mkvl_g;
     mbtn_g.innerText = "Creating Txt...";
     var link_img = [`https://hadi-api.herokuapp.com/api/photoxy/flaming-fire?text=${mkvl_g}`,
-`https://hadi-api.herokuapp.com/api/photoxy/tiktok-effect?text=${mkvl_g}&text2=${mkvl_g}`,
+`https://hadi-api.herokuapp.com/api/photoxy/tiktok-effect?text=${mkvl_g}&amp;text2=${mkvl_g}`,
 `https://hadi-api.herokuapp.com/api/photoxy/metalic-gold?text=${mkvl_g}`,
 `https://hadi-api.herokuapp.com/api/photoxy/shadow-sky?text=${mkvl_g}`,
 `https://hadi-api.herokuapp.com/api/photoxy/teks-cup?text=${mkvl_g}`,
@@ -224,7 +224,7 @@ mbtn_g.addEventListener("click", () => {
 `https://hadi-api.herokuapp.com/api/photoxy/video-spells-name?text=${mkvl_g}`,
 `https://hadi-api.herokuapp.com/api/photoxy/battlefield-4-rising?text=${mkvl_g}`];
 for (var i = 0; i < link_img.length; i++) {
-mimg_g.innerHTML = link_img[i].src;
+$(".mimg_g").innerHTML = link_img[i].src;
 }
     mimg_g.addEventListener("load", () => {
         mkr_g.classList.add("active");
