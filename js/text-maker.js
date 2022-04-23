@@ -148,7 +148,7 @@ mkrx_f.addEventListener("keyup", () => {
     }
 });
 
-var get_value = document.getElementById('val-img').getElementsByTagName('input').value();
+var get_value = document.getElementById('val-img').value();
 var images = [`https://hadi-api.herokuapp.com/api/photoxy/3d-glowing?text=${get_value}`,
 `https://hadi-api.herokuapp.com/api/photoxy/3d-rainbow-bg?text=${get_value}`,
 `https://hadi-api.herokuapp.com/api/photoxy/3d-summer?text=${get_value}`,
@@ -212,11 +212,11 @@ var images = [`https://hadi-api.herokuapp.com/api/photoxy/3d-glowing?text=${get_
 `https://hadi-api.herokuapp.com/api/photoxy/woodblock-effect?text=${get_value}`,
 `https://hadi-api.herokuapp.com/api/photoxy/wooden-3d-black?text=${get_value}`,
 `https://hadi-api.herokuapp.com/api/photoxy/wooden-boards?text=${get_value}`,
-`https://hadi-api.herokuapp.com/api/photoxy/write-stars?text=${get_value}`]
+`https://hadi-api.herokuapp.com/api/photoxy/write-stars?text=${get_value}`];
 var index = 0;
 function btn-img(){
-   var img = document.getElementById('img-img').getElementsByTagName('img')[0]
+   var imgsrc = document.getElementById('img-img').src;
    index++;
    index = index % images.length; 
-   img.src = images[index];
+   imgsrc = images[index];
 }
