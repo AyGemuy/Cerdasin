@@ -148,7 +148,7 @@ mkrx_f.addEventListener("keyup", () => {
     }
 });
 
-var get_value = document.getElementById('val-img').value();
+var get_value = $("#val-img").val();
 var images = [`https://hadi-api.herokuapp.com/api/photoxy/3d-glowing?text=${get_value}`,
 `https://hadi-api.herokuapp.com/api/photoxy/3d-rainbow-bg?text=${get_value}`,
 `https://hadi-api.herokuapp.com/api/photoxy/3d-summer?text=${get_value}`,
@@ -214,7 +214,7 @@ var images = [`https://hadi-api.herokuapp.com/api/photoxy/3d-glowing?text=${get_
 `https://hadi-api.herokuapp.com/api/photoxy/wooden-boards?text=${get_value}`,
 `https://hadi-api.herokuapp.com/api/photoxy/write-stars?text=${get_value}`];
 var index = 0;
-function btn-img(){
+$('#btn-img').on('click', function () {
    var imgsrc = document.getElementById('img-img').src;
    index++;
    index = index % images.length; 
