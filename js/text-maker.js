@@ -148,6 +148,12 @@ mkrx_f.addEventListener("keyup", () => {
     }
 });
 
+function lets_go() {
+    var result = document.getElementById("isi_text").value;
+    document.getElementById("ini_result").innerHTML = result;
+	document.getElementById("get_url").href="https://hadi-api.herokuapp.com/api/photoxy/3d-glowing?text=" + result;
+}
+
 var get_value = $("#val-img").val();
 var images = [`https://hadi-api.herokuapp.com/api/photoxy/3d-glowing?text=${get_value}`,
 `https://hadi-api.herokuapp.com/api/photoxy/3d-rainbow-bg?text=${get_value}`,
