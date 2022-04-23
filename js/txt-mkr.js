@@ -163,7 +163,7 @@ mbtn_g.addEventListener("click", () => {
 
 link_img.forEach( element => {
             var image = `<img src="${element}" alt="img">`;
-            mimg_g.innerHTML = image;
+            document.querySelector('cdimg_g').innerHTML = image;
 }); 
     mimg_g.addEventListener("load", () => {
         mkr_g.classList.add("active");
