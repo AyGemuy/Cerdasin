@@ -153,9 +153,10 @@ var mkvl_g = $("mkrx_g").val();
     var index = 0;
 
     function buildImage() {
-      var imgb = document.createElement('img')
-      imgb.src = ini_url[index];
-      $('mimg_g').appendChild(img);
+      var img = $('<img />', {
+  src: ini_url[index];
+});
+img.appendTo($('#mimg_g'));
     }
 
     function changeImage(){
