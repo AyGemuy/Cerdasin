@@ -216,7 +216,7 @@ var arr = [`https://hadi-api.herokuapp.com/api/photoxy/3d-glowing?text=${get_val
 `https://hadi-api.herokuapp.com/api/photoxy/wooden-boards?text=${get_value}`,
 `https://hadi-api.herokuapp.com/api/photoxy/write-stars?text=${get_value}`]
     for(i=0; i < arr.length ; i++) {
-    $("#val-img").append('<img src="' + arr[i].src + '" style="height:60px; width: 60px;"/>');
+document.write('<img src="' + arr[i].src + '" style="height:60px; width: 60px;"/>', img_img);
 }
   });
 });
