@@ -75,4 +75,4 @@ $('#lets_go').click(function(){
     var iniresult = document.getElementById("isi_text").value;
     document.getElementById("ini_result").innerHTML = iniresult;
 	document.getElementById("get_url").href="https://hadi-api.herokuapp.com/api/photoxy/3d-glowing?text=" + iniresult;
-}
+});
