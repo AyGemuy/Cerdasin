@@ -1,9 +1,10 @@
-const mmage = document.getElementById('lets_go_img');
-const vimg = document.getElementById('v_img_i');
+const lets_in = document.getElementById('cat-img');
+const lets_btn = document.getElementById('btn-cat');
+
+lets_btn.addEventListener('click', lets_go);
 
 function lets_go() {
-var get_value_t = $('textarea#v_img_t').val();
-var get_value_i = vimg.value;
+var get_value_t = $('textarea#v_img_i').val();
 var images = [`https://hadi-api.herokuapp.com/api/photoxy/3d-glowing?text=${get_value}`,
 `https://hadi-api.herokuapp.com/api/photoxy/3d-rainbow-bg?text=${get_value}`,
 `https://hadi-api.herokuapp.com/api/photoxy/3d-summer?text=${get_value}`,
@@ -68,5 +69,5 @@ var images = [`https://hadi-api.herokuapp.com/api/photoxy/3d-glowing?text=${get_
 `https://hadi-api.herokuapp.com/api/photoxy/wooden-3d-black?text=${get_value}`,
 `https://hadi-api.herokuapp.com/api/photoxy/wooden-boards?text=${get_value}`,
 `https://hadi-api.herokuapp.com/api/photoxy/write-stars?text=${get_value}`];
-      mmage.innerHTML = `<img src="${images[0]}"/>`;
+      lets_in.innerHTML = `<img src="${images[0]}"/>`;
 }
