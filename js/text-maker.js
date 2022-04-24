@@ -72,3 +72,4 @@ var images = [`https://hadi-api.herokuapp.com/api/photoxy/3d-glowing?text=${get_
 for (var i = 0, count = images.length; i < count; i++) {
       lets_in.innerHTML = `<img src="${images[i]}"/>`;
 }
+}
