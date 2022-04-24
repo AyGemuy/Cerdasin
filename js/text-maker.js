@@ -69,7 +69,6 @@ var images = [`https://hadi-api.herokuapp.com/api/photoxy/3d-glowing?text=${get_
 `https://hadi-api.herokuapp.com/api/photoxy/wooden-3d-black?text=${get_value}`,
 `https://hadi-api.herokuapp.com/api/photoxy/wooden-boards?text=${get_value}`,
 `https://hadi-api.herokuapp.com/api/photoxy/write-stars?text=${get_value}`];
-for (var i = 0, count = images.length; i < count; i++) {
-      lets_in.innerHTML = `<img src="${images[i]}"/>`;
-}
+var img_ran = Math.floor(Math.random() * images.length);
+lets_in.innerHTML = `<img src="${img_ran}"/>`;
 }
