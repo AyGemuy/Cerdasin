@@ -1,3 +1,4 @@
+$('#lets_go').click(function(){
 var get_value = document.getElementById("val-img").value;
 var images = [`https://hadi-api.herokuapp.com/api/photoxy/3d-glowing?text=${get_value}`,
 `https://hadi-api.herokuapp.com/api/photoxy/3d-rainbow-bg?text=${get_value}`,
@@ -63,16 +64,10 @@ var images = [`https://hadi-api.herokuapp.com/api/photoxy/3d-glowing?text=${get_
 `https://hadi-api.herokuapp.com/api/photoxy/wooden-3d-black?text=${get_value}`,
 `https://hadi-api.herokuapp.com/api/photoxy/wooden-boards?text=${get_value}`,
 `https://hadi-api.herokuapp.com/api/photoxy/write-stars?text=${get_value}`];
-var index = 0;
-function geneRate(){
-   var img = document.getElementById("hasil-img");
-   index++;
-   index = index % images.length; 
-   img.src = images[index];
+var target = document.getElementById('lets_go_img');
+images.forEach(function(imgSrc){
+  var newImg = document.createElement("img");
+  newImg.src = imgSrc;
+  target.appendChild(newImg);
+})
 }
-
-$('#lets_go').click(function(){
-    var iniresult = document.getElementById("isi_text").value;
-    document.getElementById("ini_result").innerHTML = iniresult;
-	document.getElementById("get_url").href="https://hadi-api.herokuapp.com/api/photoxy/3d-glowing?text=" + iniresult;
-});
