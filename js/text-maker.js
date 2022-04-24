@@ -1,10 +1,10 @@
-const lets_in = document.getElementById('cat-img');
-const lets_btn = document.getElementById('btn-cat');
+const lets_in = document.getElementById('img_img');
+const lets_btn = document.getElementById('btn_img');
 
 lets_btn.addEventListener('click', lets_go);
 
 function lets_go() {
-var get_value_t = $('textarea#v_img_i').val();
+var get_value = $('textarea#val_t').val();
 var images = [`https://hadi-api.herokuapp.com/api/photoxy/3d-glowing?text=${get_value}`,
 `https://hadi-api.herokuapp.com/api/photoxy/3d-rainbow-bg?text=${get_value}`,
 `https://hadi-api.herokuapp.com/api/photoxy/3d-summer?text=${get_value}`,
