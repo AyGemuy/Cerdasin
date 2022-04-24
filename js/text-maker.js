@@ -1,5 +1,6 @@
-$('#lets_go').click(function(){
-var get_value = document.getElementById("val-img").value;
+$('#lets_go').click(function() {
+var get_value_t = $('textarea#message').val();
+var get_value_i = document.getElementById("val-img").value;
 var images = [`https://hadi-api.herokuapp.com/api/photoxy/3d-glowing?text=${get_value}`,
 `https://hadi-api.herokuapp.com/api/photoxy/3d-rainbow-bg?text=${get_value}`,
 `https://hadi-api.herokuapp.com/api/photoxy/3d-summer?text=${get_value}`,
