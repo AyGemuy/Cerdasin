@@ -2,7 +2,7 @@ $('#btn_asu').on('click', function () {
 $.getJSON('//api-xfar05.herokuapp.com/api/asupan', function(asupanr) {
 swals.fire({
   title: 'Hasil',
-  html: 'Link :<a href='"+ asupanr.result.result +"'></a>',
+  html: 'Salin Link : <pre>'+ asupanr.result.result +'</pre>',
 })
 })
 });
