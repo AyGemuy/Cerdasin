@@ -1,5 +1,5 @@
-$.getJSON('//api-xfar05.herokuapp.com/api/asupan', function(data) {
 $('#btn_asu').on('click', function () {
+$.getJSON('//api-xfar05.herokuapp.com/api/asupan', function(data) {
 Swal.fire({
   title: '<strong>Asupan</strong>',
   icon: 'success',
