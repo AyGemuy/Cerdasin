@@ -3,7 +3,7 @@ $('#btn_asu').on('click', function () {
 $.getJSON('//api-xfar05.herokuapp.com/api/asupan', function(asupanr) {
 swals.fire({
   title: 'Hasil',
-  text: 'Link :<a>'+ asupanr.result.result +'</a>',
+  html: 'Link :<a>'+ asupanr.result.result +'</a>',
   icon: 'success',
 })
 })
