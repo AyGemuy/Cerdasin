@@ -1,10 +1,10 @@
+$.getJSON('//api-xfar05.herokuapp.com/api/asupan', function(asupanr) {
 $('#btn_asu').on('click', function () {
-$.getJSON('//api-xfar05.herokuapp.com/api/asupan', function(data) {
 Swal.fire({
   title: '<strong>Asupan</strong>',
   icon: 'success',
   html:
-    '<iframe width="400" height="400" src="{{data.result.result}}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+    '<iframe width="400" height="400" src="{{asupanr.result.result}}"></iframe>',
   showCloseButton: true,
   showCancelButton: true,
   focusConfirm: false,
@@ -17,4 +17,3 @@ Swal.fire({
 })
  });
 });
-
